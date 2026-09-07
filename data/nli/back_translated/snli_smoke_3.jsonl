@@ -1,0 +1,3 @@
+{"premise":"A person on a horse jumps on a broken plane.","hypothesis":"A person trains his horse for a competition.","label":1,"augmentation":"back_translation","source_index":0,"pivot_lang":"fra_Latn"}
+{"premise":"A person on a horse jumps on a broken plane.","hypothesis":"A person is in a restaurant, ordering an omelette.","label":2,"augmentation":"back_translation","source_index":1,"pivot_lang":"fra_Latn"}
+{"premise":"A person on a horse jumps on a broken plane.","hypothesis":"There's a person out there on a horse.","label":0,"augmentation":"back_translation","source_index":2,"pivot_lang":"fra_Latn"}
