@@ -1,7 +1,7 @@
 # SNLI NLLB back-translation augmentation
 
-This project augments SNLI with `facebook/nllb-200-distilled-600M` and a
-quality gate:
+This project augments SNLI with `facebook/nllb-200-distilled-600M` and an
+explainable quality gate:
 
 ```text
 candidate generation -> batched bidirectional entailment -> batched pair NLI
@@ -10,8 +10,8 @@ candidate generation -> batched bidirectional entailment -> batched pair NLI
 
 The recommended mode is `separate`, which creates two asymmetric candidates
 per source item: `(BT(premise), hypothesis)` and `(premise, BT(hypothesis))`.
-`both` keeps the legacy two-sided candidate; `premise` and `hypothesis` create
-one-sided output. The old `--fields premise` style is replaced by
+`both` creates one two-sided candidate; `premise` and `hypothesis` create one-
+sided output. The old `--fields premise` option is replaced by
 `--augmentation-mode premise`.
 
 ## Run
@@ -48,26 +48,32 @@ both original-to-candidate and candidate-to-original entailment. Pair-level
 NLI must retain the gold label with sufficient probability. Verifier calls are
 batched per chunk and internally respect `--filter-batch-size`.
 
-Logical cues are split into two policies. Negation and explicit numbers are
-hard cues: changes reject a candidate. Quantifiers, modals, time, and space
-are soft cues: changes are retained in `soft_cue_changes` and passed to the
-semantic/NLI verifier rather than being rejected automatically. This allows
-valid paraphrases such as `in a shirt` -> `wearing a shirt` to survive.
+Logical cues are split into two policies. Negation and numbers are hard cues:
+changes reject a candidate. Numeric literals are open-ended, including
+integers such as `11` and `100` and decimals such as `3.5`; common number words
+are also tracked. Quantifiers, modals, time, and space are soft cues: changes
+are recorded in `soft_cue_changes` and passed to semantic/NLI verification.
 
-Without `--allow-truncation`, an input over `--max-input-tokens` is rejected as
-`input_too_long`. With the flag, it proceeds to quality filtering and records
-`source_to_pivot_truncated`, `pivot_to_source_truncated`, and `was_truncated`.
+Truncation metadata distinguishes detected overflow from actual tokenizer
+truncation. Without `--allow-truncation`, an over-limit source is rejected as
+`input_too_long` and an over-limit generated pivot is rejected as
+`intermediate_input_too_long`; neither is marked truncated. With the flag,
+both stages may truncate and continue to quality filtering. Metadata records
+`source_to_pivot_over_limit`, `source_to_pivot_truncated`,
+`pivot_to_source_over_limit`, `pivot_to_source_truncated`, and `was_truncated`.
 In `separate` mode these flags belong only to the translated field; `both`
-combines both fields.
+combines the two fields by OR, while `was_truncated` reflects actual
+truncation only.
 
 Accepted and rejected outputs contain stable IDs of the form
 `source_index:augmented_field:pivot_lang`, scores, hard/soft cue changes,
-reasons, and model/generation provenance. JSONL input is processed in chunks,
-with each output flushed before the next chunk. JSON arrays are supported as a
-fallback but are parsed into memory. `--resume` reads candidate IDs from both
-outputs, so rejected candidates are also considered processed. `--no-metadata`
-is only available for legacy non-resume runs; combining it with `--resume`
-fails clearly because checkpoint identity would be lost.
+reasons, truncation metadata, and model/generation provenance. JSONL input is
+processed in chunks and each output is flushed. JSON arrays are supported as a
+fallback but are parsed into memory, so JSONL is preferred for large data.
+`--resume` reads candidate IDs from both outputs, so rejected candidates are
+also considered complete. `--no-metadata` cannot be combined with `--resume`;
+the command fails with `--resume requires candidate metadata` rather than
+silently regenerating candidates.
 
 For a small offline generation after NLLB is cached:
 
@@ -79,10 +85,9 @@ python scripts/back_translate_nllb.py \
   --augmentation-mode separate --device cpu --dtype float32
 ```
 
-`--quality-filter off` preserves the legacy accept-all behavior for debugging.
-With deterministic beam search (`do_sample=false`), `--seed` does not create
-beam diversity. Multi-pivot generation should follow manual quality
-calibration, not replace it.
+`--quality-filter off` preserves legacy accept-all behavior except for
+structural and input-length failures. With deterministic beam search
+(`do_sample=false`), `--seed` does not create beam diversity.
 
 ## Data and tests
 

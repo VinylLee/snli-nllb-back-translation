@@ -10,17 +10,25 @@ from typing import Any, Protocol, Sequence
 
 LABEL_NAMES = {0: "entailment", 1: "neutral", 2: "contradiction"}
 _TOKEN_RE = re.compile(r"[A-Za-z]+(?:'[A-Za-z]+)?|\d+(?:\.\d+)?")
+_NUMERIC_TOKEN_RE = re.compile(r"\d+(?:\.\d+)?\Z")
 _PUNCT_ONLY_RE = re.compile(r"^[\W_]+$", re.UNICODE)
 _REPEATED_CHUNK_RE = re.compile(r"\b(\w+(?:\s+\w+){1,5})\s+\1\b", re.IGNORECASE)
-_IMPOSSIBLE_SWITCH_RE = re.compile(r"\b(turn|turning|switch|switching)\s+(?:on|off)\s+(?:a|an|the)\s+(?:hamburger|burger|food|omelette|pizza|sandwich)\b", re.IGNORECASE)
+_IMPOSSIBLE_SWITCH_RE = re.compile(
+    r"\b(turn|turning|switch|switching)\s+(?:on|off)\s+(?:a|an|the)\s+"
+    r"(?:hamburger|burger|food|omelette|pizza|sandwich)\b", re.IGNORECASE)
 
-# Negation and explicit numbers are high-risk hard cues. Other cues are
-# retained as auditable flags because valid paraphrases can change them.
+# Negation and numbers are high-risk hard cues. Other cues are retained as
+# auditable flags because valid paraphrases can change them.
 HARD_CUE_TYPES = {"negation", "number"}
 SOFT_CUE_TYPES = {"quantifier", "modal", "time", "space"}
 CUE_GROUPS: dict[str, set[str]] = {
     "negation": {"not", "no", "never", "nobody", "nothing", "without", "n't"},
-    "number": {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"},
+    "number": {
+        "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
+        "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen",
+        "nineteen", "twenty", "hundred", "thousand", "couple", "dozen",
+        "1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
+    },
     "quantifier": {"all", "some", "any", "every", "few", "several", "many", "most", "couple"},
     "modal": {"may", "might", "can", "could", "must", "should", "will"},
     "time": {"before", "after", "during", "first", "later", "already"},
@@ -47,10 +55,16 @@ def cue_snapshot(text: str) -> dict[str, dict[str, int]]:
     tokens = [token.lower() for token in _TOKEN_RE.findall(text)]
     contractions = ["n't" for token in tokens if token.endswith("n't")]
     tokens.extend(contractions)
-    return {
+    snapshot = {
         group: {cue: tokens.count(cue) for cue in cues if tokens.count(cue)}
         for group, cues in CUE_GROUPS.items()
     }
+    # Numeric literals are open-ended (for example 11, 100, or 3.5), so they
+    # cannot be represented by a finite cue vocabulary.
+    for token in set(tokens):
+        if _NUMERIC_TOKEN_RE.fullmatch(token):
+            snapshot["number"][token] = tokens.count(token)
+    return snapshot
 
 
 def logical_cue_changes(original: str, candidate: str) -> list[dict[str, Any]]:
@@ -108,6 +122,7 @@ class QualityFilter:
             texts = {"premise": (item["original_premise"], item["candidate_premise"]),
                      "hypothesis": (item["original_hypothesis"], item["candidate_hypothesis"])}
             scores = decisions[index].scores
+            decisions[index].reasons.extend(str(reason) for reason in item.get("pre_reasons", []))
             if item.get("was_truncated"):
                 decisions[index].flags.append("was_truncated")
             if item.get("truncation"):
@@ -223,4 +238,3 @@ class TransformersNLI:
                 probabilities = self.torch.softmax(self.model(**encoded).logits, dim=-1).cpu()
             result.extend({name: float(row[index]) for name, index in self.label_ids.items()} for row in probabilities)
         return result
-

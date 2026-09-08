@@ -20,6 +20,10 @@ except ModuleNotFoundError:  # direct execution: python scripts/back_translate_n
 
 DEFAULT_MODEL = "facebook/nllb-200-distilled-600M"
 DEFAULT_VERIFIER = "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli"
+TRUNCATION_KEYS = (
+    "source_to_pivot_over_limit", "source_to_pivot_truncated",
+    "pivot_to_source_over_limit", "pivot_to_source_truncated",
+)
 
 
 def read_records(path: Path) -> Iterator[dict[str, Any]]:
@@ -88,7 +92,7 @@ def resolve_dtype(requested: str, device: str) -> str:
 
 
 class NLLBBackTranslator:
-    """Batched NLLB translator returning truncation flags for both directions."""
+    """Batched NLLB translator with separate overflow and truncation flags."""
 
     def __init__(self, model_name: str, source_lang: str, pivot_lang: str, device: str, dtype: str,
                  max_input_tokens: int, max_new_tokens: int, num_beams: int) -> None:
@@ -126,33 +130,58 @@ class NLLBBackTranslator:
         return language_id
 
     def _translate(self, texts: Sequence[str], source_lang: str, target_lang: str,
-                   allow_truncation: bool) -> tuple[list[str], list[dict[str, bool]]]:
+                   allow_truncation: bool, stage: str) -> tuple[list[str], list[dict[str, bool]]]:
         if not texts:
             return [], []
         self.tokenizer.src_lang = source_lang
-        source_flags = [self.token_length(text, source_lang) > self.max_input_tokens for text in texts]
-        encoded = self.tokenizer(list(texts), return_tensors="pt", padding=True,
+        over_limits = [self.token_length(text, source_lang) > self.max_input_tokens for text in texts]
+        metadata = [{
+            "source_to_pivot_over_limit": over if stage == "source_to_pivot" else False,
+            "source_to_pivot_truncated": False,
+            "pivot_to_source_over_limit": over if stage == "pivot_to_source" else False,
+            "pivot_to_source_truncated": False,
+        } for over in over_limits]
+        eligible = [index for index, over in enumerate(over_limits) if allow_truncation or not over]
+        outputs = ["" for _ in texts]
+        if not eligible:
+            return outputs, metadata
+        eligible_texts = [texts[index] for index in eligible]
+        raw_lengths = [self.token_length(text, source_lang) for text in eligible_texts]
+        encoded = self.tokenizer(eligible_texts, return_tensors="pt", padding=True,
                                  truncation=allow_truncation,
                                  max_length=self.max_input_tokens if allow_truncation else None).to(self.device)
+        if allow_truncation:
+            try:
+                encoded_lengths = encoded["attention_mask"].sum(dim=1).tolist()
+            except (KeyError, AttributeError):
+                encoded_lengths = raw_lengths
+            actual_flags = [raw > encoded for raw, encoded in zip(raw_lengths, encoded_lengths)]
+        else:
+            actual_flags = [False for _ in eligible]
+        for index, actual in zip(eligible, actual_flags):
+            key = f"{stage}_truncated"
+            metadata[index][key] = bool(actual)
         with self.torch.inference_mode():
             generated = self.model.generate(**encoded, forced_bos_token_id=self._language_id(target_lang),
                                             max_new_tokens=self.max_new_tokens, num_beams=self.num_beams,
                                             do_sample=False)
-        outputs = self.tokenizer.batch_decode(generated, skip_special_tokens=True)
-        return outputs, [{"source_to_pivot_truncated": flag} for flag in source_flags]
+        translated = self.tokenizer.batch_decode(generated, skip_special_tokens=True)
+        for index, output in zip(eligible, translated):
+            outputs[index] = output
+        return outputs, metadata
 
     def translate_with_metadata(self, texts: Sequence[str], batch_size: int, allow_truncation: bool) -> tuple[list[str], list[dict[str, bool]]]:
         translated: list[str] = []
         metadata: list[dict[str, bool]] = []
         for batch in batched(texts, batch_size):
-            pivot, first_flags = self._translate(batch, self.source_lang, self.pivot_lang, allow_truncation)
-            restored, second_flags = self._translate(pivot, self.pivot_lang, self.source_lang, allow_truncation)
+            pivot, first_flags = self._translate(batch, self.source_lang, self.pivot_lang, allow_truncation, "source_to_pivot")
+            restored, second_flags = self._translate(pivot, self.pivot_lang, self.source_lang, allow_truncation, "pivot_to_source")
             for first, second in zip(first_flags, second_flags):
-                metadata.append({
-                    "source_to_pivot_truncated": first["source_to_pivot_truncated"],
-                    "pivot_to_source_truncated": second["source_to_pivot_truncated"],
-                    "was_truncated": first["source_to_pivot_truncated"] or second["source_to_pivot_truncated"],
-                })
+                info = {key: bool(first.get(key, False) or second.get(key, False)) for key in TRUNCATION_KEYS}
+                info["was_truncated"] = bool(info["source_to_pivot_truncated"] or info["pivot_to_source_truncated"])
+                info["intermediate_input_too_long"] = bool(
+                    info["pivot_to_source_over_limit"] and not info["pivot_to_source_truncated"])
+                metadata.append(info)
             translated.extend(restored)
         return translated, metadata
 
@@ -194,8 +223,14 @@ def make_candidates(source_index: int, record: dict[str, Any], translations: dic
         premise = translations.get("premise", record["premise"]) if field_name in ("premise", "both") else record["premise"]
         hypothesis = translations.get("hypothesis", record["hypothesis"]) if field_name in ("hypothesis", "both") else record["hypothesis"]
         if field_name == "both":
-            info = {key: bool(truncations.get(name, {}).get(key, False)) for key in ("source_to_pivot_truncated", "pivot_to_source_truncated")}
-            info["was_truncated"] = any(info.values())
+            info = {
+                key: any(truncations.get(name, {}).get(key, False) for name in ("premise", "hypothesis"))
+                for key in TRUNCATION_KEYS
+            }
+            info["was_truncated"] = bool(info["source_to_pivot_truncated"] or info["pivot_to_source_truncated"])
+            info["intermediate_input_too_long"] = any(
+                truncations.get(name, {}).get("intermediate_input_too_long", False)
+                for name in ("premise", "hypothesis"))
         else:
             info = dict(truncations.get(field_name, {}))
         result.append(Candidate(source_index, record, premise, hypothesis, field_name, pivot_lang, info))
@@ -258,11 +293,12 @@ def output_record(candidate: Candidate, decision: Decision, args: argparse.Names
     return result
 
 
-def invalid_output(source_index: int, record: dict[str, Any], field_name: str, reasons: list[str], args: argparse.Namespace) -> dict[str, Any]:
+def invalid_output(source_index: int, record: dict[str, Any], field_name: str, reasons: list[str],
+                   args: argparse.Namespace, truncation: dict[str, bool] | None = None) -> dict[str, Any]:
     candidate = Candidate(source_index, record,
                           record.get("premise", "") if isinstance(record.get("premise", ""), str) else "",
                           record.get("hypothesis", "") if isinstance(record.get("hypothesis", ""), str) else "",
-                          field_name, args.pivot_lang, {})
+                          field_name, args.pivot_lang, truncation or {})
     return output_record(candidate, Decision(False, list(dict.fromkeys(reasons))), args, None)
 
 
@@ -316,6 +352,17 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     return args
 
 
+def _empty_truncation() -> dict[str, bool]:
+    return {key: False for key in TRUNCATION_KEYS} | {"was_truncated": False}
+
+
+def _source_truncation(translator: Any, text: str, max_input_tokens: int) -> dict[str, bool]:
+    over = translator.token_length(text) > max_input_tokens
+    info = _empty_truncation()
+    info["source_to_pivot_over_limit"] = over
+    return info
+
+
 def run_pipeline(args: argparse.Namespace, translator: Any, quality: QualityFilter | None) -> dict[str, Any]:
     accepted_path: Path = args.accepted_path
     rejected_output: Path = args.rejected_path
@@ -342,29 +389,52 @@ def run_pipeline(args: argparse.Namespace, translator: Any, quality: QualityFilt
                 chunk = chunk[: args.max_samples - stats["processed_records"]]
             stats["processed_records"] += len(chunk)
             valid: list[tuple[int, dict[str, Any]]] = []
+            blocked: set[str] = set()
             for source_index, record in chunk:
-                reasons = validate_record(record)
-                if not reasons and any(translator.token_length(record[field]) > args.max_input_tokens for field in translation_fields(args.augmentation_mode)) and not args.allow_truncation:
-                    reasons = ["input_too_long"]
-                if reasons:
+                base_reasons = validate_record(record)
+                over_by_field = {
+                    field_name: _source_truncation(translator, record[field_name], args.max_input_tokens)
+                    for field_name in translation_fields(args.augmentation_mode)
+                    if isinstance(record.get(field_name), str)
+                }
+                if base_reasons:
                     for field_name in candidate_fields(args.augmentation_mode):
                         candidate_id = f"{source_index}:{field_name}:{args.pivot_lang}"
                         if candidate_id in completed:
                             continue
-                        value = invalid_output(source_index, record, field_name, reasons, args)
+                        value = invalid_output(source_index, record, field_name, base_reasons, args)
                         rejected_handle.write(json.dumps(value, ensure_ascii=False, separators=(",", ":")) + "\n")
                         stats["rejected"] += 1
-                        for reason in reasons:
+                        for reason in base_reasons:
                             stats["reasons"][reason] = stats["reasons"].get(reason, 0) + 1
                     rejected_handle.flush()
-                else:
+                    continue
+                for field_name in candidate_fields(args.augmentation_mode):
+                    translated_fields = ("premise", "hypothesis") if field_name == "both" else (field_name,)
+                    field_info = _empty_truncation()
+                    for translated_field in translated_fields:
+                        for key, value in over_by_field.get(translated_field, {}).items():
+                            field_info[key] = bool(field_info.get(key, False) or value)
+                    field_info["was_truncated"] = False
+                    candidate_id = f"{source_index}:{field_name}:{args.pivot_lang}"
+                    if candidate_id in completed:
+                        continue
+                    if field_info.get("source_to_pivot_over_limit", False) and not args.allow_truncation:
+                        blocked.add(candidate_id)
+                        value = invalid_output(source_index, record, field_name, ["input_too_long"], args, field_info)
+                        rejected_handle.write(json.dumps(value, ensure_ascii=False, separators=(",", ":")) + "\n")
+                        stats["rejected"] += 1
+                        stats["reasons"]["input_too_long"] = stats["reasons"].get("input_too_long", 0) + 1
+                if len(blocked.intersection({f"{source_index}:{name}:{args.pivot_lang}" for name in candidate_fields(args.augmentation_mode)})) < len(candidate_fields(args.augmentation_mode)):
                     valid.append((source_index, record))
 
             translations: dict[str, dict[int, str]] = {field_name: {} for field_name in translation_fields(args.augmentation_mode)}
             truncations: dict[str, dict[int, dict[str, bool]]] = {field_name: {} for field_name in translation_fields(args.augmentation_mode)}
             for field_name in translation_fields(args.augmentation_mode):
                 candidate_field = "both" if args.augmentation_mode == "both" else field_name
-                targets = [(index, record) for index, record in valid if f"{index}:{candidate_field}:{args.pivot_lang}" not in completed]
+                targets = [(index, record) for index, record in valid
+                           if f"{index}:{candidate_field}:{args.pivot_lang}" not in completed
+                           and f"{index}:{candidate_field}:{args.pivot_lang}" not in blocked]
                 if not targets:
                     continue
                 values, metadata = translator.translate_with_metadata([record[field_name] for _, record in targets], args.batch_size, args.allow_truncation)
@@ -376,16 +446,19 @@ def run_pipeline(args: argparse.Namespace, translator: Any, quality: QualityFilt
             for source_index, record in valid:
                 translated = {field_name: translations[field_name].get(source_index, record[field_name]) for field_name in translation_fields(args.augmentation_mode)}
                 flags = {field_name: truncations[field_name].get(source_index, {}) for field_name in translation_fields(args.augmentation_mode)}
-                candidates.extend(candidate for candidate in make_candidates(source_index, record, translated, flags, args.augmentation_mode, args.pivot_lang) if candidate.candidate_id not in completed)
+                candidates.extend(candidate for candidate in make_candidates(source_index, record, translated, flags, args.augmentation_mode, args.pivot_lang)
+                                   if candidate.candidate_id not in completed and candidate.candidate_id not in blocked)
+            items = [{
+                "original_premise": candidate.record["premise"], "original_hypothesis": candidate.record["hypothesis"],
+                "candidate_premise": candidate.premise, "candidate_hypothesis": candidate.hypothesis,
+                "gold_label": int(candidate.record["label"]), "augmented_field": candidate.augmented_field,
+                "was_truncated": candidate.was_truncated, "truncation": candidate.truncation,
+                "pre_reasons": (["intermediate_input_too_long"] if candidate.truncation.get("intermediate_input_too_long") else []),
+            } for candidate in candidates]
             if quality is None:
-                decisions = [Decision(True) for _ in candidates]
+                decisions = [Decision(not item["pre_reasons"], list(item["pre_reasons"])) for item in items]
             else:
-                decisions = quality.evaluate_batch([{
-                    "original_premise": candidate.record["premise"], "original_hypothesis": candidate.record["hypothesis"],
-                    "candidate_premise": candidate.premise, "candidate_hypothesis": candidate.hypothesis,
-                    "gold_label": int(candidate.record["label"]), "augmented_field": candidate.augmented_field,
-                    "was_truncated": candidate.was_truncated, "truncation": candidate.truncation,
-                } for candidate in candidates])
+                decisions = quality.evaluate_batch(items)
             for candidate, decision in zip(candidates, decisions):
                 value = output_record(candidate, decision, args, translator)
                 handle = accepted_handle if decision.accepted else rejected_handle
