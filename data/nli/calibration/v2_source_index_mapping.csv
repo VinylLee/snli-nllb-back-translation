@@ -1,0 +1,801 @@
+input_position,source_index,premise,hypothesis
+0,21,"A man with blond-hair, and a brown shirt drinking out of a public water fountain.",A blond man getting a drink of water from a fountain in the park.
+1,90,"A woman is walking across the street eating a banana, while a man is following with his briefcase.",Nobody has food.
+2,707,a motorcyclist does a nose wheelie.,A motorcyclist doing a wheelie
+3,760,A soccer game played by a blue team and a red team on a perfectly manicured field at dusk.,People are playing soccer for a competition.
+4,941,A woman talks to two other women and a man with notepads in an office building with large windows.,a man talks to ducks in a pond
+5,2169,A woman is holding a bird while sitting in a flowering tree.,a woman puts her bird ina a tree
+6,2194,Two people are planting small bushes near a grassy area.,Two people are planting bushes for charity.
+7,3208,A boat captain steering a large green wheel.,A guy is at the green helm of a boat.
+8,3931,Band playing in front of a small crowd outside.,There are thousands of people watching them perform.
+9,4111,Tattooed man getting a tattoo.,A tattooed man is getting a tattoo of a Chinese character.
+10,4403,A man in a unique costume is playing the bagpipes while some people stare at him.,A man in a unique costume is playing the bagpipes  for monetary gain.
+11,4548,"Four musicians playing reed instruments with one playing a clarinet and three playing saxophones, being watched by a young child on a bicycle.",some musicians sleep
+12,5321,"Two young adults at a rodeo, one is helping the other to fix an injury to his arm after a brief ride.",Two young adults are at a rodeo.
+13,5450,A heavyset man is standing next to a building.,The man works in the building.
+14,5560,A group of young students are hanging out together in a university.,Students sit together by the Student Union building.
+15,5704,A blond singer is performing as people dance behind her.,Gwen Stefani sings while fans dance.
+16,6279,"A man in sunglasses, a red striped sweater, and a leather jacket smiles and points his finger.",A black man in sunglasses and a leather jacket is smiling while pointing a finger
+17,7321,A person picking garbanzo beans with her bear hands.,A person picks garbanzo beans with bear paws for hands.
+18,8269,A dog running fast with ears flying.,The dog is running fast.
+19,8435,A young boy sit alone in a wagon and holds on tightly to two cattle as they follow his mother's wagon down a dusty dirt road.,A boy and his mother are moving.
+20,9707,A woman in a white jacket is standing next to an older woman while reviewing a subway map.,Two two women are going to take the subway into town.
+21,10680,Two girls looking in microscopes.,the two girls are listening to music while in science class instead of doing their homework
+22,11003,Two men in suits laugh together.,The two guys in suits are talking and smiling.
+23,12969,"Two men walk in the park, one with a shaggy dog on a leash and a device for cleaning up canine droppings.",The dog isn't shaggy
+24,13229,A woman wearing a black stands in front of a counter while she holds a piece of meat.,The woman is naked while holding a salad.
+25,13559,"Two teams, one wearing blue and white, the other in red and white, are playing football.",There are people playing a game.
+26,13833,"A balding man in a dark suit and maroon tie, with a mustache and beard, plays bagpipes, as a young blond woman standing next to him in a light blue crop top and skirt listens and sticks her tongue out.",a balding man with facial hair wearing a dark suit and tie plays bagpipes as a young blonde woman stands next to him in a blue shirt and skirt sticking her tongue out.
+27,14934,Man riding a yellow machine on a dirt field at an event,a man is driving a piece of equipment on the grounds of a venue.
+28,16601,A lot of motorcycles lined up in Asia.,The vehicles are parked.
+29,17575,A football player lands on his head.,The football player damaged his neck.
+30,18456,A person plays with a mega joule contraption consisting of wire tracks and colored balls.,The peson has a strange life with jouls and contraptions.
+31,18505,A man in jeans is lying on a wooden floor.,A man and woman is holding hands.
+32,18686,A girl in pink is holding onto a young boy wearing red.,A sister is holding onto her brother in all black.
+33,18790,A squirrel jumps in the snow.,A squirrel is attacking a small child.
+34,19294,A shirtless man with sunglasses looks at the camera during a beach party.,the man is a model
+35,19844,A young blond boy looking at a white robot on a green table.,A young blond person looking at a white robot on a green table.
+36,22740,A man wearing an orange vest is standing on the street with a bulldozer behind him.,Guy in front of a bulldozer.
+37,26244,A boy in a swimsuit sitting on top of a circular fountain.,A funny person sitting
+38,27041,A man wearing a flannel shirt picking oranges in a farmer's market.,The man is near some oranges.
+39,27080,"A man wearing a gray hooded sweatshirt, blue jeans, and white and gray socks is putting his foot on top of his head.",A man moves his foot
+40,28431,"A young man performs yoga, inspired by a beautiful day on the beach.",A karate battle in the woods
+41,28875,Boys in Africa are outside playing soccer and enjoying themselves.,The kids play baseball.
+42,29218,A man lying down with a maroon cloth over his eyes and someone standing over him wearing flip-flops.,The man is lying down.
+43,29415,"A man is operating a weed eater behind a building, and there is a red van nearby.",A man is working inside.
+44,29765,A man on a bicycle rides up the side of a tree.,A man on a skateboard.
+45,30056,A man with glasses and a white shirt playing a red guitar.,Billy decided to wear his white shirt with his new glasses for his guitar recital.
+46,32175,A child shows other kids his still packaged toy.,A child has a Buzz Lightyear doll.
+47,32579,"Two musicians are carrying speakers, guitars, and musical equipment.",The musicians are going to band practice.
+48,32673,A man sits in the floor slapping something while another woman watches and one stands in the kitchen talking.,Noone is watching the man.
+49,34221,Two men fix a bicycle on a trail.,Two men are out in the mountains.
+50,34858,Wolf-like dog chasing white wiffle ball through a green field.,The dog is in the field.
+51,37727,"A person holding up a red, yellow and purple striped flag on a street.",The person holds the flag of their home country.
+52,38085,"Two young girls are playing on swings, and one is holding the other girls swing ""still.""",A girl is telling her friend it is her turn to swing.
+53,38101,A girl running through uneven sand with some withered grass.,The girl is not wearing shoes.
+54,38352,A baby that is smiling big.,A kid is crying.
+55,40045,Former First Lady Laura Bush wearing a peach colored dress speaks at a conference.,Laura Bush reads a newspaper while eating an orange.
+56,40130,A man sitting on a rock in a grass field talking on his cellphone.,The man is outside talking on his cellphone.
+57,40441,"two men, one in a red shirt, running towards a Frisbee.",Two guys trying to catch the same Frisbee
+58,41993,A man wearing glasses sitting at a desk with a large pile of papers.,The office worker is thinking.
+59,42372,Young asian boy sits down and reads a book at a book fair as a female looks on.,The boy is Asian.
+60,43495,A man with black gloves sits on someone's shoulders to take a picture.,The man is short.
+61,43588,Two women are wearing sunglasses and eating food.,Two men are playing baseball.
+62,43604,Two women eating food with sunglasses on.,Two women are working on a puzzle.
+63,44726,A boy is checking a system on the computer.,A boy is using a computer.
+64,45940,A dog runs while holding an object in its mouth.,The dog brings the ball back to his owner.
+65,46018,Two boys in yellow shirts walk in a field.,The boys are wearing soccer jerseys.
+66,46166,Lovers kiss before they part.,lovers are kissing
+67,46771,"Girl with glasses wearing a black horizontally striped shirt, a blue tuque, and jeans sitting on a cobblestone sidewalk and street.",A girl is waiting for her ride
+68,48670,Two children are sitting shirtless on a trampoline.,The children are outside.
+69,48793,A man in a jean jacket walking through town.,Man takes a walk.
+70,48999,A person does a jump on a bike in a natural setting.,A person is jumping over a bench on a bike.
+71,49580,A young boy looks out the window while traveling.,a child is in a moving vehicle
+72,49929,A crowd full of people are holding flags and signs.,A crowd of protesters hold anti abortion signs.
+73,50615,A ballet dancer poses at a photo shoot.,A football player taking a hit
+74,51049,A young girl and an older man are checking out at the food store.,The two people have just bought some food.
+75,52691,A street which is lined with many motorcycles.,There is a parade of motorcycles.
+76,52808,A warehouse manager assisting an employee.,The manager is about to fire the employee.
+77,53250,Man lining up a putt while playing mini-golf.,A man plays in the PGA tournament.
+78,53773,A man looks across a city street at night.,A man looks for criminal activity in the dark streets.
+79,54712,A man breakdances as a crowd watches.,A man dances in front of a crowd.
+80,54941,The girl in the pink California Santa Cruz sweatshirt was cutting cheese for the picnic.,A girl cuts the cheese.
+81,55266,"A man wearing a cowboy hat, overalls, and a white shirt is pointing at his music sheet and looking at someone in confusion.",The man is naked
+82,55448,A woman with blond-hair and a pink shirt holds a young boy who appears to be sad.,A woman and a young boy are laughing.
+83,56475,The dog is running around the cow.,An animal is moving.
+84,56607,A man dressed in all green with his face covered by a bandanna is working outdoors with heavy machinery.,A man with a bandanna is outside.
+85,56660,A woman with a drink and a toy.,a woman is lifting weights at the olympics
+86,56738,A woman scuba diving with a large sea turtle.,A woman captures an eel for her aquarium.
+87,58153,A group of runners on a road outside wearing short-sleeved shirts and shorts run towards the camera while a group of bystanders lining the street watch.,the camera photographs a race
+88,58539,"A man washing his shirt, in a fountain in a park.",The man is living out of his car since losing his job 5 months ago.
+89,58989,A man in a blue shirt is taking a picture.,A man is taking a picture of a pretty lady.
+90,60384,Two basketball players from duke are looking upward.,Two teammates are checking the scoreboard.
+91,60930,A man with black hair is wearing a red and yellow shirt and has a yellow clown nose and face makeup on.,A man is dressed up like a clown.
+92,61057,A woman and three children are picking something out of a blue trashcan.,A woman and kids are picking up trash.
+93,62478,A dog is standing in the snow watching the camera,The dog is experiencing cold weather.
+94,62874,"A man in glasses and a dust mask makes chains under a sign reading ""laut jaya.""",A man is indoors watching TV.
+95,62914,A man in a blue shirt playing the drums and singing.,A man is playing drums and singing at the same time.
+96,63473,This African-American man is talking on the phone.,A man is communicating
+97,63627,The cylinder's pattern could be described as red chevron.,The cylinder was painted by someone.
+98,64203,A child sleeps under a pink pillow.,The child is asleep
+99,64354,two men working in a bakery,Two men checking books out of a library.
+100,64378,Four people swinging on a swing set.,The four people are siblings.
+101,64777,Two girls look through a microscope.,Girls are looking through an instrument
+102,66214,These are very well groomed animals.,These are animals.
+103,66385,A boy in his pajamas getting ready to play something on his guitar.,A boy sits in his pajamas with a guitar on his lap.
+104,66614,A man playing a guitar on stage while a man plays drums in the background.,"Two men play on stage, hoping to get discovered by someone in the crowd."
+105,66664,A group of people clapping as they watch a band together.,A group of people are clapping as they watch a rubber band.
+106,67736,A dog is running through the ocean.,A dog is in the ocean.
+107,67883,A guy catches or prepares to throw a football with various teammates and staff in the background at what looks like a school.,Students play lacrosse at a school.
+108,68719,A person is doing a back flip while other people and cars go by in the background.,The person knows how to do a flip.
+109,69474,A man wearing black jacket poses with a smile.,A man is smiling.
+110,69925,"There are two men engaged in a karate match, the man on the left kicks the man on the right in the face while the man on the right kicks the man on the left in the groin.",The men are in a torunament.
+111,69975,A man in a white shirt and shorts prepares to serve a tennis ball.,A man in a white shirt and shorts is ready to serve the beef wellington.
+112,71150,A man stands by a building playing a wooden electric guitar.,A man is standing.
+113,71585,Two people in blue shirts are selling shoes in an outside market.,The shoes are being sold by the girls.
+114,71825,A boy rides a game machine.,A boy is riding a toy pony.
+115,72005,A group of people playing a game with a tennis ball on a beach.,People running from a tsunami.
+116,73032,A man wearing blue jeans is standing outside carrying a wide assortment of items and has a large dish on his head.,The man is walking a tight rope between two sky scrapers.
+117,73520,The woman is holding the harness that the brown and white dog is wearing.,The woman is walking the brown and white dog.
+118,73554,"A man in a neon shirt, khakis, and an orange hard hat walks by a mulch machine.",A man is walking.
+119,73820,"A young boy wearing a yellow shirt and green pants pushing a baby stroller in front of houses with red and white roofs, red doors, white railing and red floor planks.",A boy walking outdoors.
+120,74358,A group examines a run down house.,A woman feeds a tiger.
+121,75090,A runner is leaping over hurdles.,a runner leaps
+122,75277,A couple embraces on a busy street.,A couple reunites
+123,75708,"A baseball pitcher wearing a blue, red and white uniform is about to throw a baseball.",A baseball player prepares to throw a ball at a batter.
+124,76076,An individual cutting up a vegetable in their kitchen with a knife.,A person making a dinner for his family.
+125,76517,One climber helps another in the snow.,The two men are walking unobstructed in the snow.
+126,77440,Two children work on a project with woman.,The woman is with her friends.
+127,78138,a woman bends down to reach in a plastic bag.,A woman is putting a box on a shelf.
+128,78367,"Two people sit in handicapped seats, one touching her ear while the other touches her eyes.",two individuals run around with guns
+129,79799,A crowd of black people are gathered and one person has a backpack on.,A crowd of teenage black people are waiting for the school to open and one of them has a backpack.
+130,80395,A girl at a park cooking lunch.,A girl is making a hot dog for lunch.
+131,81737,This is an outdoor vegetable market in possibly Southeast Asia where please are selling their fruits and vegetables.,This is an outdoor market where people buy meat.
+132,82658,A blond woman dressed in black and red is running.,"A young woman is working out at her local high-school's track, running laps."
+133,83167,A man with long black hair wearing a black shirt and multi-color tie is using a electronic board with lights on it.,His hair is a different color than his shirt.
+134,84582,A man smiling while shining another man's shoes.,A human smiling
+135,87146,"A man with glasses is reading a book while lying in a red, orange and yellow striped hammock next to a sidewalk.",A person reading
+136,87701,A girl wearing a white coat standing in a fountain.,A girl wearing a white coat standing.
+137,88157,Children people run and play near a fountain.,People are going into the restaurant.
+138,88243,"A man with a white hard hat with a black logo in the front of the hat holding part of a sign with numbers on it, while standing on a balcony.",The balcony is fully built.
+139,88424,Two young women are writing on a banner.,Two women are writing.
+140,88539,A group of adults viewing a presentation in a school gymnasium.,adults learning something
+141,89957,Two men in sleeveless shirts and shorts getting a beverage.,two men are getting a drink
+142,90459,A possible woman dressed as a belly dancer holds out a cloth with beads on it.,Maybe a woman is wearing a weird outfit and dances.
+143,93659,A man in a white shirt with a plate of food sits outside in folding chairs with a little girl who is writing.,The small girl is drawing a picture of the man sleeping next to her.
+144,93870,This is a child in a snowy landscape sledding down a hill.,The child is sledding through the snow.
+145,93979,A man stands outside of a doorway on his cellphone.,A man with empty hands stands outside a doorway.
+146,95485,"A woman holding a girl, who wears an apple themed coat.",Woman holds a girl wearing a coat.
+147,95970,Many two-person kayaks fill a river surrounded by trees.,People are in a stadium.
+148,96110,A man stands on stage with a fireworks going off beside of him.,The man is sitting on the stage.
+149,97014,An elderly middle-eastern woman is about to smoke a pack of cigarettes.,A woman is about to harm her body.
+150,97491,The small dog wearing a tutu stands on its hind legs.,There is a dog laying down
+151,97760,"The backs of two Asian girls, wearing red tops and holding red flags.",Two girls are holding red flags.
+152,97761,One child is pointing to the sky and another is trying to block the sun to look,The children are playing in the indoor playground.
+153,99482,A large brown dog is digging in the sand.,A dog is digging outside.
+154,99704,"Runners, some in costume, in a St Paddy's day Marathon run in the streets as people watch.",The runners are almost finished with the St. Patrick's Day race.
+155,99871,A woman sitting at a desk staring at a computer screen.,A woman is at work.
+156,101119,A man with two dogs on a beach,A man is with two deer on a beach.
+157,101993,A woman adjusts her sunglasses.,A woman wears sunglasses.
+158,103011,A group of people surrounding the American flag.,People are around a Russian flag
+159,103148,People hanging about in a crowded cafe.,People are in a cafe.
+160,103393,Three children look through a telescope in the forest.,Children are looking at the stars.
+161,104123,A gloved man palms forward in front of arranged clothes.,A man jumps forward in front of dogs.
+162,104228,A man is playing guitar on the otherwise empty sidewalk of a street lined with vibrant homes.,A guitar player is playing on the sidewalk in front of his house.
+163,104604,Two people are sitting at an outdoor cafe in front of an old building.,There are people sitting in a building.
+164,105325,Many people ride their bikes down a bike path in a city.,A group of bike riders racing.
+165,105872,A man shovels snow off of a roof while another stands in the contraption that allowed them to reach the high place.,One man is on the roof
+166,107185,A dad is entertaining his family by playing the guitar.,The dad plays country music under the starry night.
+167,107232,Children getting picked up from sports practice.,children getting done with sports practice
+168,108589,A group of people are dressed in multicolored clothes while performing an act.,One of the people is wearing green
+169,108810,"A man wearing white pants stretches out his arms as he stands on a podium, while two men and a woman are looking the other way.",A man is stretching by a podium.
+170,109794,People filling a large black container with water.,people are drinking gatorade because water sucks
+171,109896,"A young Asian man wearing a conical straw hat holding straw goods, and another person in the back to the left holding straw goods.",Two young Asian men are selling their wares at a market in China.
+172,111292,A man wearing a white t-shirt looking away from the camera.,The is wearing a red t-shirt.
+173,111766,A dog is running on the sand whilst chasing a ball.,the dog is on the couch in the living room
+174,112647,"An edited picture of a couple kissing, one is holding a bouquet of flowers.",The mom kissed her son on the forehead.
+175,113130,A person wearing a red shirt sitting in the middle of fresh fruit and vegetables.,A person is surrounded by food.
+176,113482,"Construction worker, welding on high beam.",The worker gets paid
+177,114570,A man in a green parks looks over his shoulder at a policeman who is helping an injured bicyclist lying in the street.,man looks at policeman
+178,115153,A woman in dark sunglasses checks her mobile phone while two woman walk the city crosswalk.,A girl drops her phone in a stream in the country side.
+179,117040,A group of ladies with computers sit behind a table while people on the other side purchase something.,People are purchasing necessary items.
+180,117167,An old man in front of an Iron Man truck.,The man is working on the engine of the Iron Man truck.
+181,117651,A dog taking a poop in the street.,A dog is pooping.
+182,118176,A young girl in a red shirt hitting a tennis ball with a pink racket,The girl is winning the tennis match.
+183,118210,"A group of African boys of different ages tending to their cattle, with bushes in the background and small wagon in the center of the picture.",The boys are slopping the hogs.
+184,118275,A group of people digging a large hole.,A bulldozer digging a hole.
+185,119934,A man is bending down repairing a house.,The man is near the house.
+186,121762,A dog walking through the water at the ocean.,A cat walking through the water at the ocean.
+187,123524,Factory workers standing in uniform next to their product.,The factory workers are sitting.
+188,123536,The black and white dog is running on the grass.,The black and white dog is running.
+189,124930,A woman standing in front of a building as others go about their day.,I women waiting on friends outside a building.
+190,125168,"Two cyclists competing in road race, one in front of the other.",Two people are racing.
+191,125334,"A woman wearing a sparkly blue costume, leaps into the air while swirling a green ribbon in her left hand.",The woman is in a play.
+192,126619,Five men wearing black shorts are leaving the starting blocks in a track competition with few spectators.,Five men are racing.
+193,126867,A woman in a brown coat is reading a book.,A woman reading the first published copy of her new book.
+194,129375,"A woman holding a microphone wearing a brown jacket, in front of a sign which says ""comedians you should know.""",A woman is advertising for a sign promoting comedians.
+195,129526,People walking past a fashion shops.,People are eating in a restaurant
+196,129767,A young long-haired girl is out skipping on the sidewalk on a sunny day.,The boy is rolling a can down the street in the rain.
+197,130156,A person is suspended by wires and poles against a blue sky.,There is a highwire act that is too high and it suspended between two buildings.
+198,132011,"A woman and a man sit on a stone bench, with tall buildings behind them.",Two people sitting on a bench.
+199,133213,"A shirtless man, wearing sunglasses and yellow shorts is making a heart sign towards the camera.",Grocery stores are busy with shoppers hoping to win a free turkey.
+200,134525,People on the sideline of a soccer match.,People are watching a college basketball game.
+201,134613,"A redheaded woman with a scarf in her hair, wearing a white sweater with black bows on it.",The woman is out Christmas Carolling in the winter time.
+202,135071,"A man wearing a belt, a tan jacket and brown shoes is walking next to a woman with a brown purse, a black outfit, and sunglasses on a sidewalk.",People are walking outdoors.
+203,135294,A father and his son and daughter play by the waters edge.,A father is spending his saturday with his kids
+204,136271,People riding motorbikes down the street.,People are rowing a boat on a river
+205,136456,A painter is standing on smaller silver ladder and there is another silver ladder close by.,A man is standing on a ladder painting.
+206,137962,The rugby players play on a field.,A group of rugby players practices outside.
+207,138010,A lady wearing a bonnet is sitting down with her hands on her lap.,A man is standing in a field.
+208,138280,Person in a red hat walking on a sidewalk on a snowy day.,The lady wore a red hat while she walked on the snowy sidewalk.
+209,138332,Two young boys wearing collared shirts and baseball caps have their blue-tinted tongues stuck out.,A couple of young baseball players at a park.
+210,138618,A person riding transit (catching?) a paper bag.,A person with a paper bag.
+211,138993,A group of girls in leotards.,Some women in jumpsuits.
+212,141282,"A view of large field ringed by trees, with a large group of people milling about on the field.",They are waiting for a picnic to start.
+213,141386,A sari-garbed woman is smiling at the camera.,The woman is yelling at the photographer.
+214,141712,A man is asleep on the ground near two bank machines.,A man is asleep on the ground to take rest.
+215,141719,"A boy watches his classmates play in a courtyard, looking from above.",A boy watches his classmates play.
+216,142281,Men wearing black and white striped shirts and red scarves carry a shrine on their shoulders.,Men are carrying a shrine on their shoulders.
+217,143023,"A group of women in pink dresses, walking across a street.",A group of women are walking to a wedding they're attending.
+218,143539,A baby with its eyes closed is holding a wooden toy and biting it.,The child is chewing its toys.
+219,145395,Old woman with lots of ornate clothing and jewelry.,A grandmother is have a garage sale getting rid of her Clothing and jewelry since she has too many
+220,145658,A group of school children looking at a group on men wearing white shirts,A group of kids are together.
+221,146160,Several people walk by a rickshaw containing a sleeping cat.,People walking as a group in a tour
+222,146990,"A cyclist in a red, yellow and black uniform, including a helmet is performing a trick on his bike.",A cyclist is preforming a bike trick.
+223,147325,Three girls are walking along the sidewalk together and the one in the middle is bouncing a basketball.,Three girls are on their way to the park to shoot some hoops.
+224,148216,Man trying to guide a kit in the desert.,A man is trying to guide a kit in the desert
+225,148356,A man in a red shirt is interacting with a woman holding a shopping bag.,A red-haired rides a go-cart.
+226,150141,The woman in glasses is smiling with the ocean in the background,The woman is mad that her glasses are broken.
+227,150619,A person in a yellow coat is carrying a bag of three oranges.,A man  in a yellow coat is carrying a bag of three oranges.
+228,150697,a woman holding a small ball chasing after a small boy.,The woman is sleeping in bed.
+229,151152,Several men sit with their green nets in fishing boats.,The men are standing in the boats.
+230,151395,Eight people are on an escalator going up or down.,Group of people taking an escalator.
+231,155127,A skateboarder riding up to a slope.,There is someone on the skateboard.
+232,158708,An elderly man in a leather jacket with a scarf is holding up a sign.,A man is holding up a sign.
+233,159279,playing the guitar in front of the color purple.,some instruments can only be played with particular colours
+234,159758,A man in a white shirt black tie looks out of the elevator shaft of a parking garage.,A woman cries of happiness.
+235,160952,Hikers walking up red clay path.,Hikers follow a path to get to a waterfall.
+236,161674,A male is leaping above white water.,A male leaps.
+237,163028,A smiling young girl in braids is playing ball.,A child kicking a ball while playing.
+238,163640,Old man is fixing overturned bike.,Man is fixing a bike.
+239,164057,A man holding a sign and a man playing a guitar are speaking in front of a crowd.,A woman holding a sign is begging for money near her husband pretending to be a guitar player.
+240,164421,An older man with white hair and beard reading a map as he's walking through an unfamiliar city.,The man is sitting on a park bench.
+241,165214,Two women making decorations on a wall.,Two women are sleeping.
+242,166345,A young girl is drawing with an orange crayon.,watched by a group
+243,167082,"Four women, two with id badges.",Two women have badges.
+244,167459,A construction worker assembles a scaffold.,The scaffold was assembled by the worker.
+245,167720,an asian girl looking surprised in front of a brick window,There is an arabian man looking surprised.
+246,168963,A man is on a casual bike ride during the day into town.,A woman is wearing roller skates near the beach.
+247,169049,Man and baby posing in front of an engine of an old train.,The baby is driving the train.
+248,169137,Two people riding a bike are riding towards a stop sign.,A couple ride a bike together.
+249,169167,Skater does a trick on a rail.,The skater is performing for a cameraman.
+250,169975,A street vendor is sitting on the ground in front of the shirts he is selling.,The street vendor looks tired.
+251,170191,A game of dominoes is being played.,Two men are playing a card game.
+252,170297,Two Latin dancers dancing with Mariachi band playing in the background with a crowd watching.,The dancers are performing for the crowd.
+253,171597,"A small South American child running on a cobblestone pathway, by a blue wall with a door.",A small girl runs along a pathway towards a house.
+254,172675,a sparsely-populated arcade with many brightly lit games and a few people sprinkled around.,The arcade is closed.
+255,172947,Three young boys on a beach in swimsuits- two standing facing the water and one sitting on a rock- are in a rocky area with yellow wildflowers in the foreground while in the background many people recreate on a sandy shore.,Three boys play nintendo.
+256,173016,A man bending over holding a tennis ball and playing with his dog.,The man and his dog are playing basketball at the gym.
+257,173774,"In China, workers in the field carry out their tasks as the sun sets.",Workers in China carry out tasks as the sun sets.
+258,175645,Kids jump their bikes off of dirt ramps near a waterfront.,Humans jumping
+259,176277,people in white shirts and backpacks looking around one of them holding a small camera.,Some people are dressed in formal wear at the museum.
+260,176740,"Five children are sitting and standing in front of an open green tent, holding food with a trashcan and table that had food on it behind them.",Five kids are standing in front of a tent.
+261,176956,A woman in a magazine stand.,The magazine stand has a wide variety of material.
+262,177271,"A young lady in a colorful dress, holds a white stuffed animal stands in the rain hold a plaid umbrella.",A lady wearing a colorful dress holds a plaid umbrella and a white stuffed animal in the rain.
+263,177566,A little boy with a green shirt is running on a rock ledge.,A child is running.
+264,177718,Three women are rollerskating in full roller derby attire.,Three women are rollerskating
+265,178067,A man with a red hat looking at something in a glass counter and starfish on top in a metal container.,A man is looking at an object.
+266,178078,Young African people drum in the streets.,Asian girls dancing in the streets.
+267,180986,Two white dogs play together on a slightly snowy patch of green grass.,dog chasing man on snow
+268,182297,A man is snowboarding over a structure on a snowy hill.,The snowboard has stripes.
+269,182307,"The child in white is on the monkey bars, while the one in brown stands below.",Kids walking home.
+270,182879,A girl with a purple shirt with a heart on it is making an electrical switch.,A student is working in her technology education class.
+271,183621,two women walk down some stairs with intricate designs on the railings,The railings had designs.
+272,184494,An oriental woman in a white gabardine and dressy shoes standing outside waiting for a ride.,The woman is a bride on her way to a church.
+273,184671,A person in a yellow safety vest kneeling in the street.,A plane is taking off on a stormy day.
+274,184879,A young girl expanding the time of childhood through colorful play.,The girl is painting with all the colours of the rainbow.
+275,185263,A man and two young girls in a forest.,A man and his two daughters eat ice cream indoors.
+276,188183,group of people by the ocean holding a net,A group of people are near the ocean.
+277,188199,A woman with a floral shirt and purse and a man with a black shirt are walking while another man walks behind them.,the woman has a purse
+278,188555,Several people are holding containers of alcohol in a room.,People holding containers on alcohol.
+279,188590,A man wearing a business suit and a newsie cap clicks his heels in excitement.,An excited businessman clicks up his heels
+280,188599,A man with an olive green shirt and messy hair plays a colorful drum set.,A man plays the drums.
+281,188981,A man in a black sweatshirt and jeans holds a black acoustic guitar and converses with a passerby.,A man holds his guitar and talks to a man who just gave him a tip.
+282,189281,a group sitting at a table discussing a subject.,peoples are tested by group discussion.
+283,192390,"A woman, fit and toned, runs in a race as a crowd of runners follow.",Everybody is walking slowly.
+284,192973,Several people are washing themselves off using showers at the beach.,some people are in beach
+285,194020,A man on a laptop at a table.,A man using a computer.
+286,195461,A group of children wearing colorful hats are smiling at the camera.,Some children are getting their picture taken.
+287,195920,A single man sits on the ground with a cup in front of him.,The man is all alone on the ground.
+288,196673,A biker reaches the apex of his ramp while onlookers watch his feat.,A biker reaches the apex of his ramp.
+289,197235,A man is fishing on an inlet in the ocean.,A man fishing in the ocean.
+290,199215,"Ready and set as two hockey players on the ice wait with sticks out in front of them, anticipating the puck.",The hckey game is about to begin.
+291,200568,A multicolor cat fighting with a black and brown dog in a red collar.,A cat and dog are fighting.
+292,200662,A man in a hat is walking across a lawn from a small truck to a van with a satellite.,A man is wearing a secret service outfit.
+293,200772,A wakeboarder is traveling across the water behind a ramp.,The wakeboader is a man.
+294,202122,"A group of people sit outdoors around a small, short table.",The dryer is broken.
+295,203055,A person in a colorful wig is wiping white cream on a woman's face.,a rabbit runs
+296,204391,A smiling man on a horse in front of brush and woods.,A man enjoys a day in the woods with his horse.
+297,204719,The men are waving as they are standing in snow.,A group of men are enjoying a day at the pool.
+298,204800,Two women with stethoscopes and a man with a blue hairnet on working tedious over an unknown object or person.,Two women are running.
+299,205153,The men standing on the edge of a torn down building.,The men are wearing safety gear.
+300,206106,There is a man with a red hat on his hand.,There is a sad man with a red hat on his hand.
+301,207276,This dish is very tasty and I enjoy this dish,There is food in the dish.
+302,207574,A man surfing on big waves with a watch on.,He is in a surfing tournament.
+303,208906,People at a concert wave their hands in the air as they watch the singer and guitarist perform.,People enjoying music at a concert.
+304,209139,A kid is riding on a skateboard.,A kid is riding a skateboard
+305,209684,"A man sits back on an elegant sofa, sticking his feet up on the coffee table.",The man is sitting down.
+306,209775,Eldery couple wearing hats looking at tickets on the street.,the people were on concrete
+307,211350,Two women in military uniform are standing with other soldiers in formation.,Two women in military uniform are standing with others in formation
+308,211927,A boat floating on blue water.,The boat is about to be taken out on the water.
+309,213001,Two girls play in the shower with their clothes on.,Two girls have their clothes on in the shower.
+310,213279,A large duck in flight over a rocky stream.,A duck is flying over water.
+311,213566,A little boy in a cowboy hat eating something.,The boy is eating his birthday cake with the other party guests.
+312,214226,A man sitting on the back of a truck underneath an umbrella.,a mouse eating chees
+313,214998,A runner is sliding into home while the cathcer covers the plate in a softball game.,A runner slides home for the winning run in a softball game.
+314,215221,A waveboarder skims through the surf at sunset.,A person is in a waveboader competition.
+315,215707,A man with black hair sits in a restaurant with a glass of beer.,There is a man with a drink.
+316,215759,White girl in a white dress and white bird-looking wings holding some blue ads.,A girl is wearing a yellow suit.
+317,215835,Soccer players in jerseys representing two teams mill around on a soccer field.,The soccer players are getting ready to play.
+318,215950,"A guy in a blue shirt, shorts and sandals is giving a speech with a microphone to some people sitting in the front row of an auditorium.",A man is giving his campaing speech.
+319,216738,A woman is taking a man's blood pressure in a kitchen.,The woman is checking the man's health indoors.
+320,217803,Many people stand on an overpass looking over.,People are looking at something.
+321,218103,A teenage girl wearing a t-shirt and bathing suit bottom jumps into a body of water.,A girl jumps into water.
+322,218557,A boy is flying in midair while snowboarding in a hilly and wooded area.,the boy is competing in a snowboard competition
+323,219803,"A young man is having his picture taken in front of a picture of an Asian sports team, while a child walks in a ball cap walks in front of the picture.",A young man gets his photo taken.
+324,221452,A girl in a baseball uniform getting ready to throw the ball at a game.,The girl prepares to throw the ball.
+325,221454,A girl wearing the number one LaFayette softball uniform is about to throw the ball.,Some woman are softball players.
+326,223038,A boy in a blue life jacket jumps into the water.,There is a boy jumping into the water to play.
+327,223113,Two men stand in front of a building.,two men stand
+328,224071,Three people are walking down the beach.,Three men riding their motorcycles.
+329,224732,Shoppers look for Christmas gifts at Harrod's department store.,The shoppers are finding good deals.
+330,224812,Little girl holding a karate trophy.,A little girl is
+331,226116,Two females walking down the street with shopping bags.,they just finished shopping
+332,226394,A black bird in the air with leaves in its mouth.,A black bird is making a nest.
+333,226504,Two people raise their arms on a snowy hill in the mountains.,the child was happy
+334,226575,Two men and a woman converse together at as EASTA meeting.,A woman is shouting a men in office.
+335,226981,Two men are sitting by themselves in a cafe.,A cafe where two men sit alone.
+336,227619,Two young men are leaping exuberantly on an outdoor plaza.,The two men have just been stuck in concrete boots and are drowning in the Hudson River.
+337,229906,A dark-skinned security officer smiles.,A security officer is angry and scowling.
+338,230044,A man with a guitar and a woman with a microphone perform.,They are performing in a club
+339,230599,"Two men are kayaking, one in front of the other.",The people are sitting on the beach.
+340,231324,A smiling woman with dark hair is sitting at a table.,A woman sits at a table.
+341,232434,"Male figure wearing black, and surfing on a surfboard.",Male in black mugs a lady on the street.
+342,232796,A guy and a girl having a conversation.,Two people talking.
+343,232922,A person standing outside is using an umbrella in the heavy rain.,Someone is outside.
+344,233399,Man swiftly riding a horse.,The man is riding the horse in a race.
+345,233423,A gentleman in jeans and a black sweatshirt is excitedly speaking on a cellphone.,A man talking with his wife on the phone.
+346,233782,A bunch of police officers are standing outside a bus.,The police officers are driving in a car.
+347,233919,A man and a woman kissing while at a show.,A man is attracted to a woman.
+348,233997,Blond child in red shirt standing on a plastic wreathed Christmas sleigh.,Child wearing nothing at all standing on a sleigh.
+349,234990,The man in black shorts and a green shirt with the number 25 on the back is about to kick the soccer ball.,He is aiming at a goal.
+350,235554,The man in a red shirt just got a rebound in a basketball game.,The man in the red shirt is playing well
+351,236796,"Two dancers performing in the spotlight, on stage.",The dancers are performing in front of a large audience.
+352,237247,Two boys are standing in a kitchen.,Two boys are inside a house inside a kitchen wearing pink aprons.
+353,237389,A woman and a small child laying in bed.,two people are in bed
+354,238210,A bearded man is wearing a redhead scarf and holding a forked green and white branch.,A man with facial hair is wearing a scarf.
+355,238582,A boy jumps off of a structure into a pool.,He is wearing swim goggles.
+356,238747,A man sitting on a metal fence overlooking the water and skyline.,A man sits on a fence to hide from the soldiers.
+357,241686,A black and white dog is jumping into the water.,A dog is sleeping in the owner's backyard.
+358,243896,A woman on a cellphone is sitting in a chair.,A woman on a phone is sitting in a chair.
+359,244500,This gentleman just finished a refreshing swim.,A man is swimming in a pool.
+360,246031,A blond woman in a gray dress crossing the street.,The woman is black.
+361,248126,"one white little girl, riding on a brown and white saddle which is on top of brown adult horse with black hair, both outside on a sunny day.",The girl is on the horse.
+362,249816,A young blond-haired boy is going down a red slide.,a mother shows her kid how to slide
+363,250993,A man walks into a maroon building as a dog looks on.,A man walks into a building in front of a dog
+364,251441,A sign on a store in and urban neighborhood.,A banna is nailed to the wall.
+365,252089,"A woman sitting at a desk labeled Programmes and Ice Cream, the stand appears to be out of ice cream.","A female is sitting at a table with two labels, and item described in one of the labels is not at the table."
+366,252148,A white female sitting behind a programmes and ice cream stand.,A woman waits for a friend behind a programmes and ice cream stand.
+367,253837,A young man in a gray t-shirt and dark pants is mowing a lawn outside a white clapboard building.,there is a bee following the man
+368,254588,A large group of people participate in a marathon along a city street.,One man stands alone on the city street
+369,254814,A skateboarder performs a trick in front of a business building.,A skateboarder irritates business people by doing tricks downtown.
+370,256030,Two men on a snowy and rocky mountainside cook a meal while their teammates sit a little way away.,The men are inside watching TV.
+371,257881,A man on a bike is seen among a crowd of people at an outdoor event.,A large group of people are gathered outdoors.
+372,258168,"Two men are swimming in a body of water, near which is an area of land covered in vegetation.",the men are divers
+373,258343,A man working on the construction of a large boat.,A man working on a boat.
+374,258358,A skateboarder flies through the air over the staircase of a sleek contemporary building.,lion sleeps
+375,258365,A woman pushing a shopping cart at a grocery store.,A woman carrying her bags to the car
+376,259128,A greyhound running on a track.,Dog running.
+377,259206,"The two boys, in matching red shirts, fell asleep in the same position.",The two boys were fighting and throwing punches.
+378,261673,A woman is walking by a building labeled Fisher's Popcorn.,A woman is walking by a popcorn stand
+379,261954,"Two girls, one with brown hair and one with red, make toy cars.",Two girls make toys together.
+380,262023,People sitting in a room talking to a panel.,The people are at a party.
+381,263405,A woman is playing ice hockey.,A woman proving she can be a hockey player.
+382,263526,A Caucasian male performing a water board trick in a lake with trees in the background.,A guy sitting down beside the water surrounded by trees.
+383,264247,One lone skier is making his way down a snowy mountain slope which has many ski track marks visible on the snow pack and a ski lift in the background.,A man is outdoors.
+384,264764,Two children are on a fairground ride.,children are at the fair
+385,265354,Young Indian children in an old stone building watching an elephant who his touching one child on the head.,Young Indian children watched an elephant.
+386,266636,People in snowy climate prepare to eat food on plates.,People in a snow covered area preparing to eat a meal.
+387,268411,A man waits at a crosswalk holding a motorbike helmet.,A dog is wearing pants.
+388,268796,Children playing on a merry-go-round on a chilly day.,Children are playing on a merry go
+389,270886,A man standing by a building corner and reading a newspaper.,A man is standing by a building corner and reading a book.
+390,271518,A group of white water rafters.,The group has been rafting all day.
+391,271629,"A woman with red eyes and green makeup on her face, holds up a beige colored, ornately designed fan to cover her mouth.",A women hides her mouth behind the fan.
+392,272383,A lacrosse player wearing a red uniform with the number 33 on the back looks skyward while a player in a green uniform with yellow trim is visible in the background.,A lacrosse player is catching a ball.
+393,272751,Two young women have fallen asleep at a public eating area.,Sleeping women.
+394,272787,"A young boy, arms and legs splayed wide, is leaping into the water on a rocky shoreline.",A young boy is spitting.
+395,274036,"Woman in shorts and bikini top, yellow jacket, walking.",It is snowing.
+396,276768,"Three men and one woman standing next to each other, all wearing aprons and pouring something into each others cups at the same time.","3 males and 1 female are standing vertical, next to each other wearing an apron and motioning of moving something inside a cup"
+397,276879,"two kids, one with green pants and the other with a white shirt and jeans are running down a street.",There are children running after someone outside.
+398,277346,A young male holding a fishing pole.,A man carries his fishing rod.
+399,277522,An Indian man is writing on something in a crowd of women and children.,An Indian man is writing on something.
+400,277576,A golfer wearing a striped red polo shirt and white pants watches his drive after swinging.,The golfer is preparing food for dinner.
+401,277858,A guy sitting in a chair is getting a shave.,A guy is in a barbershop.
+402,277982,A man with a black hat is standing and shading his eyes.,A man is standing.
+403,278462,a boy swings on the swing.,A boy swings on the swing his mother built.
+404,278595,A couple and child are watching people walk by.,The family is on the way to a movie.
+405,278717,A woman playing tennis at a tennis game.,A woman trying to win the final match for the title.
+406,279199,Several people on a stage with a blue background.,The humans are on the ground.
+407,280193,"A child with a stethoscope, preparing to listen to his mother heart.",A child is listening to his mother's heart beat.
+408,280508,Men are working on scaffolding outside of a building while other men watch.,Men are working indoors.
+409,280977,A airline stewardess serving passengers on a plane.,The stewardess is a woman
+410,281436,"A young boy, dressed in a karate gee and wearing a yellow belt, stands ready to defend himself inside a gym.",A young boy is ready to defend himself from a flying spaghetti monster.
+411,282246,Four band members singing and playing.,They play a gig at a bar
+412,282259,A woman in a black jacket is walking down the street with a red umbrella.,A fat woman in a black jacket is walking down the street with a red umbrella.
+413,282686,Horrific artwork displayed at the local hipster bar.,Local hipster bar is ripped off when ordering artwork and displays it anyways.
+414,282806,Two kids in a green tree.,The kids are above the ground.
+415,284212,A man doing a trick on a bicycle in a wooded area.,A man does a trick
+416,285462,A person in a dark wetsuit is surfing.,A person in a white wetsuit surfing
+417,286692,"A woman wearing a white shirt and a short, black skirt is in motion on a green, artificial surface.",There is a dog playing catch.
+418,287124,Two female rollerskaters competing.,The women are great skaters.
+419,287246,Two people walk in opposite directions across a brick road.,The road was made with bricks.
+420,290260,Children playing on the beach.,Kids were having fun.
+421,290629,A man is standing next to a vehicle in a city setting.,Someone is standing by a car
+422,290839,The man in the red shirt pretends to play the violin with an umbrella.,The man is wearing a red shirt.
+423,291507,The young boy is jumping into the pool on his belly.,The people around the pool are afraid of getting wet after the belly flop is finished.
+424,291984,A woman dressed in black boots and a black trench coat is walking down the middle of the street.,The woman walking down the street trips and falls.
+425,292713,a young girl in a pick shirt swinging up in the air on a swing set,The girl is having fun on the playground at recess.
+426,292795,Woman looking out the window at a man.,The woman is standing outdoors.
+427,292908,A man in a black hat holds a small girl on his shoulders.,A man carries his son.
+428,292986,Man in black and white playing tennis.,A man is inside eating dinner
+429,293493,"A Frisbee team huddles around a Frisbee, each holding a part of it.",A frisbee team does a chant before their game in a circle.
+430,293560,Two men in orange outfits clean up garbage spilled on the street.,Two men are cleaning up garbage that was spilled after a block party.
+431,293833,A young girl with red-hair blows bubbles in clear water.,A red headed girl is making bubbles.
+432,294178,"A basketball player in a white jersey with the word price on it, posting up against another player in a blue uniform.",a player dressed in white
+433,294223,A photographer capturing a skateboarder mid trick.,No cameras are around when the skateboard performs his trick.
+434,295019,three people standing in line.,Some people are standing.
+435,295231,A restaurant in downtown Korea.,The restaurant in downtown Korea has Korean food.
+436,295609,a beige dog running on the grass with a tennis ball in his mouth,Nobody is running
+437,295641,A wedding party scene with the bride throwing the bouquet of flowers to onlooking women.,A bride throws the flowers to her sister.
+438,297956,A man in a gray shirt is pouring a drink into a flute.,A woman in a gray shirt is pouring a drink into a flute.
+439,298065,Three dogs are together outdoors checking out a fountain.,Animals by a fountain.
+440,298894,A professional wrestler takes a flying leap onto another wrestler.,Pro wrestlers put on a show.
+441,299161,A couple of boys are in a gym with partially assembled bicycles.,The boys are working on their bikes inside.
+442,299206,Two people are carrying a large bag filled with a red substance down a ally as a figure in red walks behind them.,Three people are walking down the alley.
+443,299336,A group of surgeons wearing scrubs are performing a surgery.,The group of surgeons are having a board meeting.
+444,300966,Two people with hard hats on standing on a brick wall.,No one is wearing protective gear.
+445,301270,A young woman wearing sunglasses and a blue shirt is holding a white sheet while a little girl in pigtails writes on it with a marker.,The little girl is coloring on a white sheet.
+446,301629,A male surfer catching a nice wave.,A woman is surfing.
+447,302107,Men share an item on mini trains.,men at a mini train convention
+448,302885,A man wearing black and white stripes is trying to stop a horse.,A man is trying to keep the horse from running into the crowd.
+449,303583,a lone skier walking cross a snowy bank with trees in the background,A person is out in the outdoors.
+450,304578,A girl sits at a desk and reads a paper.,A boy sitting at his desk is reading a large book.
+451,306358,An asian lady in a red jacket taking a photo,A tall human in a jacket.
+452,307182,A lady pouring tea into tea cups with flower print on them.,a lady pouring wine for guests
+453,307679,An older man in a white shirt is playing a saxaphone.,The man owns the saxophone.
+454,308436,A group of people hold on to a long skinny object.,No one is holding on to an object
+455,309108,A woman in a brown sweater is sewing on her machine.,The woman doesn't have a sewing machine.
+456,309756,a couple looking at food out in the cold.,Two people are looking at food
+457,310001,A bearded man with glasses does a toe-touch.,A man is moving.
+458,310358,a woman is walking beside a subway.,The woman is in a rush.
+459,310401,A man using a wheelchair is talking in a field to a couple women.,The man is sitting
+460,310705,Two girls are astonished at the sight of planes.,The two girls have never seen planes before.
+461,311121,A woman in shorts and a white top is taking a picture with a digital camera as a young man watches.,A woman in shorts and a white top is talking on her cellphone to a close friend.
+462,311315,"A single man, riding his bike on the pier at sunset.",The man is riding his bike
+463,311574,A woman preparing to serve a meal on the beach.,It is mealtime.
+464,311616,"Two people, a man and a woman, are on a stage at a band.",They are in a band.
+465,312572,A middle-aged man riding his black motorcycle through a neighborhood.,The man is headed home on his motorcycle.
+466,313598,A scuba diving class taking a picture during class time.,Some people are taking ski lessons.
+467,313693,"One of the buses is marked ""Linea Express"" while the other is marked ""Metropolitan Transit System"". ",Two buses
+468,314343,"A group of people sit in folding chairs in a small area under two umbrellas outdoors, with a few cars parked in the background.",A group of people are sitting outdoors.
+469,314877,A middle-aged man and woman are holding hands walking in a street with people behind them.,A middle-aged couple running down the bridge.
+470,315586,"Two older women smiling and standing in front of large trees, one woman is fixing her hair.",The women are skateboarding down a busy street.
+471,316194,Three children and three adults are outside in the yard of a home and they have a basket sitting on the lawn.,Three children and three adults have a basket.
+472,316876,A young girl holds a crying infant.,A blonde girl holds her baby sister.
+473,318353,Workers enjoy coffee and treats at conference table.,the workers are underpaid
+474,319482,"Two boys are looking upwards with their arms streteched to the sky, the boy on the left is wearing a blue vest jacket with a gray long-sleeved shirt and black jogging pants, and black tennis shoes and a hat, and the boy on the right is wearing a silver vest jacket, with blue long-sleeved undershirt, gray pants, and black tennis shoes and has black short hair and glasses.",Two boys stretching for the sky
+475,319797,A woman in a gray and blue shirt smiles as she unwraps and cuts into a calzone.,The woman is cutting into her arm.
+476,321140,"A couple smiling, sitting at an event with other adults and children doing the same.",Adults and children get sleepy listening to a dull speaker at an event.
+477,321435,A dog leaps to catch a ball in a field.,A dog caught a ball in a field but then dropped it.
+478,322012,The lady is holding her glasses.,A lady is cleaning her glasses.
+479,322299,A group of men playing and singing music while a crowd watches.,A boy band is performing a concert for a crowd.
+480,322472,A big group of people are enjoying a public event.,People are enjoying a public event.
+481,323424,Two hockey players one in yellow and one in white competing against each other to gain control of the hockey puck.,Two friends are playing basketball.
+482,324702,The woman talks on her cellular phone while walking on a city street.,The streets are crowded.
+483,325880,A man in a black shirt and blue jeans crawls on a table.,A man wearing a black shirt.
+484,326312,A dog peeks out of a red play tunnel.,a dog playing
+485,326894,People in orange shirts roll carts while people watch them.,A group of workers in matching oranage shirts push carts outside as others watch them.
+486,327111,A child is holding an Aquafina water bottle.,The man has a beer.
+487,327544,Two people are having a conversation as they sit at the bar.,They are going to Mars
+488,327733,A little boy in red stands on top of a rock with a smile and outstretched arms.,A little boy in red is outdoors.
+489,328469,A group of well-dressed young people stand in front of a congregation.,There are several people in the room.
+490,330719,Small dog running through a field.,A cat is playing with yarn.
+491,331133,A man in pants scaling the side of a cliff.,A woman climbs the side of a building.
+492,331212,"A little girl in a red shirt is suspended in midair on a contraption, as a man wearing white shorts looks up at her.",A man and girl are swimming in the ocean
+493,332168,A man is leaning his head on a fancy coffin in a church.,A man is leaning his head against a pulpit.
+494,333591,"A female and a male put a long, oblong box away in an area full of boxes.",A couple remove a box from an area full of boxes.
+495,334203,A girl with red-hair is jumping on a sand dune.,A girl is outdoors.
+496,334987,"A man, woman, and two girls walk on the beach barefoot.",The group walks outside.
+497,335668,A cloudy sky above a busy city street.,Cars are driving on clouds.
+498,336330,"The woman carrying a backpack is facing the camera, while the man is turned away.",The woman has a backpack
+499,336368,People are ice-skating and walking across a frozen surface with the Adobe building in the background.,The people are skating.
+500,337152,A group of young men in colorful shirts with their number on them walk down a street.,They are camping out in the wilderness
+501,337655,A boy in an orange shirt holds hands with an adult as he walks with a group of other children down a street.,Two runners in blue t-shirts hold hands.
+502,338139,A mom and a young boy on a seesaw.,Some high school kids smoking cigarettes outside school.
+503,338736,A black dog leaps in the air above the snow.,The dog has snow on his fur.
+504,338834,A very excited man on top of a mountain jumping into the air.,A man is showing his excitement on the mountain.
+505,338871,A snowboarder rides a snowboard down a railing beside a flight of steps.,A man is watching t.v. at home.
+506,339401,Several people are in an enclosed garden space while a young Black boy and another person hold onto a wooden frame of a raised plant bed.,There is only one person present.
+507,339454,"Ow, my head, you silly a-hole watch what you are doing next time.","Ow, you just punched me in the shoulder."
+508,340397,A man in a white outfit sings into a microphone.,The man is wearing a green outfit.
+509,340830,"Two individuals, in full fencing attire, with their masks on and the swords in their hands, fencing in the gym.","Two men, in full fencing attire, with their masks on and the swords in their hands, fencing in the gym."
+510,341229,Two woman with white head coverings are gazing at a cellphone.,Two men with black head coverings are gazing at a cellphone.
+511,341509,"Two men dressed in matching blue uniforms, celebrate a victory.",the men are are their house sleeping
+512,341844,Several men traveling down a hill riding donkeys.,the men are at the restaurant eating
+513,342089,Children stand around water pipes awaiting clean water.,The men broke the water pipes and are waiting for the repairman.
+514,342956,"A male wearing a strange helmet covering face and head is seated on the accordion case in a street apparently blocked off, perhaps for a block party, while onlookers walk behind and listeners are seated in front in lawn chairs.",a boy in a head covering is next to a blocked road that's near a crowd of people sitting on chairs
+515,343438,A large amount of people using sleeping bags to sleep in front of a building.,A large amount of people sleeping.
+516,343889,A man catches a ball in front of a large crowd.,The football player caught the pass.
+517,344181,A boy contorts his face while holding an electronic device.,A boy has a cell phone.
+518,344451,A street performer smiles at two potential customers.,An upturned hat half filled with coins sits next to the street performer.
+519,344802,Three Asian women having a conversation.,Three white men are talking to each other.
+520,344964,A man in a white shirt is sitting on a curb and reading a newspaper.,The man is going up an escalator.
+521,346374,"Two boys, one in a red and one in a white uniform, fight for control over the ball during a soccer match.",Two boys are playing basketball.
+522,347590,A child is interacting with an electronics laboratory kit.,A child is bored and has no toys.
+523,349312,A man in mid- air while going down a sand-dune.,The man is skiing in the snow.
+524,349463,A dark-skinned woman with a scarf on her head smiling with telephones hanging from the trees.,She is climbing the tree to get a better reception.
+525,349723,An older man in a blue hoodie is sitting down next to his bags.,A mann handing a cashier money.
+526,350091,"Three girls dressed alike in plaid skirts and hats, green sweaters, and blue knee socks walk together.",The three girls are twins.
+527,350537,"Two men kick in the air at each other on a grassy area, while another man watches them in the background.",The men are outdoors.
+528,351322,"There are two men on a ladder one is at the top handing down to the other guy the number ""O"" as this what they do for a living.",Two men are at office desks.
+529,351356,A black man in a white shirt is cooking on a commercial stove.,A man is preparing food on the commercial stove for the restaurant patrons.
+530,351913,"With flowers in the foreground, a man in a blue striped shirt bikes past a large white building.",A man is biking outside.
+531,352553,Two men are looking through the solar telescopes.,The men are trying to find Uranus.
+532,352765,A fluffy dog looking at a yellow chew toy.,A dog is near a toy.
+533,352989,A group of people near a fun house at a carnival.,A group of people near entrance at a carnival.
+534,353921,Two men wearing dark pants and red shirts are leaping in-synch in front of a white building.,They crawl along
+535,354675,A person sits outside at a table and rests their head in their hand.,A person is standing with the crowd at the festival concert.
+536,355209,A girl dressed in black with a purse on her arm is smiling at a man in a room with lots of desserts on the table.,There is a girl dressed in light colored clothing frowning at a man.
+537,355550,A man walks on a fancy sidewalk next to an abandoned bar.,the man is going to meet a friend for drinks
+538,356013,Three women in old-fashioned clothing stand in the street with a dog.,Women are standing.
+539,356717,A skier is by himself in the woods.,A person is outside.
+540,357578,Small child in green shorts and green shirt squatting and looking at something.,The child is standing up.
+541,358703,The woman in a green sweater and the man with a cap are on the side of the road.,A husband and wife next to a road.
+542,358861,"The football players wear purple pants, gold helmets and white jerseys.",The people are racing cars.
+543,359371,A group of men in hard hats traveling over the ocean in a small boat.,A group of men travel over an ocean.
+544,359675,A man is taking a nap outdoors under the cover of a pink blanket.,A man is dead outdoors under the cover of a pink blanket.
+545,360401,A policeman in sunglasses and uniform with other policemen.,Two police officers are watching a suspect from afar.
+546,360709,Three school boys posing under a blue umbrella.,The umbrella is red.
+547,361537,Young boy staring excitedly at a leaf.,The boy looks at the veins that run along the leaf.
+548,361621,A woman wearing sunglasses and a black shirt is running on the beach.,A woman runs away from a lobster.
+549,363227,a middle-aged man working on a dock.,A man is fixing a dock.
+550,364369,A man and a woman are posing for a photo beside a rack of clothes.,A man and woman are sitting on a couch.
+551,364429,A man and a woman are sitting on the grass together.,A man and a woman are in the park
+552,366538,A woman in a hi-viz jacket is smiling at person carrying a stop sign in front of a crane.,A woman is smiling at someone.
+553,366985,A curly-haired woman plays the violin.,A woman is playing a stringed instrument.
+554,369066,A man is standing while playing the drums for an audience.,A man is playing the piano.
+555,369396,A man is reading a newspaper at a Chinese food store.,A teenage girl is standing on the table.
+556,369541,Five boy scouts performing on an indoor stage.,the boys are five
+557,369982,two wrestlers fighting in a rink with a referee in the backgroud,Some wrestlers are wrestling in a backyard championship match.
+558,371082,This is two black children dressed the same hugging.,Funny humans dressed
+559,371632,A group of five people have picture taken while jumping in the air.,The people jump in the air when the picture is taken.
+560,371860,"Brunette female wearing yellow bikini top, has large tattoo inked across her lower back, and a blue towel draped across her right shoulder.",A person in a black shirt and black shorts is holding a football.
+561,372611,A brown dog carries a multiple colored toy in the grass.,A dog is carrying colored toys.
+562,372919,A woman with curly brown hair looks at a menu.,The woman has decided on what she wants to eat.
+563,373879,Adults and children are in a rooming dancing.,The clidren are watching a game
+564,374215,Amish guy plays golf and walks,An Amish man enjoying some golf.
+565,374596,A group of people sitting in white plastic chairs are having a picnic.,All arrived at the picnic on foot.
+566,374679,A man leaning into a hole in the counter.,A man standing at the counter.
+567,375404,An elderly man takes his dog for a walk near the water.,The elderly man is running with his dog.
+568,375602,"A man is standing in a white room, with the lights turned down, holding a detailed lantern with another hanging nearby.",A man is praying while holding a latern.
+569,376513,People walk down the busy sidewalk.,People happily walk down the sidewalk.
+570,376867,A dog with a muzzle is leading several other dogs in a race,The muzzled dog is really having fun.
+571,377799,Older gentleman putting a powdery substance in a swimming pool.,The gentleman is 10 years old.
+572,377914,A woman in red is holding a microphone in front of a green background.,A woman in red holds a black kidney bean.
+573,378043,A surfer in the distance is at the base of the wave close to the shore.,A man surfs the internet at home.
+574,379691,People are watching a boy on a skateboard at the top of a skate ramp.,People are watching a girl on a skateboard at the top of a skate ramp.
+575,381415,Two men in magenta costumes performing.,Two men are putting on a large show.
+576,381818,Two men juggling in front of a group of people.,Two men juggling in fornt of group of people to attract them.
+577,382061,There is a child wearing an orange shirt and hold an orange book.,There is a child wearing a shirt and holding a book.
+578,383277,A man in a white shirt is playing a saxophone on a stage.,the guy in the white shirt is playing music on this sax that he is renting
+579,383368,A man in an orange shirt and black cap is standing in front of a stage with several women dancing.,A man dancing with women on stage.
+580,384316,A man and a woman are sleeping on a mode of public transportation.,Everyone is awake riding the bus.
+581,385656,A man playing drums on upside down jugs.,The jugs the man is playing on are very big.
+582,387067,"A woman is running on a gravel path, while another woman in a green shirt is cheering.",A woman in shorts is running.
+583,388849,An elderly man with a beard in a dark suit is walking through a rainy city.,A young man is dancing in the streets on a sunny day.
+584,389488,three children in a field with white flowers,Three people sit in the grass.
+585,389577,A man in a nun costume has a cigarette in his mouth.,A person wear a costume.
+586,390330,"A woman in a white shirt, with a red bandanna holding the end of a sign post.",A woman with a red shirt and a bandana is shopping at the mall.
+587,393497,A chef in white clothes is putting something into a brick oven.,A chef in white clothes is putting a pizza into a brick oven.
+588,394495,Men and women competing in a marathon.,The men and women are at the end of the marathon.
+589,394608,A lady in a yellow shirt adjusts her sunglasses.,The lady is adjusting her hat.
+590,394965,There is a man and a woman sitting on lawn chairs next to a skate park with a group of guys on bicycles in the background and a woman with a child in a stroller on the side of the picture.,A group of people outdoors.
+591,396067,A girl wearing a blue shirt fixing her hair while looking into a pink mirror.,A girl with blonde hair in front of a mirror.
+592,396269,A man tends to his laptop in what appears to be a slideshow of sorts.,A man runs a slideshow.
+593,396554,"A child in a coat and hat is standing in a yellow doorway, and a woman in a coat and hat is standing outside, holding a cup.",The door is open.
+594,397864,A young boy listens to music through headphones in front of a kitchen.,A young boy listens to rock music.
+595,398189,"A person is standing at the top of a large, rolling sand dune.",She was stranded in the desert.
+596,398883,A man and woman reenact a scene of a statue.,A man and woman eat at a restaurant.
+597,399855,A girl blows into a large yellow balloon.,a girl has a balloon
+598,400206,Two young girls have fun in an ice skating rink.,The girls are wearing tights.
+599,400731,A group of children is performing a concert outside.,A group of children is performing outside.
+600,400864,A person has just thrown a snowball and hit someone in the back.,A person was outside playing a threw something.
+601,402508,Someone doing a jump on a dirt bike in the woods.,A person is jumping on the dirt bike.
+602,403554,A man in checkered pants rides a unicycle down the street while juggling for a crowd.,A man in clown make-up performs stunts for a crowd.
+603,403976,People are sitting at a park under flowering trees.,The people are standing in the desert.
+604,404415,"A man taking a photograph, holding a postcard",There is a man holding a post card.
+605,405381,"A child in a red jacket, sitting atop a slide.",A child is sliding down a waterslide
+606,407270,A man standing next to a women's restroom in an orange shirt.,The man's wife is in the restroom.
+607,407321,Several people are walking on a sidewalk while one person is laying down.,a person is laying down because he is having a heart attack
+608,411654,"A group of people are sitting around a large white banner that says ""From New York.""",There is a group of people sitting around a large white banner.
+609,412899,A child holding some shoes.,The child is tying the shoelaces on his shoes.
+610,413131,A man in a white shirt is working on a laptop while another man in a black shirt points to something on the screen with a pen.,The men are coworkers.
+611,413141,three young woman walking down a sidewalk looking up,Three young women walk outside.
+612,415665,A girl with yellow sunglasses is laying on the ground with a girl wearing brown sunglasses.,sisters lay on the ground
+613,416052,Man carries empty Coke bottles on his head across dirt road.,Man carries empty Coke bottles outside.
+614,417237,"Several people sitting, relaxing in the snow.",The people are outdoors.
+615,418334,A pedicab driving sitting on the side and waiting for his next customer.,The cab is waiting for a customer.
+616,418639,"At a brick-floored area near the beach, a middle-aged white man surrounded by a white family is sitting and painting a portrait of someone.",A woman is drawing dogs at the beach.
+617,420064,A police officer on a motorcycle talking to two men on a cobblestone street.,A motorbike cop interrogates two men on a street.
+618,421310,"A person, whose face is blocked, is working on a large wooden loom.","A person, whose face is blocked, is working on a wooden loom."
+619,422758,A man dressed in a green jacket is playing piano while a woman sings.,A man is burning a piano.
+620,423126,A crane is hoisting someone up next to a building.,The crane is lifting up a car.
+621,423518,A magician performs with a burning bar placed in his front on the floor while the crowd watches closely.,The magician burns himself.
+622,424045,A man sits under an umbrella beside a pond while he works.,A woman is swimming in a pool.
+623,424612,Two female bikers pose on a bridge as other riders travel by in a marathon.,"The two woman are repelling down a rock face, attempting to get to the bottom of the rock wall."
+624,425301,Teenage girls in a dance recital.,The high school dance team put on a great show.
+625,426181,Lady wearing spectacles points camera with some trepidation.,A lady is holding a camera.
+626,426473,A little boy in a bright green field has kicked a soccer ball very high in the air.,A boy watches soccer on TV at his house.
+627,426484,"A man resting in a blue hammock, boots and pack off, as he looks out over a flowing river.",A man is outside.
+628,426839,Two women on the patio having drinks.,Two women have drinks on the deck.
+629,427833,A little girl in a white jacket holding a piglet toy.,The little girl is caucasian.
+630,428056,A construction worker in a neon vest is working with electrical equipment while sparks fly.,A construction worker is on his lunch break
+631,429004,Two women observing a fountain in a park.,two women dig up their yard for a garden
+632,430526,A skilled surfer rides a very large wave;,The surfer is sitting in the sand.
+633,431648,"A young woman in a striped sweater, knitted hat and jeans and wearing a black winter coat is ice skating at a rink with several other young women.",The woman in the sweater was rollerblading.
+634,431938,A woman talks on a cellphone on an Asian market street.,A woman is sleeping.
+635,431953,A man and a woman are walking in a street.,a man and a woman walk down the street
+636,432209,A woman in a brown flowered tank top dances with a puppet,A woman is sleeping on the street.
+637,433659,A man riding a horse is chasing after a young cow with a lasso.,a lasso is being used on a pig
+638,436878,A person does a trick on a skateboard.,Trick on skateborad by a young boy in a busy traffic
+639,437702,A person swims in a pool by a waterfall.,A person is near the waterfall.
+640,438773,"Man and woman looking surprised, with the man holding headphones.","They looked surprised, holding the headphones."
+641,439665,"A man dressed in a red t-shirt and blue jeans eats food he's holding in his hand, as he walks along a busy sidewalk, with an antique-style sign advertising wedding rings on the right-hand side of the picture.",A man in a suit holds a briefcase as he walks along an empty sidewalk.
+642,441211,Three dogs pull a sled during a race in the snow.,Four dogs are winning a sled race.
+643,441240,four men looking at a large sign.,The men are watching sports.
+644,441625,Three teenage boys sitting down talking and fixing their shoes.,Three schoolboys take time out from soccer practice to talk
+645,441649,A small boy in a white shirt is jumping with a sword in his hand.,Boys holding sword
+646,442027,A child in an orange t-shirt is riding a green bike beside a pathway.,A man wearing a red shirt riding a cow.
+647,442332,A man in a gray t-shirt walks down a public street past a pair of tall office buildings.,A man is unable to walk.
+648,442910,A person wearing a gray sweatshirt and tennis shoes is sitting on something.,A person dust lint off his suit.
+649,443307,"In a tilted picture, two boys in a poor country run towards a doorway.",Two boys wearing blue run toward a doorway in a picture.
+650,445694,A person riding a horse trying to rope a calf that is running from them.,A person is competing at a rodeo.
+651,445900,Several men are tinkering with radio controlled items.,Some people are maneuvering radio controlled gadgets.
+652,446052,A man on a white surfboard in the ocean riding the waves.,A surfer is standing on his board in the water.
+653,447248,An Asian man makes calligraphy on a green table with newspaper on it.,A man is drawing.
+654,448081,There is a husband and wife outside of a small shop taking pictures of a baby camel.,The baby camel is inside of the shop.
+655,448093,"A security guard stands by a metal, lighted sculpture.",A person guards a sculpture.
+656,448470,A man wearing a helmet has his hand up in the air and is shouting in a similar way the crowd behind his doing.,A man leads others in a chant.
+657,448551,The bull is running with a yellow fence behind him.,A bull is running through an open field chasing a cow.
+658,449726,Two young blond-haired children are laying in their sleeping bags.,Their hair is red.
+659,450435,People ordering food from a lunch cart outside.,The lunch cart is mexican food.
+660,450767,A young woman dances to the delight of a group of children.,A woman is holding 3 children.
+661,450897,A chef is preparing some food.,In the kitchen the man washes dishes.
+662,450940,A boy in a sports uniform chasing a soccer ball,A boy is playing.
+663,452118,Two men play the guitar while on a boat.,Two men on a boat play their guitars together.
+664,453097,A group of people are running a race.,The people are almost to the finish line.
+665,455935,A man wearing orange reflective clothing and a red hard hat shovels watery mud next to a low cement wall.,The man is a repairman.
+666,456117,Three women in a hospital.,the skateboard was black
+667,456266,A guy lifts some heavy weights while an older man assists him.,A man helping another man bench press.
+668,456761,"Three dogs run on beach, two playing with unknown object.",Three dogs are swimming in the ocean.
+669,456772,Two large white dogs and one large tan dog in a red collar run along a beach.,Three dogs are lying in the grass in the shade.
+670,457878,A girl doing something on her cellphone.,There is a person with a telecommunications device.
+671,457899,A woman in a red dress and a man in a white suite are engaging in a ballet performance on a purple lit stage.,A man and woman are dancing.
+672,458599,A closeup of a man riding his bicycle through the forest.,A man is riding his bicycle in the forest to exercise.
+673,458628,Two young girls one blond one brunette are puckering there lips and showing a peace sign with there fingers.,The girls have no fingers.
+674,459828,Young girl jumping off a swing.,Someone is jumping.
+675,461143,A woman in a white shirt sitting on a gray bench in front of a wall with graffiti written on it.,A person in a white shirt swimming in a lake.
+676,463262,A brown and black dog approaching a red ball.,The ball attracted the dog's attention.
+677,463559,"A woman is jogging on a road by a shoreline, holding an item up in the air.",The woman is holding a rock.
+678,463572,A man is selling water and lemonade at a stand.,a vendor is selling lemonade.
+679,463687,Children are playing outside in a rocky area beside a river.,Children are playing oustide with their parents.
+680,464513,A small kid wearing a helmet smiles while his father is doing some adjustment at its back.,The kid is flying through the sky wearing a cape.
+681,464854,Little boy pushing another little boy up the pole.,There are two boys.
+682,464901,A man wearing a colorful suit sits on a sidewalk playing a basset horn to collect money.,A man juggles on the street.
+683,466557,Woman walking on a puddle of water.,A woman with wet Nike sneakers.
+684,467470,A group of people are sitting on the top of a boat.,The people are swimming
+685,467865,Two players in red white and blue football uniforms squat down on the field.,Two players in red white and blue football uniforms squat down on the field and holding their helmets.
+686,468548,A class of students all doing different actions.,A class of students working on one math problem.
+687,469856,The men are talking to the person in the police van.,There is a criminal in the back of a police van.
+688,470247,A man with a yellow hat on is leaning on a wall of some sort.,someone with a yellow hat leans
+689,470257,A child wearing a green shirt and blowing bubbles.,A child in green is playing baseball.
+690,472747,Young boy delivers a jumping martial arts kick.,The boy practices martial arts.
+691,472789,A young boy points a toy rifle off-camera.,A boy is holding a sword.
+692,473855,There is a person sitting on a plastic blow-up float in the high piled snow.,The person is outdoors.
+693,474441,A baby decides to pack himself away in a suitcase.,A baby ends up in a suitcase and is promptly discovered.
+694,474740,A man in white is playing a black accordion.,man plays accordion
+695,475013,The racer zooms past the wooded area leaving a cloud of dust.,The car is fast.
+696,475232,A guy snowboarding down a pole that is on top of a blue vehicle into the snow.,A man performs snowboard stunts in a scored event.
+697,475671,The people are standing outside after a wedding.,It was a wedding for two Indian people
+698,477167,A man in a white t-shirt is standing outside on a busy street.,The woman is wearing a white shirt.
+699,477223,A guy is jumping in the air while a group of people stand around and ignore him.,A guy is really an alien from Neptune.
+700,477332,People are in a restaurant eating.,A group of individuals eating in a restaurant.
+701,477877,A man wearing yellow riding a bike.,A man steering a bike.
+702,477962,Three teenage girls walking down the sidewalk together on a nice day,Girls are walking in the daytime.
+703,478194,Beautiful day to play fetch with dog while relaxing on the dock at the lake.,The sun shines upon the lake.
+704,482019,A man in glasses talks to a woman while shopping for orange juice.,There is a man shopping while avoiding a women
+705,482758,A man bundled up in a coat displaying with his arms a bunch of clothes.,The man was about to go outside
+706,484972,Four cheerleaders at a basketball game dance at half-court during a break in the game.,Four cheerleaders dance during a break in the game.
+707,485427,A child jumps onto a bed.,The child is jumping on the bed and his big sister is worried that the bed will break and they will get scolded.
+708,485580,A man who is wearing glasses is planting trees.,A man plants strawberries.
+709,485598,There are 2 shirtless boys jumping up from some water looking at a soccer ball.,Two boys are playing with a soccer ball in a pool.
+710,485858,"A woman with long dark hair is walking on a sidewalk past some tall buildings, while two other people walk across the street with their dog.",People walking.
+711,486098,A professor explaining a University level lecture.,A professor in class.
+712,486675,Two people are hugging and one is wearing a pink-hooded stretch top.,Both people are wearing scuba suits.
+713,487229,A young girl in a green bathing suit getting splashed with water.,A girl in a red tank top gets splashed with water.
+714,487685,There are three people sitting on a bench outside a building and one man standing next to it looking at a newspaper.,The people are talking.
+715,488220,A lady with a blue coat is seen riding a bike in front of a store.,A lady with a blue coat is getting exercise.
+716,488702,"A person in a yellow hat, carrying a bag and a fishing pole, walks in a grassy area near a small body of water.","On the grass near the water, a person in a yellow hat walks carrying fishing gear."
+717,488841,People are standing in a room with a television that has a picture of a boat on the water.,A man sits online in a dark room eating pizza and watching Wheel of Fortune.
+718,489327,A person wearing a red vest climbs up a steep rock.,A person is repelling down the mountain.
+719,489352,A young man is taking his hat off while walking from his graduation.,A student is sitting after graduating.
+720,489857,A little boy learning how to handle an owl in the outdoors.,A boy is learning.
+721,490129,"A red and silver muscle car, waits to start a drag race.",the car is in a long race
+722,491039,A young lady is being videotaped while she's sitting in her stroller in front of a Sysco truck on the sidewalk.,a young woman is being filmed while she sits in her stroller on the sidewalk in front of a truck
+723,492175,A person holding a small dog on a leash is bending over and looking through items.,The person is looking though several shopping bags.
+724,493759,Yellow dog catches ball in shallow waters.,Dog sleeping
+725,494996,Greyhound dogs wearing racing stripes are running out of a gate on a track.,Dogs wearing racing stripes are running out of a gate on a track.
+726,495730,A woman in a park wearing a hat and holding a scarf over her face.,A woman is in a city park.
+727,495795,A man is walking on a trail in the woods while a young girl is attempting to climb some boards of wood.,A man walks in the woods while a young girl climbs.
+728,496534,Three guys riding on an elephant with a house-like structures and trees in the background.,The elephants sometimes fight their trainers.
+729,499937,They blow their trumpets.,The trumpeters are playing fiddles.
+730,500623,The horse on the left has a white mane.,The horse is solid black.
+731,501731,"Two people, a woman wearing an orange shirt and a man wearing a blue shirt, are jumping out of swings in midair.",No one is jumping from a swing.
+732,501926,A man in a plaid shirt exhales smoke on a crowded city street.,A firetruck goes down the street.
+733,502223,Three men are standing next to each other wearing different colored shirts.,Three brothers wearing their favorite color shirt.
+734,502423,A man smiles and poses with a product he appears to be trying to sell.,A person is posing with an object.
+735,503039,Girl poses on couch on suburban lawn.,A girl posing for a photo shoot on a couch.
+736,504105,A man wearing a blue shirt smokes a cigarette in front of an official building.,A man wearing a blue shirt.
+737,504992,Two women walking toward the camera along a sidewalk while wearing a backpack and showing midriff.,There are clothes on the women.
+738,506005,A woman with gray hair is sitting next to a little boy who is holding onto the handles of a stroller and a little girl who is sitting in a different stroller.,An older lady is resting with a couple of children.
+739,506414,The trees are green,All trees are green.
+740,508521,A person in a red shirt doing tricks on a bicycle.,A person is competing in a bmx competition.
+741,509169,A couple hug in a crowded place.,A man hugs his boyfriend at a protest.
+742,509328,A woman in an orange bikini is massaging a man.,A woman is touching a man.
+743,509438,Two women sit at desks in a large room with white walls.,The women are esitting in a white room.
+744,510455,Here is a picture of an older lady wearing a beanie and carrying her terrier in a field outside.,Here is a picture of a older person wearing a hat and carrying her dog outside.
+745,510869,A man is sitting on the floor meditating,A man is meditating while listening to water noises.
+746,511280,A mottled black and gray dog in a blue collar jumping over a fallen tree.,A white dog in a red collar jumping over a tree.
+747,511871,The man in blue is punching the man with the red gloves while he blocks his face.,Floyd Mayweather is laying some smack down on a hapless challenger.
+748,512053,"Man performing stunt, lady breaking block on his stomach with sludge hammer.",Nobody is performing.
+749,512639,A skateboarder makes a jump while someone films it.,The skateboarder landed the jump perfectly.
+750,512695,A young girl in a pink shirt creates a painting on paper.,A young girl draws.
+751,512778,"A man riding a four-wheel ATV in the dessert, kicking up sand in his wake.",The man is riding his atv on the city road.
+752,513211,two men working a construction job,The two men are sweating.
+753,513720,"Three women in white mini dresses, carrying white umbrellas and drinks, walking in an unknown desert location.",Three women are waiting in the desert while wearing short dresses.
+754,513835,A man in a black hooded sweater stands behind a rich variety of fruits and vegetables.,A fruit salad on the rung from the cops.
+755,514380,"A woman, with a drink in hand, is leaning against a silver car parked along the street, while looking at the camera.",A female is going to take a picture of a car that she is trying to sell.
+756,515747,A boy poses on a shadow-dappled lawn.,A boy takes a bath.
+757,516128,A man in a green striped shirt drums furiously.,The man is playing drums.
+758,517858,Older female walking with cane next to flower wreaths.,An older woman is walking with a cane.
+759,518461,A dog up to its belly in the snow attempts to move.,An animal outdoors.
+760,518638,A man on a cellphone stands outside of a building with pictures of women in black shirts behind him.,The woman is late for her appointment
+761,519201,A white ice cream truck stopped on the side of the road and a man stopped to buy some.,A green ice cream truck stopped on the side of the road and a woman stopped to buy some.
+762,519469,Many birds are sitting on a concrete wall.,Many pigeons are sitting on a concrete wall.
+763,519819,A man hiking with a large backpack and two poles near a collection of pointy white rocks.,The man hiking is caucasian.
+764,520042,A Team USA player passing the ball to another player.,The people do not have a ball.
+765,520786,Man with gray hair telling a story to a group of younger people on a bench.,The man is entertaining people
+766,521347,A blond woman is holding a microphone and making a zero sign with her fingers.,A woman is speaking into a microphone.
+767,521683,A little girl in a hat sits under a grocery cart.,A girl is sleeping in her bed.
+768,523638,A person is walking by a wall that is surrounding a church.,A person is walking by an ice cream stand.
+769,524089,A brunette with a lei around her head.,A person with a lei around their head.
+770,524354,Two girls looking at bubbles in the air.,Two boys were climbing a tree
+771,524385,A boy in a flowered apron standing at a stove while a woman stirs a pot in the background.,A boy in a flowered apron is helping make soup.
+772,524406,A young woman is stirring something in a pot while a young boy wearing a flowered apron stands by her.,They are making soup
+773,524854,A little girl smiling and holding a small object.,A girl is proud of her object.
+774,527833,These two people are eating.,Two humans are having a meal.
+775,528482,A religious man in a robe is sitting in contemplation.,A man wearing a robe looks to be very religious
+776,528520,A surfer catching a wave.,A person is surfing.
+777,530538,Four young boys are standing around a grill.,Four young boys are standing in a group.
+778,531157,A girl sitting in the back of a cart full of various belongings.,A boy carries his belongings in his arms.
+779,533036,A woman wearing a colorful shawl on her head is using a sewing machine.,A sewing machine is used by a woman wearing a colorful shawl.
+780,534650,Someone in a blue coat and white sneakers is airborne.,The person is laying on the ground.
+781,537726,A closeup of a bicycle rider's leg.,The person is participating in a bike race.
+782,538979,The local street is busy with a food market and bus transportation.,There is a bus that brings you to the local street fair that sells food.
+783,539080,Two asian women are sitting in the shade under a tree.,Two women are relaxing.
+784,539243,Two men wearing sandals walking.,the men are asleep in the motel
+785,539998,A small black girl in a bathing suit,The girl is visiting her grandmother who lives on Martha's Vineyard.
+786,540283,"A horse pulls a wagon with a bale of hay on top, while a man sits on top of the bale with his hand in the air.",A man wears a hat.
+787,540574,man wearing gray jacket watching family at worship.,A man is at home eating dinner.
+788,541031,A woman and a man holding a small boy smile while standing in front of a decorated christmas tree with gifts under it.,The family is celebrating its last Channukah.
+789,541746,A person in yellow is riding a dirt bike on a dirt path.,A guy driving an ATV through the park.
+790,542263,A girl in a floral bathing suit jumping on the beach in front of the waves.,A five year old girl is on vacation with her family.
+791,542646,A sports team is lined up outside.,The sports team is laying down on the field.
+792,543160,A man has a pan and what looks like a block of dirt.,A man with a pan.
+793,545706,A middle-aged solo musician performs by singing and playing the guitar.,The muscisian is on stage.
+794,546367,Two people are standing in a flower shop.,People in a store.
+795,547621,Three dogs playing in the snow.,Dogs play outside.
+796,548940,A man in a yellow shirt is reading a book.,A man is reading while waiting for a bus.
+797,549041,"A man in a purple hat, white shirt, wearing earbuds, listening to music, sitting outside a city building.",He is taking shelter from the hurricane.
+798,549274,A female swimmer wearing a swim cap and nose clips moves slowly through the water is seen from below.,A female swimmer swims.
+799,549910,Crowd standing outside a metro area.,The crowd is sitting in a field.

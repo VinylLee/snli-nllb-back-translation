@@ -61,8 +61,24 @@ def read_records(path: Path) -> Iterator[dict[str, Any]]:
 
 def indexed_chunks(records: Iterable[dict[str, Any]], chunk_size: int) -> Iterator[list[tuple[int, dict[str, Any]]]]:
     chunk: list[tuple[int, dict[str, Any]]] = []
-    for source_index, record in enumerate(records):
-        chunk.append((source_index, record))
+    seen_source_indices: set[int] = set()
+    for input_position, record in enumerate(records):
+        raw_source_index = record.get("source_index")
+        index_reasons: list[str] = []
+        if raw_source_index is None:
+            source_index = input_position
+        elif isinstance(raw_source_index, int) and not isinstance(raw_source_index, bool) and raw_source_index >= 0:
+            source_index = raw_source_index
+        else:
+            source_index = input_position
+            index_reasons.append("invalid_source_index")
+        if source_index in seen_source_indices:
+            raise ValueError(f"duplicate_source_index: {source_index}")
+        seen_source_indices.add(source_index)
+        enriched = dict(record)
+        enriched["_input_position"] = input_position
+        enriched["_source_index_reasons"] = index_reasons
+        chunk.append((source_index, enriched))
         if len(chunk) == chunk_size:
             yield chunk
             chunk = []
@@ -96,14 +112,16 @@ def resolve_dtype(requested: str, device: str) -> str:
 
 
 def generation_was_truncated(sequence: Any, eos_token_id: int | None, pad_token_id: int | None, max_new_tokens: int, decoder_start_token_id: int | None = None) -> bool:
-    """Detect max-new-token cutoff per sequence, ignoring padding after EOS."""
+    """Detect max-new-token cutoff in generated target tokens, per sequence."""
     tokens = sequence.tolist() if hasattr(sequence, "tolist") else list(sequence)
+    if decoder_start_token_id is not None and tokens and tokens[0] == decoder_start_token_id:
+        tokens = tokens[1:]
+    if pad_token_id is not None:
+        while tokens and tokens[-1] == pad_token_id:
+            tokens.pop()
     if eos_token_id is not None and eos_token_id in tokens:
         return False
-    if pad_token_id is not None:
-        tokens = [token for token in tokens if token != pad_token_id]
-    generated_length = max(0, len(tokens) - 1)
-    return generated_length >= max_new_tokens
+    return len(tokens) >= max_new_tokens
 
 
 class NLLBBackTranslator:
@@ -232,6 +250,7 @@ class Candidate:
     original_nli_gold_probability: float | None = None
     original_nli_probabilities: dict[str, float] = field(default_factory=dict)
     translation_performed: bool = True
+    input_position: int | None = None
 
     @property
     def candidate_id(self) -> str:
@@ -273,7 +292,7 @@ def make_candidates(source_index: int, record: dict[str, Any], translations: dic
         result.append(Candidate(source_index, record, premise, hypothesis, field_name, pivot_lang, info,
                                    (source_info or {}).get("source_nli_status"), (source_info or {}).get("source_nli_threshold"),
                                    (source_info or {}).get("original_nli_predicted_label"), (source_info or {}).get("original_nli_gold_probability"),
-                                   {key: float(value) for key, value in (source_info or {}).items() if key.endswith("_probability")}, True))
+                                   {key: float(value) for key, value in (source_info or {}).items() if key.endswith("_probability")}, True, record.get("_input_position")))
     return result
 
 
@@ -320,6 +339,7 @@ def output_record(candidate: Candidate, decision: Decision, args: argparse.Names
                   translator: NLLBBackTranslator | None) -> dict[str, Any]:
     result: dict[str, Any] = {
         "source_index": candidate.source_index, "candidate_id": candidate.candidate_id,
+        "input_position": candidate.input_position,
         "label": candidate.record.get("label"), "gold_label": candidate.record.get("label"),
         "original_premise": candidate.record.get("premise"), "original_hypothesis": candidate.record.get("hypothesis"),
         "premise": candidate.premise, "hypothesis": candidate.hypothesis,
@@ -347,7 +367,7 @@ def invalid_output(source_index: int, record: dict[str, Any], field_name: str, r
                           field_name, args.pivot_lang, truncation or {},
                           (source_info or {}).get("source_nli_status"), (source_info or {}).get("source_nli_threshold"),
                           (source_info or {}).get("original_nli_predicted_label"), (source_info or {}).get("original_nli_gold_probability"),
-                          {key: float(value) for key, value in (source_info or {}).items() if key.endswith("_probability")}, translation_performed)
+                          {key: float(value) for key, value in (source_info or {}).items() if key.endswith("_probability")}, translation_performed, record.get("_input_position"))
     return output_record(candidate, Decision(False, list(dict.fromkeys(reasons))), args, None)
 
 
@@ -442,7 +462,7 @@ def run_pipeline(args: argparse.Namespace, translator: Any, quality: QualityFilt
             valid: list[tuple[int, dict[str, Any]]] = []
             blocked: set[str] = set()
             for source_index, record in chunk:
-                base_reasons = validate_record(record)
+                base_reasons = validate_record(record) + list(record.get("_source_index_reasons", []))
                 over_by_field = {
                     field_name: _source_truncation(translator, record[field_name], args.max_input_tokens)
                     for field_name in translation_fields(args.augmentation_mode)
@@ -505,7 +525,8 @@ def run_pipeline(args: argparse.Namespace, translator: Any, quality: QualityFilt
                             continue
                         value = invalid_output(source_index, record, field_name, [reason], args, source_info=info, translation_performed=False)
                         rejected_handle.write(json.dumps(value, ensure_ascii=False, separators=(",", ":")) + "\n")
-                        record_stats(Decision(False, [reason]), make_candidates(source_index, record, {}, {}, args.augmentation_mode, args.pivot_lang, info)[0 if field_name == "both" else (0 if field_name == "premise" else 1)])
+                        candidate_map = {candidate.augmented_field: candidate for candidate in make_candidates(source_index, record, {}, {}, args.augmentation_mode, args.pivot_lang, info)}
+                        record_stats(Decision(False, [reason]), candidate_map[field_name])
                         completed.add(candidate_id)
                     rejected_handle.flush()
                 valid = gated_valid

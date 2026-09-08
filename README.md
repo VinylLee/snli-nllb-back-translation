@@ -62,6 +62,12 @@ In `separate` mode these flags belong only to the translated field; `both`
 combines the two fields by OR, while `was_truncated` reflects actual
 truncation only.
 
+If an input record contains a nonnegative integer `source_index`, it is
+preserved as the stable dataset provenance index and is used in the candidate
+ID. Records without one use their zero-based input position. Every output
+also records `input_position`; invalid or duplicate explicit indices are
+reported rather than silently cast or reused.
+
 Accepted and rejected outputs contain stable IDs of the form
 `source_index:augmented_field:pivot_lang`, scores, hard/soft cue changes,
 reasons, truncation metadata, and model/generation provenance. JSONL input is
