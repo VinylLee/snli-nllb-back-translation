@@ -8,14 +8,16 @@ import json
 import os
 import random
 import sys
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 from pathlib import Path
 from typing import Any, Iterable, Iterator, Sequence
 
 try:
-    from scripts.quality_filter import Decision, QualityFilter, canonical_label, validate_record
+    from scripts.quality_filter import Decision, LABEL_NAMES, QualityFilter, canonical_label, validate_record
+    from scripts.policy_v2 import classify_source_nli
 except ModuleNotFoundError:  # direct execution: python scripts/back_translate_nllb.py
-    from quality_filter import Decision, QualityFilter, canonical_label, validate_record
+    from quality_filter import Decision, LABEL_NAMES, QualityFilter, canonical_label, validate_record
+    from policy_v2 import classify_source_nli
 
 
 DEFAULT_MODEL = "facebook/nllb-200-distilled-600M"
@@ -23,6 +25,8 @@ DEFAULT_VERIFIER = "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli"
 TRUNCATION_KEYS = (
     "source_to_pivot_over_limit", "source_to_pivot_truncated",
     "pivot_to_source_over_limit", "pivot_to_source_truncated",
+    "source_to_pivot_generation_truncated", "pivot_to_source_generation_truncated",
+    "generation_truncated",
 )
 
 
@@ -91,6 +95,17 @@ def resolve_dtype(requested: str, device: str) -> str:
     return requested if requested != "auto" else ("float16" if device.startswith("cuda") else "float32")
 
 
+def generation_was_truncated(sequence: Any, eos_token_id: int | None, pad_token_id: int | None, max_new_tokens: int, decoder_start_token_id: int | None = None) -> bool:
+    """Detect max-new-token cutoff per sequence, ignoring padding after EOS."""
+    tokens = sequence.tolist() if hasattr(sequence, "tolist") else list(sequence)
+    if eos_token_id is not None and eos_token_id in tokens:
+        return False
+    if pad_token_id is not None:
+        tokens = [token for token in tokens if token != pad_token_id]
+    generated_length = max(0, len(tokens) - 1)
+    return generated_length >= max_new_tokens
+
+
 class NLLBBackTranslator:
     """Batched NLLB translator with separate overflow and truncation flags."""
 
@@ -120,6 +135,7 @@ class NLLBBackTranslator:
         self.tokenizer.src_lang = source_lang or self.source_lang
         return len(self.tokenizer(text, add_special_tokens=True, truncation=False)["input_ids"])
 
+
     def _language_id(self, language: str) -> int:
         language_ids = getattr(self.tokenizer, "lang_code_to_id", {})
         if language in language_ids:
@@ -140,6 +156,9 @@ class NLLBBackTranslator:
             "source_to_pivot_truncated": False,
             "pivot_to_source_over_limit": over if stage == "pivot_to_source" else False,
             "pivot_to_source_truncated": False,
+            "source_to_pivot_generation_truncated": False,
+            "pivot_to_source_generation_truncated": False,
+            "generation_truncated": False,
         } for over in over_limits]
         eligible = [index for index, over in enumerate(over_limits) if allow_truncation or not over]
         outputs = ["" for _ in texts]
@@ -165,6 +184,12 @@ class NLLBBackTranslator:
             generated = self.model.generate(**encoded, forced_bos_token_id=self._language_id(target_lang),
                                             max_new_tokens=self.max_new_tokens, num_beams=self.num_beams,
                                             do_sample=False)
+        eos_id = getattr(self.tokenizer, "eos_token_id", None)
+        pad_id = getattr(self.tokenizer, "pad_token_id", None)
+        start_id = getattr(getattr(self.model, "config", None), "decoder_start_token_id", None)
+        generation_flags = [generation_was_truncated(row, eos_id, pad_id, self.max_new_tokens, start_id) for row in generated]
+        for index, actual in zip(eligible, generation_flags):
+            metadata[index][f"{stage}_generation_truncated"] = bool(actual)
         translated = self.tokenizer.batch_decode(generated, skip_special_tokens=True)
         for index, output in zip(eligible, translated):
             outputs[index] = output
@@ -179,6 +204,9 @@ class NLLBBackTranslator:
             for first, second in zip(first_flags, second_flags):
                 info = {key: bool(first.get(key, False) or second.get(key, False)) for key in TRUNCATION_KEYS}
                 info["was_truncated"] = bool(info["source_to_pivot_truncated"] or info["pivot_to_source_truncated"])
+                info["source_to_pivot_generation_truncated"] = bool(first.get("source_to_pivot_generation_truncated", False) or second.get("source_to_pivot_generation_truncated", False))
+                info["pivot_to_source_generation_truncated"] = bool(first.get("pivot_to_source_generation_truncated", False) or second.get("pivot_to_source_generation_truncated", False))
+                info["generation_truncated"] = bool(info["source_to_pivot_generation_truncated"] or info["pivot_to_source_generation_truncated"])
                 info["intermediate_input_too_long"] = bool(
                     info["pivot_to_source_over_limit"] and not info["pivot_to_source_truncated"])
                 metadata.append(info)
@@ -198,6 +226,12 @@ class Candidate:
     augmented_field: str
     pivot_lang: str
     truncation: dict[str, bool] = field(default_factory=dict)
+    source_nli_status: str | None = None
+    source_nli_threshold: float | None = None
+    original_nli_predicted_label: str | None = None
+    original_nli_gold_probability: float | None = None
+    original_nli_probabilities: dict[str, float] = field(default_factory=dict)
+    translation_performed: bool = True
 
     @property
     def candidate_id(self) -> str:
@@ -217,7 +251,7 @@ def translation_fields(mode: str) -> tuple[str, ...]:
 
 
 def make_candidates(source_index: int, record: dict[str, Any], translations: dict[str, str],
-                    truncations: dict[str, dict[str, bool]], mode: str, pivot_lang: str) -> list[Candidate]:
+                    truncations: dict[str, dict[str, bool]], mode: str, pivot_lang: str, source_info: dict[str, Any] | None = None) -> list[Candidate]:
     result: list[Candidate] = []
     for field_name in candidate_fields(mode):
         premise = translations.get("premise", record["premise"]) if field_name in ("premise", "both") else record["premise"]
@@ -228,12 +262,18 @@ def make_candidates(source_index: int, record: dict[str, Any], translations: dic
                 for key in TRUNCATION_KEYS
             }
             info["was_truncated"] = bool(info["source_to_pivot_truncated"] or info["pivot_to_source_truncated"])
+            info["source_to_pivot_generation_truncated"] = any(truncations.get(name, {}).get("source_to_pivot_generation_truncated", False) for name in ("premise", "hypothesis"))
+            info["pivot_to_source_generation_truncated"] = any(truncations.get(name, {}).get("pivot_to_source_generation_truncated", False) for name in ("premise", "hypothesis"))
+            info["generation_truncated"] = bool(info["source_to_pivot_generation_truncated"] or info["pivot_to_source_generation_truncated"])
             info["intermediate_input_too_long"] = any(
                 truncations.get(name, {}).get("intermediate_input_too_long", False)
                 for name in ("premise", "hypothesis"))
         else:
             info = dict(truncations.get(field_name, {}))
-        result.append(Candidate(source_index, record, premise, hypothesis, field_name, pivot_lang, info))
+        result.append(Candidate(source_index, record, premise, hypothesis, field_name, pivot_lang, info,
+                                   (source_info or {}).get("source_nli_status"), (source_info or {}).get("source_nli_threshold"),
+                                   (source_info or {}).get("original_nli_predicted_label"), (source_info or {}).get("original_nli_gold_probability"),
+                                   {key: float(value) for key, value in (source_info or {}).items() if key.endswith("_probability")}, True))
     return result
 
 
@@ -270,6 +310,7 @@ def provenance(args: argparse.Namespace, translator: NLLBBackTranslator | None) 
         "verifier_model_revision": getattr(args, "verifier_revision", None),
         "generation": {"num_beams": args.num_beams, "do_sample": False,
                         "max_input_tokens": args.max_input_tokens, "max_new_tokens": args.max_new_tokens},
+        "source_nli_gate": getattr(args, "source_nli_gate", "off") if args.quality_filter == "on" else "off", "source_nli_threshold": getattr(args, "source_nli_threshold", None),
         "quality": {"semantic_threshold": args.semantic_threshold, "nli_threshold": args.nli_threshold,
                     "min_change_ratio": args.min_change_ratio},
     }
@@ -286,6 +327,11 @@ def output_record(candidate: Candidate, decision: Decision, args: argparse.Names
         "pivot_lang": candidate.pivot_lang, "was_truncated": candidate.was_truncated,
         "truncation": candidate.truncation,
         "quality": {**decision.scores, "accepted": decision.accepted, "reasons": decision.reasons, "flags": decision.flags},
+        "source_nli_status": candidate.source_nli_status, "source_nli_threshold": candidate.source_nli_threshold,
+        "original_nli_predicted_label": candidate.original_nli_predicted_label,
+        "original_nli_gold_probability": candidate.original_nli_gold_probability,
+        "original_nli_probabilities": candidate.original_nli_probabilities,
+        "translation_performed": candidate.translation_performed,
         "provenance": provenance(args, translator),
     }
     if args.no_metadata and decision.accepted:
@@ -294,11 +340,14 @@ def output_record(candidate: Candidate, decision: Decision, args: argparse.Names
 
 
 def invalid_output(source_index: int, record: dict[str, Any], field_name: str, reasons: list[str],
-                   args: argparse.Namespace, truncation: dict[str, bool] | None = None) -> dict[str, Any]:
+                   args: argparse.Namespace, truncation: dict[str, bool] | None = None, source_info: dict[str, Any] | None = None, translation_performed: bool = False) -> dict[str, Any]:
     candidate = Candidate(source_index, record,
                           record.get("premise", "") if isinstance(record.get("premise", ""), str) else "",
                           record.get("hypothesis", "") if isinstance(record.get("hypothesis", ""), str) else "",
-                          field_name, args.pivot_lang, truncation or {})
+                          field_name, args.pivot_lang, truncation or {},
+                          (source_info or {}).get("source_nli_status"), (source_info or {}).get("source_nli_threshold"),
+                          (source_info or {}).get("original_nli_predicted_label"), (source_info or {}).get("original_nli_gold_probability"),
+                          {key: float(value) for key, value in (source_info or {}).items() if key.endswith("_probability")}, translation_performed)
     return output_record(candidate, Decision(False, list(dict.fromkeys(reasons))), args, None)
 
 
@@ -314,8 +363,10 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--augmentation-mode", choices=("separate", "premise", "hypothesis", "both"), default="separate")
     parser.add_argument("--quality-filter", choices=("on", "off"), default="on")
     parser.add_argument("--verifier-model", default=DEFAULT_VERIFIER)
-    parser.add_argument("--semantic-threshold", type=float, default=0.80)
+    parser.add_argument("--semantic-threshold", type=float, default=0.90)
     parser.add_argument("--nli-threshold", type=float, default=0.80)
+    parser.add_argument("--source-nli-threshold", type=float, default=0.80)
+    parser.add_argument("--source-nli-gate", choices=("on", "off"), default="on")
     parser.add_argument("--min-change-ratio", type=float, default=0.03)
     parser.add_argument("--filter-batch-size", type=int, default=32)
     parser.add_argument("--chunk-size", type=int, default=64)
@@ -343,7 +394,7 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
         parser.error("--no-metadata is only supported with --quality-filter off")
     if min(args.batch_size, args.chunk_size, args.filter_batch_size, args.max_input_tokens, args.max_new_tokens, args.num_beams) < 1:
         parser.error("batch sizes, token limits, and num_beams must be positive")
-    if not 0 <= args.semantic_threshold <= 1 or not 0 <= args.nli_threshold <= 1 or not 0 <= args.min_change_ratio <= 1:
+    if not all(0 <= value <= 1 for value in (args.semantic_threshold, args.nli_threshold, args.source_nli_threshold, args.min_change_ratio)):
         parser.error("quality thresholds must be between 0 and 1")
     if args.resume and args.overwrite:
         parser.error("--resume and --overwrite are mutually exclusive")
@@ -363,13 +414,13 @@ def _source_truncation(translator: Any, text: str, max_input_tokens: int) -> dic
     return info
 
 
-def run_pipeline(args: argparse.Namespace, translator: Any, quality: QualityFilter | None) -> dict[str, Any]:
+def run_pipeline(args: argparse.Namespace, translator: Any, quality: QualityFilter | None, source_gate: Any | None = None) -> dict[str, Any]:
     accepted_path: Path = args.accepted_path
     rejected_output: Path = args.rejected_path
     completed = completed_candidate_ids((accepted_path, rejected_output)) if args.resume else set()
     accepted_mode = "a" if args.resume and accepted_path.exists() else "w"
     rejected_mode = "a" if args.resume and rejected_output.exists() else "w"
-    stats: dict[str, Any] = {"accepted": 0, "rejected": 0, "processed_records": 0, "reasons": {}, "by_label": {}, "by_field": {}}
+    stats: dict[str, Any] = {"accepted": 0, "rejected": 0, "processed_records": 0, "reasons": {}, "source_status": {}, "by_label": {}, "by_field": {}}
 
     def record_stats(decision: Decision, candidate: Candidate) -> None:
         key = "accepted" if decision.accepted else "rejected"
@@ -428,6 +479,37 @@ def run_pipeline(args: argparse.Namespace, translator: Any, quality: QualityFilt
                 if len(blocked.intersection({f"{source_index}:{name}:{args.pivot_lang}" for name in candidate_fields(args.augmentation_mode)})) < len(candidate_fields(args.augmentation_mode)):
                     valid.append((source_index, record))
 
+            source_metadata: dict[int, dict[str, Any]] = {}
+            pending_valid = []
+            for source_index, record in valid:
+                candidate_ids = {f"{source_index}:{name}:{args.pivot_lang}" for name in candidate_fields(args.augmentation_mode)}
+                if any(candidate_id not in completed and candidate_id not in blocked for candidate_id in candidate_ids):
+                    pending_valid.append((source_index, record))
+            valid = pending_valid
+            if source_gate is not None and valid:
+                gate_pairs = [(record["premise"], record["hypothesis"]) for _, record in valid]
+                gate_probabilities = source_gate.predict_proba(gate_pairs)
+                gated_valid = []
+                for (source_index, record), probabilities in zip(valid, gate_probabilities):
+                    info = classify_source_nli(probabilities, int(record["label"]), args.source_nli_threshold)
+                    source_metadata[source_index] = info
+                    status = info["source_nli_status"]
+                    stats["source_status"][status] = stats["source_status"].get(status, 0) + 1
+                    if status == "RELIABLE_GOLD":
+                        gated_valid.append((source_index, record))
+                        continue
+                    reason = "source_nli_low_confidence" if status == "GOLD_LOW_CONFIDENCE" else "source_label_disagreement"
+                    for field_name in candidate_fields(args.augmentation_mode):
+                        candidate_id = f"{source_index}:{field_name}:{args.pivot_lang}"
+                        if candidate_id in completed or candidate_id in blocked:
+                            continue
+                        value = invalid_output(source_index, record, field_name, [reason], args, source_info=info, translation_performed=False)
+                        rejected_handle.write(json.dumps(value, ensure_ascii=False, separators=(",", ":")) + "\n")
+                        record_stats(Decision(False, [reason]), make_candidates(source_index, record, {}, {}, args.augmentation_mode, args.pivot_lang, info)[0 if field_name == "both" else (0 if field_name == "premise" else 1)])
+                        completed.add(candidate_id)
+                    rejected_handle.flush()
+                valid = gated_valid
+
             translations: dict[str, dict[int, str]] = {field_name: {} for field_name in translation_fields(args.augmentation_mode)}
             truncations: dict[str, dict[int, dict[str, bool]]] = {field_name: {} for field_name in translation_fields(args.augmentation_mode)}
             for field_name in translation_fields(args.augmentation_mode):
@@ -446,14 +528,14 @@ def run_pipeline(args: argparse.Namespace, translator: Any, quality: QualityFilt
             for source_index, record in valid:
                 translated = {field_name: translations[field_name].get(source_index, record[field_name]) for field_name in translation_fields(args.augmentation_mode)}
                 flags = {field_name: truncations[field_name].get(source_index, {}) for field_name in translation_fields(args.augmentation_mode)}
-                candidates.extend(candidate for candidate in make_candidates(source_index, record, translated, flags, args.augmentation_mode, args.pivot_lang)
+                candidates.extend(candidate for candidate in make_candidates(source_index, record, translated, flags, args.augmentation_mode, args.pivot_lang, source_metadata.get(source_index))
                                    if candidate.candidate_id not in completed and candidate.candidate_id not in blocked)
             items = [{
                 "original_premise": candidate.record["premise"], "original_hypothesis": candidate.record["hypothesis"],
                 "candidate_premise": candidate.premise, "candidate_hypothesis": candidate.hypothesis,
                 "gold_label": int(candidate.record["label"]), "augmented_field": candidate.augmented_field,
                 "was_truncated": candidate.was_truncated, "truncation": candidate.truncation,
-                "pre_reasons": (["intermediate_input_too_long"] if candidate.truncation.get("intermediate_input_too_long") else []),
+                "pre_reasons": (["intermediate_input_too_long"] if candidate.truncation.get("intermediate_input_too_long") else []) + (["generation_truncated"] if candidate.truncation.get("generation_truncated") else []),
             } for candidate in candidates]
             if quality is None:
                 decisions = [Decision(not item["pre_reasons"], list(item["pre_reasons"])) for item in items]
@@ -494,7 +576,8 @@ def main(argv: Sequence[str] | None = None) -> int:
         verifier = TransformersNLI(args.verifier_model, resolve_device(args.device), args.dtype, args.filter_batch_size)
         args.verifier_revision = verifier.model_revision
         quality = QualityFilter(verifier, args.semantic_threshold, args.nli_threshold, args.min_change_ratio)
-    stats = run_pipeline(args, translator, quality)
+    source_gate = quality.verifier if quality is not None and args.source_nli_gate == "on" else None
+    stats = run_pipeline(args, translator, quality, source_gate)
     print(f"Accepted: {args.accepted_path}\nRejected: {args.rejected_path}\nSummary: {json.dumps(stats, ensure_ascii=False)}")
     return 0
 

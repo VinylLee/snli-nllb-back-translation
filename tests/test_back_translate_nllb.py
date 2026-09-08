@@ -114,7 +114,8 @@ class QualityFilterTest(unittest.TestCase):
         hard = QualityFilter(FakeVerifier()).evaluate(
             "A person is running", "Someone is visible", "A person is not running",
             "Someone is visible", 1, "premise")
-        self.assertIn("hard_cue_changed", hard.reasons)
+        self.assertNotIn("hard_cue_changed", hard.reasons)
+        self.assertIn("negation_changed", hard.flags)
         soft = QualityFilter(FakeVerifier()).evaluate(
             "A person is outside", "Someone is visible", "A person is inside",
             "Someone is visible", 0, "premise")
@@ -129,7 +130,7 @@ class QualityFilterTest(unittest.TestCase):
             self.assertIn("number", {change["group"] for change in changes})
             decision = QualityFilter(FakeVerifier()).evaluate(
                 original, "Someone is present", candidate, "Someone is present", 0, "premise")
-            self.assertIn("hard_cue_changed", decision.reasons)
+            self.assertIn("numeric_value_changed", decision.reasons)
         unchanged = logical_cue_changes("11 people", "There are 11 people")
         self.assertNotIn("number", {change["group"] for change in unchanged})
 

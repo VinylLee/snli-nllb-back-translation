@@ -17,22 +17,31 @@ _IMPOSSIBLE_SWITCH_RE = re.compile(
     r"\b(turn|turning|switch|switching)\s+(?:on|off)\s+(?:a|an|the)\s+"
     r"(?:hamburger|burger|food|omelette|pizza|sandwich)\b", re.IGNORECASE)
 
-# Negation and numbers are high-risk hard cues. Other cues are retained as
-# auditable flags because valid paraphrases can change them.
-HARD_CUE_TYPES = {"negation", "number"}
-SOFT_CUE_TYPES = {"quantifier", "modal", "time", "space"}
+# Cue changes are now diagnostic by default. Only an explicit, reliably
+# comparable numeric value conflict is an independent hard failure.
+HARD_CUE_TYPES = {"numeric_value"}
+SOFT_CUE_TYPES = {"negation", "number", "quantifier", "modal", "time", "space"}
 CUE_GROUPS: dict[str, set[str]] = {
     "negation": {"not", "no", "never", "nobody", "nothing", "without", "n't"},
     "number": {
         "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
         "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen",
-        "nineteen", "twenty", "hundred", "thousand", "couple", "dozen",
-        "1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
+        "nineteen", "twenty", "hundred", "thousand", "couple", "dozen", "both",
+        "single", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
     },
     "quantifier": {"all", "some", "any", "every", "few", "several", "many", "most", "couple"},
     "modal": {"may", "might", "can", "could", "must", "should", "will"},
     "time": {"before", "after", "during", "first", "later", "already"},
     "space": {"in", "inside", "outside", "on", "under", "over", "behind", "front", "through", "left", "right", "near", "beside"},
+}
+
+NUMBER_WORD_VALUES: dict[str, int | float] = {
+    "zero": 0, "one": 1, "two": 2, "three": 3, "four": 4, "five": 5,
+    "six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10,
+    "eleven": 11, "twelve": 12, "thirteen": 13, "fourteen": 14,
+    "fifteen": 15, "sixteen": 16, "seventeen": 17, "eighteen": 18,
+    "nineteen": 19, "twenty": 20, "hundred": 100, "thousand": 1000,
+    "couple": 2, "both": 2, "single": 1,
 }
 
 
@@ -49,9 +58,7 @@ class Decision:
 
 
 def cue_snapshot(text: str) -> dict[str, dict[str, int]]:
-    # Keep the source list immutable while deriving contraction cues. This is
-    # intentionally a snapshot: extending a list while iterating it can loop
-    # forever for strings such as "isn't".
+    """Return raw cue counts; contraction expansion uses an immutable snapshot."""
     tokens = [token.lower() for token in _TOKEN_RE.findall(text)]
     contractions = ["n't" for token in tokens if token.endswith("n't")]
     tokens.extend(contractions)
@@ -59,18 +66,79 @@ def cue_snapshot(text: str) -> dict[str, dict[str, int]]:
         group: {cue: tokens.count(cue) for cue in cues if tokens.count(cue)}
         for group, cues in CUE_GROUPS.items()
     }
-    # Numeric literals are open-ended (for example 11, 100, or 3.5), so they
-    # cannot be represented by a finite cue vocabulary.
     for token in set(tokens):
         if _NUMERIC_TOKEN_RE.fullmatch(token):
             snapshot["number"][token] = tokens.count(token)
     return snapshot
 
 
+def _canonical_negation(text: str) -> dict[str, int]:
+    tokens = [token.lower() for token in _TOKEN_RE.findall(text)]
+    concepts: list[str] = []
+    for index, token in enumerate(tokens):
+        if token == "no" and index + 1 < len(tokens) and tokens[index + 1] == "one":
+            concepts.append("nobody")
+        elif token in {"not", "n't"} or token.endswith("n't"):
+            concepts.append("not")
+        elif token in {"nobody", "noone", "nothing", "never", "without", "no"}:
+            concepts.append("nobody" if token in {"nobody", "noone"} else token)
+    return {concept: concepts.count(concept) for concept in set(concepts)}
+
+
+def _is_pronoun_one(tokens: list[str], index: int) -> bool:
+    token = tokens[index]
+    if token != "one":
+        return False
+    previous = tokens[index - 1] if index else ""
+    following = tokens[index + 1] if index + 1 < len(tokens) else ""
+    return previous in {"no", "the", "another"} or following in {"another", "of"}
+
+
+def explicit_number_values(text: str) -> list[int | float]:
+    """Extract comparable number values while avoiding pronoun ``one``."""
+    tokens = [token.lower() for token in _TOKEN_RE.findall(text)]
+    values: list[int | float] = []
+    for index, token in enumerate(tokens):
+        if _is_pronoun_one(tokens, index):
+            continue
+        if token in NUMBER_WORD_VALUES:
+            values.append(NUMBER_WORD_VALUES[token])
+            continue
+        if _NUMERIC_TOKEN_RE.fullmatch(token):
+            values.append(float(token) if "." in token else int(token))
+    return values
+
+
+def _raw_number_tokens(text: str) -> dict[str, int]:
+    tokens = [token.lower() for token in _TOKEN_RE.findall(text)]
+    return {token: tokens.count(token) for token in set(tokens)
+            if token in CUE_GROUPS["number"] or _NUMERIC_TOKEN_RE.fullmatch(token)}
+
+
+def numeric_value_conflicts(original: str, candidate: str) -> bool:
+    """Return true only when both sides expose comparable, different values."""
+    before, after = explicit_number_values(original), explicit_number_values(candidate)
+    return bool(before and after and before != after)
+
+
+def _canonical_cue_snapshot(text: str, group: str) -> dict[str, int]:
+    if group == "negation":
+        return _canonical_negation(text)
+    if group == "number":
+        values = explicit_number_values(text)
+        return {str(value): values.count(value) for value in set(values)}
+    raw = cue_snapshot(text)[group]
+    return raw
+
+
 def logical_cue_changes(original: str, candidate: str) -> list[dict[str, Any]]:
-    before, after = cue_snapshot(original), cue_snapshot(candidate)
-    return [{"group": group, "original": before[group], "candidate": after[group]}
-            for group in CUE_GROUPS if before[group] != after[group]]
+    changes = []
+    for group in CUE_GROUPS:
+        before = _canonical_cue_snapshot(original, group)
+        after = _canonical_cue_snapshot(candidate, group)
+        if before != after:
+            changes.append({"group": group, "original": before, "candidate": after})
+    return changes
 
 
 def normalized_change_ratio(original: str, candidate: str) -> float:
@@ -95,25 +163,23 @@ def canonical_label(label: Any) -> int | None:
 
 
 class QualityFilter:
-    def __init__(self, verifier: Verifier, semantic_threshold: float = 0.80,
+    def __init__(self, verifier: Verifier, semantic_threshold: float = 0.90,
                  nli_threshold: float = 0.80, min_change_ratio: float = 0.03,
                  hard_cue_types: set[str] | None = None) -> None:
         self.verifier = verifier
         self.semantic_threshold = semantic_threshold
         self.nli_threshold = nli_threshold
         self.min_change_ratio = min_change_ratio
+        # Kept as an injectable compatibility attribute; generic cue groups do
+        # not become vetoes in policy v2.
         self.hard_cue_types = hard_cue_types or HARD_CUE_TYPES
 
     def evaluate_batch(self, items: Sequence[dict[str, Any]]) -> list[Decision]:
-        """Evaluate all candidates with one semantic and one pair-NLI call.
-
-        The verifier itself chunks these pair lists according to its configured
-        batch size. Basic checks are assembled before inference and scores are
-        mapped back to their original candidate positions.
-        """
         if not items:
             return []
-        decisions = [Decision(True, [], {"logical_cue_changes": [], "hard_cue_changes": [], "soft_cue_changes": []}, []) for _ in items]
+        decisions = [Decision(True, [], {"logical_cue_changes": [], "hard_cue_changes": [],
+                                        "hard_numeric_value_changes": [], "soft_cue_changes": []}, [])
+                     for _ in items]
         semantic_pairs: list[tuple[str, str]] = []
         semantic_map: list[tuple[int, str]] = []
         nli_pairs: list[tuple[str, str]] = []
@@ -141,15 +207,18 @@ class QualityFilter:
                 for change in changes:
                     change = {**change, "field": field_name}
                     scores["logical_cue_changes"].append(change)
-                    if change["group"] in self.hard_cue_types:
-                        scores["hard_cue_changes"].append(change)
-                    elif change["group"] in SOFT_CUE_TYPES:
+                    if change["group"] in SOFT_CUE_TYPES:
                         scores["soft_cue_changes"].append(change)
-                if changes:
-                    if any(change["group"] in self.hard_cue_types for change in changes):
-                        decisions[index].reasons.append("hard_cue_changed")
-                    elif any(change["group"] in SOFT_CUE_TYPES for change in changes):
-                        decisions[index].flags.append("soft_cue_changed")
+                    if change["group"] == "number" and numeric_value_conflicts(original_text, candidate_text):
+                        scores["hard_cue_changes"].append(change)
+                        scores["hard_numeric_value_changes"].append(change)
+                changed_groups = {change["group"] for change in changes}
+                for group in sorted(changed_groups):
+                    decisions[index].flags.append(f"{group}_changed")
+                if "number" in changed_groups and numeric_value_conflicts(original_text, candidate_text):
+                    decisions[index].reasons.append("numeric_value_changed")
+                if changes and changed_groups.intersection(SOFT_CUE_TYPES):
+                    decisions[index].flags.append("soft_cue_changed")
                 semantic_pairs.extend(((original_text, candidate_text), (candidate_text, original_text)))
                 semantic_map.extend(((index, f"{field_name}_forward"), (index, f"{field_name}_backward")))
             nli_pairs.append((item["candidate_premise"], item["candidate_hypothesis"]))
@@ -181,7 +250,6 @@ class QualityFilter:
                  candidate_premise: str, candidate_hypothesis: str, gold_label: int,
                  augmented_field: str, was_truncated: bool = False,
                  truncation: dict[str, bool] | None = None) -> Decision:
-        """Compatibility wrapper around the batch implementation."""
         item = {"original_premise": original_premise, "original_hypothesis": original_hypothesis,
                 "candidate_premise": candidate_premise, "candidate_hypothesis": candidate_hypothesis,
                 "gold_label": gold_label, "augmented_field": augmented_field,

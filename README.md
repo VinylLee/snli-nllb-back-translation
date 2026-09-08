@@ -32,7 +32,9 @@ python scripts/back_translate_nllb.py \
   --pivot-lang fra_Latn \
   --augmentation-mode separate \
   --quality-filter on \
-  --semantic-threshold 0.80 \
+  --source-nli-gate on \
+  --source-nli-threshold 0.80 \
+  --semantic-threshold 0.90 \
   --nli-threshold 0.80 \
   --filter-batch-size 32 \
   --chunk-size 64 \
@@ -42,17 +44,12 @@ python scripts/back_translate_nllb.py \
 ```
 
 Quality filtering is on by default and uses
-`MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli`. The `0.80` thresholds are
-engineering starting points, not calibrated optima. Semantic checks require
+`MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli`. The candidate NLI threshold `0.80` remains an engineering starting point; the default semantic threshold is now `0.90` as a conservative calibration-informed candidate, not a calibrated optimum. Semantic checks require
 both original-to-candidate and candidate-to-original entailment. Pair-level
 NLI must retain the gold label with sufficient probability. Verifier calls are
 batched per chunk and internally respect `--filter-batch-size`.
 
-Logical cues are split into two policies. Negation and numbers are hard cues:
-changes reject a candidate. Numeric literals are open-ended, including
-integers such as `11` and `100` and decimals such as `3.5`; common number words
-are also tracked. Quantifiers, modals, time, and space are soft cues: changes
-are recorded in `soft_cue_changes` and passed to semantic/NLI verification.
+Logical cue changes are primarily diagnostic flags. Negation forms such as `not`/`n't` and `nobody`/`no one` are canonicalized, as are equivalent number forms such as `5`/`five`. Only a reliable explicit numeric value conflict is an independent hard failure; other negation, number, quantifier, modal, time, and space changes are passed to semantic/NLI verification.
 
 Truncation metadata distinguishes detected overflow from actual tokenizer
 truncation. Without `--allow-truncation`, an over-limit source is rejected as
@@ -88,6 +85,14 @@ python scripts/back_translate_nllb.py \
 `--quality-filter off` preserves legacy accept-all behavior except for
 structural and input-length failures. With deterministic beam search
 (`do_sample=false`), `--seed` does not create beam diversity.
+
+## Quality Policy v2
+
+The current conservative production profile enables the original-pair NLI source gate (`--source-nli-gate on`, threshold `0.80`) before NLLB generation. Only `RELIABLE_GOLD` sources are augmented. Candidate NLI preservation remains at `0.80`, while the default bidirectional semantic threshold is `0.90`; this is a calibration-informed conservative candidate, not a proven optimum.
+
+Logical cue changes are primarily diagnostic flags. Negation forms such as `not`/`n't` and `nobody`/`no one` are canonicalized, as are equivalent number forms such as `5`/`five`; only a reliable explicit numeric value conflict is an independent hard failure. Decoder EOS/max-new-token cutoffs are detected in both translation stages and rejected as `generation_truncated`.
+
+The existing calibration audit can be reclassified offline with `python scripts/simulate_policy_v2.py`. Historical candidates do not contain decoder EOS/max-new-token metadata, so that simulation cannot apply the generation-truncation gate.
 
 ## Data and tests
 
