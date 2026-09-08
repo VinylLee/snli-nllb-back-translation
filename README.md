@@ -100,6 +100,16 @@ Logical cue changes are primarily diagnostic flags. Negation forms such as `not`
 
 The existing calibration audit can be reclassified offline with `python scripts/simulate_policy_v2.py`. Historical candidates do not contain decoder EOS/max-new-token metadata, so that simulation cannot apply the generation-truncation gate.
 
+## Secondary semantic verifier bake-off
+
+The analysis-only bake-off is run with
+`python scripts/bakeoff_semantic_verifiers.py --device cpu --batch-size 32`.
+It reads the frozen V2 audit and review artifacts, scores
+`cross-encoder/stsb-roberta-base` and `FacebookAI/roberta-large-mnli`, and
+writes anchor, score, threshold-simulation, and disagreement artifacts. It
+does not call NLLB or alter production decisions. The optional BART model is
+not required.
+
 ## Data and tests
 
 Original SNLI files are under `data/nli/original_dataset/snli/` and are not
