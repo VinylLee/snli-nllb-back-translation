@@ -110,6 +110,20 @@ writes anchor, score, threshold-simulation, and disagreement artifacts. It
 does not call NLLB or alter production decisions. The optional BART model is
 not required.
 
+The final analysis-only bake-off is run with:
+
+```bash
+python scripts/final_semantic_metric_bakeoff.py --device cpu --batch-size 32
+```
+
+It reuses the frozen V2 audit (no NLLB generation), compares STS-large and
+BLEURT with the previously recorded STS-base and RoBERTa-MNLI scores, and
+produces expert-anchor, threshold-sweep, and disagreement review artifacts
+under `data/nli/calibration/`. BLEURT values are raw regression scores, not
+probabilities. The targeted expert set is selection-biased and is not a
+benchmark; bake-off results are analysis-only and do not change production
+filtering or thresholds.
+
 ## Data and tests
 
 Original SNLI files are under `data/nli/original_dataset/snli/` and are not
