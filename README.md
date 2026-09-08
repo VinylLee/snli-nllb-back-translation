@@ -110,6 +110,32 @@ writes anchor, score, threshold-simulation, and disagreement artifacts. It
 does not call NLLB or alter production decisions. The optional BART model is
 not required.
 
+## Blind accepted-precision audit
+
+The frozen V2 accepted population can be sampled for independent human review
+without exposing model outputs:
+
+```bash
+python scripts/build_precision_audit.py
+```
+
+This verifies the expected 774 accepted translated candidates, samples 40 per
+`gold_label × augmented_field` stratum with seed `20260908`, shuffles the 240
+rows, and writes one blind CSV plus six 40-row batches under
+`data/nli/calibration/`. The reviewer-facing files contain only the text, gold
+label, field, and empty review columns. Keep
+`accepted_precision_audit_key.csv` private; it contains candidate IDs and
+automatic scores for later merging. After review, analyze the completed file
+with:
+
+```bash
+python scripts/analyze_precision_audit.py
+```
+
+The analysis uses population-weighted strata and a 20,000-iteration
+stratified-bootstrap interval. No quality recommendation is produced until
+all review columns are completed.
+
 The final analysis-only bake-off is run with:
 
 ```bash

@@ -339,7 +339,7 @@ def write_report(anchors: Sequence[dict[str, Any]], expert_rows: Sequence[dict[s
         f"- BLEURT: {revisions.get('bleurt_model', BLEURT_PRIMARY)}, revision {revisions.get('bleurt', 'unknown')}; CPU raw-score runtime {runtimes.get('bleurt_full', 0):.2f}s.",
         f"- BLEURT primary fallback note: {revisions.get('bleurt_fallback_reason', 'primary model loaded') }.",
         "- RoBERTa-MNLI: existing scores reused; BART-MNLI: not run.", "",
-        "## Expert-anchor performance", "",
+        "## Expert-reviewed disagreement pairwise ranking", "",
         "| metric | PASS > FAIL pairwise ranking |", "| --- | ---: |",
     ]
     pairwise_fields = [("Current DeBERTa", "current_semantic_min"),

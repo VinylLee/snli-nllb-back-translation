@@ -11,7 +11,7 @@ Analysis-only. No NLLB, full-SNLI run, production-policy change, or threshold ch
 - BLEURT primary fallback note: ValueError: The checkpoint you are trying to load has model type `bleurt` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date. You can upda.
 - RoBERTa-MNLI: existing scores reused; BART-MNLI: not run.
 
-## Expert-anchor performance
+## Expert-reviewed disagreement pairwise ranking
 
 | metric | PASS > FAIL pairwise ranking |
 | --- | ---: |
