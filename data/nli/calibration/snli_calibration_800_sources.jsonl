@@ -1,0 +1,800 @@
+{"source_index":21,"premise":"A man with blond-hair, and a brown shirt drinking out of a public water fountain.","hypothesis":"A blond man getting a drink of water from a fountain in the park.","label":1}
+{"source_index":90,"premise":"A woman is walking across the street eating a banana, while a man is following with his briefcase.","hypothesis":"Nobody has food.","label":2}
+{"source_index":707,"premise":"a motorcyclist does a nose wheelie.","hypothesis":"A motorcyclist doing a wheelie","label":0}
+{"source_index":760,"premise":"A soccer game played by a blue team and a red team on a perfectly manicured field at dusk.","hypothesis":"People are playing soccer for a competition.","label":1}
+{"source_index":941,"premise":"A woman talks to two other women and a man with notepads in an office building with large windows.","hypothesis":"a man talks to ducks in a pond","label":2}
+{"source_index":2169,"premise":"A woman is holding a bird while sitting in a flowering tree.","hypothesis":"a woman puts her bird ina a tree","label":1}
+{"source_index":2194,"premise":"Two people are planting small bushes near a grassy area.","hypothesis":"Two people are planting bushes for charity.","label":1}
+{"source_index":3208,"premise":"A boat captain steering a large green wheel.","hypothesis":"A guy is at the green helm of a boat.","label":0}
+{"source_index":3931,"premise":"Band playing in front of a small crowd outside.","hypothesis":"There are thousands of people watching them perform.","label":2}
+{"source_index":4111,"premise":"Tattooed man getting a tattoo.","hypothesis":"A tattooed man is getting a tattoo of a Chinese character.","label":1}
+{"source_index":4403,"premise":"A man in a unique costume is playing the bagpipes while some people stare at him.","hypothesis":"A man in a unique costume is playing the bagpipes  for monetary gain.","label":1}
+{"source_index":4548,"premise":"Four musicians playing reed instruments with one playing a clarinet and three playing saxophones, being watched by a young child on a bicycle.","hypothesis":"some musicians sleep","label":2}
+{"source_index":5321,"premise":"Two young adults at a rodeo, one is helping the other to fix an injury to his arm after a brief ride.","hypothesis":"Two young adults are at a rodeo.","label":0}
+{"source_index":5450,"premise":"A heavyset man is standing next to a building.","hypothesis":"The man works in the building.","label":1}
+{"source_index":5560,"premise":"A group of young students are hanging out together in a university.","hypothesis":"Students sit together by the Student Union building.","label":1}
+{"source_index":5704,"premise":"A blond singer is performing as people dance behind her.","hypothesis":"Gwen Stefani sings while fans dance.","label":1}
+{"source_index":6279,"premise":"A man in sunglasses, a red striped sweater, and a leather jacket smiles and points his finger.","hypothesis":"A black man in sunglasses and a leather jacket is smiling while pointing a finger","label":1}
+{"source_index":7321,"premise":"A person picking garbanzo beans with her bear hands.","hypothesis":"A person picks garbanzo beans with bear paws for hands.","label":1}
+{"source_index":8269,"premise":"A dog running fast with ears flying.","hypothesis":"The dog is running fast.","label":0}
+{"source_index":8435,"premise":"A young boy sit alone in a wagon and holds on tightly to two cattle as they follow his mother's wagon down a dusty dirt road.","hypothesis":"A boy and his mother are moving.","label":1}
+{"source_index":9707,"premise":"A woman in a white jacket is standing next to an older woman while reviewing a subway map.","hypothesis":"Two two women are going to take the subway into town.","label":1}
+{"source_index":10680,"premise":"Two girls looking in microscopes.","hypothesis":"the two girls are listening to music while in science class instead of doing their homework","label":2}
+{"source_index":11003,"premise":"Two men in suits laugh together.","hypothesis":"The two guys in suits are talking and smiling.","label":1}
+{"source_index":12969,"premise":"Two men walk in the park, one with a shaggy dog on a leash and a device for cleaning up canine droppings.","hypothesis":"The dog isn't shaggy","label":2}
+{"source_index":13229,"premise":"A woman wearing a black stands in front of a counter while she holds a piece of meat.","hypothesis":"The woman is naked while holding a salad.","label":2}
+{"source_index":13559,"premise":"Two teams, one wearing blue and white, the other in red and white, are playing football.","hypothesis":"There are people playing a game.","label":0}
+{"source_index":13833,"premise":"A balding man in a dark suit and maroon tie, with a mustache and beard, plays bagpipes, as a young blond woman standing next to him in a light blue crop top and skirt listens and sticks her tongue out.","hypothesis":"a balding man with facial hair wearing a dark suit and tie plays bagpipes as a young blonde woman stands next to him in a blue shirt and skirt sticking her tongue out.","label":0}
+{"source_index":14934,"premise":"Man riding a yellow machine on a dirt field at an event","hypothesis":"a man is driving a piece of equipment on the grounds of a venue.","label":0}
+{"source_index":16601,"premise":"A lot of motorcycles lined up in Asia.","hypothesis":"The vehicles are parked.","label":1}
+{"source_index":17575,"premise":"A football player lands on his head.","hypothesis":"The football player damaged his neck.","label":1}
+{"source_index":18456,"premise":"A person plays with a mega joule contraption consisting of wire tracks and colored balls.","hypothesis":"The peson has a strange life with jouls and contraptions.","label":1}
+{"source_index":18505,"premise":"A man in jeans is lying on a wooden floor.","hypothesis":"A man and woman is holding hands.","label":2}
+{"source_index":18686,"premise":"A girl in pink is holding onto a young boy wearing red.","hypothesis":"A sister is holding onto her brother in all black.","label":2}
+{"source_index":18790,"premise":"A squirrel jumps in the snow.","hypothesis":"A squirrel is attacking a small child.","label":2}
+{"source_index":19294,"premise":"A shirtless man with sunglasses looks at the camera during a beach party.","hypothesis":"the man is a model","label":1}
+{"source_index":19844,"premise":"A young blond boy looking at a white robot on a green table.","hypothesis":"A young blond person looking at a white robot on a green table.","label":0}
+{"source_index":22740,"premise":"A man wearing an orange vest is standing on the street with a bulldozer behind him.","hypothesis":"Guy in front of a bulldozer.","label":0}
+{"source_index":26244,"premise":"A boy in a swimsuit sitting on top of a circular fountain.","hypothesis":"A funny person sitting","label":1}
+{"source_index":27041,"premise":"A man wearing a flannel shirt picking oranges in a farmer's market.","hypothesis":"The man is near some oranges.","label":0}
+{"source_index":27080,"premise":"A man wearing a gray hooded sweatshirt, blue jeans, and white and gray socks is putting his foot on top of his head.","hypothesis":"A man moves his foot","label":0}
+{"source_index":28431,"premise":"A young man performs yoga, inspired by a beautiful day on the beach.","hypothesis":"A karate battle in the woods","label":2}
+{"source_index":28875,"premise":"Boys in Africa are outside playing soccer and enjoying themselves.","hypothesis":"The kids play baseball.","label":2}
+{"source_index":29218,"premise":"A man lying down with a maroon cloth over his eyes and someone standing over him wearing flip-flops.","hypothesis":"The man is lying down.","label":0}
+{"source_index":29415,"premise":"A man is operating a weed eater behind a building, and there is a red van nearby.","hypothesis":"A man is working inside.","label":2}
+{"source_index":29765,"premise":"A man on a bicycle rides up the side of a tree.","hypothesis":"A man on a skateboard.","label":2}
+{"source_index":30056,"premise":"A man with glasses and a white shirt playing a red guitar.","hypothesis":"Billy decided to wear his white shirt with his new glasses for his guitar recital.","label":1}
+{"source_index":32175,"premise":"A child shows other kids his still packaged toy.","hypothesis":"A child has a Buzz Lightyear doll.","label":1}
+{"source_index":32579,"premise":"Two musicians are carrying speakers, guitars, and musical equipment.","hypothesis":"The musicians are going to band practice.","label":1}
+{"source_index":32673,"premise":"A man sits in the floor slapping something while another woman watches and one stands in the kitchen talking.","hypothesis":"Noone is watching the man.","label":2}
+{"source_index":34221,"premise":"Two men fix a bicycle on a trail.","hypothesis":"Two men are out in the mountains.","label":1}
+{"source_index":34858,"premise":"Wolf-like dog chasing white wiffle ball through a green field.","hypothesis":"The dog is in the field.","label":1}
+{"source_index":37727,"premise":"A person holding up a red, yellow and purple striped flag on a street.","hypothesis":"The person holds the flag of their home country.","label":1}
+{"source_index":38085,"premise":"Two young girls are playing on swings, and one is holding the other girls swing \"still.\"","hypothesis":"A girl is telling her friend it is her turn to swing.","label":1}
+{"source_index":38101,"premise":"A girl running through uneven sand with some withered grass.","hypothesis":"The girl is not wearing shoes.","label":1}
+{"source_index":38352,"premise":"A baby that is smiling big.","hypothesis":"A kid is crying.","label":2}
+{"source_index":40045,"premise":"Former First Lady Laura Bush wearing a peach colored dress speaks at a conference.","hypothesis":"Laura Bush reads a newspaper while eating an orange.","label":2}
+{"source_index":40130,"premise":"A man sitting on a rock in a grass field talking on his cellphone.","hypothesis":"The man is outside talking on his cellphone.","label":0}
+{"source_index":40441,"premise":"two men, one in a red shirt, running towards a Frisbee.","hypothesis":"Two guys trying to catch the same Frisbee","label":1}
+{"source_index":41993,"premise":"A man wearing glasses sitting at a desk with a large pile of papers.","hypothesis":"The office worker is thinking.","label":1}
+{"source_index":42372,"premise":"Young asian boy sits down and reads a book at a book fair as a female looks on.","hypothesis":"The boy is Asian.","label":0}
+{"source_index":43495,"premise":"A man with black gloves sits on someone's shoulders to take a picture.","hypothesis":"The man is short.","label":1}
+{"source_index":43588,"premise":"Two women are wearing sunglasses and eating food.","hypothesis":"Two men are playing baseball.","label":2}
+{"source_index":43604,"premise":"Two women eating food with sunglasses on.","hypothesis":"Two women are working on a puzzle.","label":2}
+{"source_index":44726,"premise":"A boy is checking a system on the computer.","hypothesis":"A boy is using a computer.","label":0}
+{"source_index":45940,"premise":"A dog runs while holding an object in its mouth.","hypothesis":"The dog brings the ball back to his owner.","label":1}
+{"source_index":46018,"premise":"Two boys in yellow shirts walk in a field.","hypothesis":"The boys are wearing soccer jerseys.","label":1}
+{"source_index":46166,"premise":"Lovers kiss before they part.","hypothesis":"lovers are kissing","label":0}
+{"source_index":46771,"premise":"Girl with glasses wearing a black horizontally striped shirt, a blue tuque, and jeans sitting on a cobblestone sidewalk and street.","hypothesis":"A girl is waiting for her ride","label":1}
+{"source_index":48670,"premise":"Two children are sitting shirtless on a trampoline.","hypothesis":"The children are outside.","label":0}
+{"source_index":48793,"premise":"A man in a jean jacket walking through town.","hypothesis":"Man takes a walk.","label":0}
+{"source_index":48999,"premise":"A person does a jump on a bike in a natural setting.","hypothesis":"A person is jumping over a bench on a bike.","label":1}
+{"source_index":49580,"premise":"A young boy looks out the window while traveling.","hypothesis":"a child is in a moving vehicle","label":0}
+{"source_index":49929,"premise":"A crowd full of people are holding flags and signs.","hypothesis":"A crowd of protesters hold anti abortion signs.","label":1}
+{"source_index":50615,"premise":"A ballet dancer poses at a photo shoot.","hypothesis":"A football player taking a hit","label":2}
+{"source_index":51049,"premise":"A young girl and an older man are checking out at the food store.","hypothesis":"The two people have just bought some food.","label":0}
+{"source_index":52691,"premise":"A street which is lined with many motorcycles.","hypothesis":"There is a parade of motorcycles.","label":1}
+{"source_index":52808,"premise":"A warehouse manager assisting an employee.","hypothesis":"The manager is about to fire the employee.","label":2}
+{"source_index":53250,"premise":"Man lining up a putt while playing mini-golf.","hypothesis":"A man plays in the PGA tournament.","label":2}
+{"source_index":53773,"premise":"A man looks across a city street at night.","hypothesis":"A man looks for criminal activity in the dark streets.","label":1}
+{"source_index":54712,"premise":"A man breakdances as a crowd watches.","hypothesis":"A man dances in front of a crowd.","label":0}
+{"source_index":54941,"premise":"The girl in the pink California Santa Cruz sweatshirt was cutting cheese for the picnic.","hypothesis":"A girl cuts the cheese.","label":0}
+{"source_index":55266,"premise":"A man wearing a cowboy hat, overalls, and a white shirt is pointing at his music sheet and looking at someone in confusion.","hypothesis":"The man is naked","label":2}
+{"source_index":55448,"premise":"A woman with blond-hair and a pink shirt holds a young boy who appears to be sad.","hypothesis":"A woman and a young boy are laughing.","label":2}
+{"source_index":56475,"premise":"The dog is running around the cow.","hypothesis":"An animal is moving.","label":0}
+{"source_index":56607,"premise":"A man dressed in all green with his face covered by a bandanna is working outdoors with heavy machinery.","hypothesis":"A man with a bandanna is outside.","label":0}
+{"source_index":56660,"premise":"A woman with a drink and a toy.","hypothesis":"a woman is lifting weights at the olympics","label":2}
+{"source_index":56738,"premise":"A woman scuba diving with a large sea turtle.","hypothesis":"A woman captures an eel for her aquarium.","label":2}
+{"source_index":58153,"premise":"A group of runners on a road outside wearing short-sleeved shirts and shorts run towards the camera while a group of bystanders lining the street watch.","hypothesis":"the camera photographs a race","label":1}
+{"source_index":58539,"premise":"A man washing his shirt, in a fountain in a park.","hypothesis":"The man is living out of his car since losing his job 5 months ago.","label":1}
+{"source_index":58989,"premise":"A man in a blue shirt is taking a picture.","hypothesis":"A man is taking a picture of a pretty lady.","label":1}
+{"source_index":60384,"premise":"Two basketball players from duke are looking upward.","hypothesis":"Two teammates are checking the scoreboard.","label":1}
+{"source_index":60930,"premise":"A man with black hair is wearing a red and yellow shirt and has a yellow clown nose and face makeup on.","hypothesis":"A man is dressed up like a clown.","label":0}
+{"source_index":61057,"premise":"A woman and three children are picking something out of a blue trashcan.","hypothesis":"A woman and kids are picking up trash.","label":1}
+{"source_index":62478,"premise":"A dog is standing in the snow watching the camera","hypothesis":"The dog is experiencing cold weather.","label":0}
+{"source_index":62874,"premise":"A man in glasses and a dust mask makes chains under a sign reading \"laut jaya.\"","hypothesis":"A man is indoors watching TV.","label":2}
+{"source_index":62914,"premise":"A man in a blue shirt playing the drums and singing.","hypothesis":"A man is playing drums and singing at the same time.","label":0}
+{"source_index":63473,"premise":"This African-American man is talking on the phone.","hypothesis":"A man is communicating","label":0}
+{"source_index":63627,"premise":"The cylinder's pattern could be described as red chevron.","hypothesis":"The cylinder was painted by someone.","label":0}
+{"source_index":64203,"premise":"A child sleeps under a pink pillow.","hypothesis":"The child is asleep","label":0}
+{"source_index":64354,"premise":"two men working in a bakery","hypothesis":"Two men checking books out of a library.","label":2}
+{"source_index":64378,"premise":"Four people swinging on a swing set.","hypothesis":"The four people are siblings.","label":1}
+{"source_index":64777,"premise":"Two girls look through a microscope.","hypothesis":"Girls are looking through an instrument","label":0}
+{"source_index":66214,"premise":"These are very well groomed animals.","hypothesis":"These are animals.","label":0}
+{"source_index":66385,"premise":"A boy in his pajamas getting ready to play something on his guitar.","hypothesis":"A boy sits in his pajamas with a guitar on his lap.","label":0}
+{"source_index":66614,"premise":"A man playing a guitar on stage while a man plays drums in the background.","hypothesis":"Two men play on stage, hoping to get discovered by someone in the crowd.","label":1}
+{"source_index":66664,"premise":"A group of people clapping as they watch a band together.","hypothesis":"A group of people are clapping as they watch a rubber band.","label":2}
+{"source_index":67736,"premise":"A dog is running through the ocean.","hypothesis":"A dog is in the ocean.","label":0}
+{"source_index":67883,"premise":"A guy catches or prepares to throw a football with various teammates and staff in the background at what looks like a school.","hypothesis":"Students play lacrosse at a school.","label":2}
+{"source_index":68719,"premise":"A person is doing a back flip while other people and cars go by in the background.","hypothesis":"The person knows how to do a flip.","label":0}
+{"source_index":69474,"premise":"A man wearing black jacket poses with a smile.","hypothesis":"A man is smiling.","label":0}
+{"source_index":69925,"premise":"There are two men engaged in a karate match, the man on the left kicks the man on the right in the face while the man on the right kicks the man on the left in the groin.","hypothesis":"The men are in a torunament.","label":1}
+{"source_index":69975,"premise":"A man in a white shirt and shorts prepares to serve a tennis ball.","hypothesis":"A man in a white shirt and shorts is ready to serve the beef wellington.","label":2}
+{"source_index":71150,"premise":"A man stands by a building playing a wooden electric guitar.","hypothesis":"A man is standing.","label":0}
+{"source_index":71585,"premise":"Two people in blue shirts are selling shoes in an outside market.","hypothesis":"The shoes are being sold by the girls.","label":1}
+{"source_index":71825,"premise":"A boy rides a game machine.","hypothesis":"A boy is riding a toy pony.","label":2}
+{"source_index":72005,"premise":"A group of people playing a game with a tennis ball on a beach.","hypothesis":"People running from a tsunami.","label":2}
+{"source_index":73032,"premise":"A man wearing blue jeans is standing outside carrying a wide assortment of items and has a large dish on his head.","hypothesis":"The man is walking a tight rope between two sky scrapers.","label":2}
+{"source_index":73520,"premise":"The woman is holding the harness that the brown and white dog is wearing.","hypothesis":"The woman is walking the brown and white dog.","label":1}
+{"source_index":73554,"premise":"A man in a neon shirt, khakis, and an orange hard hat walks by a mulch machine.","hypothesis":"A man is walking.","label":0}
+{"source_index":73820,"premise":"A young boy wearing a yellow shirt and green pants pushing a baby stroller in front of houses with red and white roofs, red doors, white railing and red floor planks.","hypothesis":"A boy walking outdoors.","label":0}
+{"source_index":74358,"premise":"A group examines a run down house.","hypothesis":"A woman feeds a tiger.","label":2}
+{"source_index":75090,"premise":"A runner is leaping over hurdles.","hypothesis":"a runner leaps","label":0}
+{"source_index":75277,"premise":"A couple embraces on a busy street.","hypothesis":"A couple reunites","label":1}
+{"source_index":75708,"premise":"A baseball pitcher wearing a blue, red and white uniform is about to throw a baseball.","hypothesis":"A baseball player prepares to throw a ball at a batter.","label":1}
+{"source_index":76076,"premise":"An individual cutting up a vegetable in their kitchen with a knife.","hypothesis":"A person making a dinner for his family.","label":1}
+{"source_index":76517,"premise":"One climber helps another in the snow.","hypothesis":"The two men are walking unobstructed in the snow.","label":2}
+{"source_index":77440,"premise":"Two children work on a project with woman.","hypothesis":"The woman is with her friends.","label":2}
+{"source_index":78138,"premise":"a woman bends down to reach in a plastic bag.","hypothesis":"A woman is putting a box on a shelf.","label":2}
+{"source_index":78367,"premise":"Two people sit in handicapped seats, one touching her ear while the other touches her eyes.","hypothesis":"two individuals run around with guns","label":2}
+{"source_index":79799,"premise":"A crowd of black people are gathered and one person has a backpack on.","hypothesis":"A crowd of teenage black people are waiting for the school to open and one of them has a backpack.","label":1}
+{"source_index":80395,"premise":"A girl at a park cooking lunch.","hypothesis":"A girl is making a hot dog for lunch.","label":1}
+{"source_index":81737,"premise":"This is an outdoor vegetable market in possibly Southeast Asia where please are selling their fruits and vegetables.","hypothesis":"This is an outdoor market where people buy meat.","label":2}
+{"source_index":82658,"premise":"A blond woman dressed in black and red is running.","hypothesis":"A young woman is working out at her local high-school's track, running laps.","label":1}
+{"source_index":83167,"premise":"A man with long black hair wearing a black shirt and multi-color tie is using a electronic board with lights on it.","hypothesis":"His hair is a different color than his shirt.","label":2}
+{"source_index":84582,"premise":"A man smiling while shining another man's shoes.","hypothesis":"A human smiling","label":0}
+{"source_index":87146,"premise":"A man with glasses is reading a book while lying in a red, orange and yellow striped hammock next to a sidewalk.","hypothesis":"A person reading","label":0}
+{"source_index":87701,"premise":"A girl wearing a white coat standing in a fountain.","hypothesis":"A girl wearing a white coat standing.","label":0}
+{"source_index":88157,"premise":"Children people run and play near a fountain.","hypothesis":"People are going into the restaurant.","label":2}
+{"source_index":88243,"premise":"A man with a white hard hat with a black logo in the front of the hat holding part of a sign with numbers on it, while standing on a balcony.","hypothesis":"The balcony is fully built.","label":0}
+{"source_index":88424,"premise":"Two young women are writing on a banner.","hypothesis":"Two women are writing.","label":0}
+{"source_index":88539,"premise":"A group of adults viewing a presentation in a school gymnasium.","hypothesis":"adults learning something","label":1}
+{"source_index":89957,"premise":"Two men in sleeveless shirts and shorts getting a beverage.","hypothesis":"two men are getting a drink","label":0}
+{"source_index":90459,"premise":"A possible woman dressed as a belly dancer holds out a cloth with beads on it.","hypothesis":"Maybe a woman is wearing a weird outfit and dances.","label":0}
+{"source_index":93659,"premise":"A man in a white shirt with a plate of food sits outside in folding chairs with a little girl who is writing.","hypothesis":"The small girl is drawing a picture of the man sleeping next to her.","label":2}
+{"source_index":93870,"premise":"This is a child in a snowy landscape sledding down a hill.","hypothesis":"The child is sledding through the snow.","label":0}
+{"source_index":93979,"premise":"A man stands outside of a doorway on his cellphone.","hypothesis":"A man with empty hands stands outside a doorway.","label":2}
+{"source_index":95485,"premise":"A woman holding a girl, who wears an apple themed coat.","hypothesis":"Woman holds a girl wearing a coat.","label":0}
+{"source_index":95970,"premise":"Many two-person kayaks fill a river surrounded by trees.","hypothesis":"People are in a stadium.","label":2}
+{"source_index":96110,"premise":"A man stands on stage with a fireworks going off beside of him.","hypothesis":"The man is sitting on the stage.","label":2}
+{"source_index":97014,"premise":"An elderly middle-eastern woman is about to smoke a pack of cigarettes.","hypothesis":"A woman is about to harm her body.","label":0}
+{"source_index":97491,"premise":"The small dog wearing a tutu stands on its hind legs.","hypothesis":"There is a dog laying down","label":2}
+{"source_index":97760,"premise":"The backs of two Asian girls, wearing red tops and holding red flags.","hypothesis":"Two girls are holding red flags.","label":0}
+{"source_index":97761,"premise":"One child is pointing to the sky and another is trying to block the sun to look","hypothesis":"The children are playing in the indoor playground.","label":2}
+{"source_index":99482,"premise":"A large brown dog is digging in the sand.","hypothesis":"A dog is digging outside.","label":0}
+{"source_index":99704,"premise":"Runners, some in costume, in a St Paddy's day Marathon run in the streets as people watch.","hypothesis":"The runners are almost finished with the St. Patrick's Day race.","label":1}
+{"source_index":99871,"premise":"A woman sitting at a desk staring at a computer screen.","hypothesis":"A woman is at work.","label":0}
+{"source_index":101119,"premise":"A man with two dogs on a beach","hypothesis":"A man is with two deer on a beach.","label":2}
+{"source_index":101993,"premise":"A woman adjusts her sunglasses.","hypothesis":"A woman wears sunglasses.","label":0}
+{"source_index":103011,"premise":"A group of people surrounding the American flag.","hypothesis":"People are around a Russian flag","label":2}
+{"source_index":103148,"premise":"People hanging about in a crowded cafe.","hypothesis":"People are in a cafe.","label":0}
+{"source_index":103393,"premise":"Three children look through a telescope in the forest.","hypothesis":"Children are looking at the stars.","label":1}
+{"source_index":104123,"premise":"A gloved man palms forward in front of arranged clothes.","hypothesis":"A man jumps forward in front of dogs.","label":2}
+{"source_index":104228,"premise":"A man is playing guitar on the otherwise empty sidewalk of a street lined with vibrant homes.","hypothesis":"A guitar player is playing on the sidewalk in front of his house.","label":1}
+{"source_index":104604,"premise":"Two people are sitting at an outdoor cafe in front of an old building.","hypothesis":"There are people sitting in a building.","label":0}
+{"source_index":105325,"premise":"Many people ride their bikes down a bike path in a city.","hypothesis":"A group of bike riders racing.","label":1}
+{"source_index":105872,"premise":"A man shovels snow off of a roof while another stands in the contraption that allowed them to reach the high place.","hypothesis":"One man is on the roof","label":0}
+{"source_index":107185,"premise":"A dad is entertaining his family by playing the guitar.","hypothesis":"The dad plays country music under the starry night.","label":1}
+{"source_index":107232,"premise":"Children getting picked up from sports practice.","hypothesis":"children getting done with sports practice","label":0}
+{"source_index":108589,"premise":"A group of people are dressed in multicolored clothes while performing an act.","hypothesis":"One of the people is wearing green","label":1}
+{"source_index":108810,"premise":"A man wearing white pants stretches out his arms as he stands on a podium, while two men and a woman are looking the other way.","hypothesis":"A man is stretching by a podium.","label":0}
+{"source_index":109794,"premise":"People filling a large black container with water.","hypothesis":"people are drinking gatorade because water sucks","label":2}
+{"source_index":109896,"premise":"A young Asian man wearing a conical straw hat holding straw goods, and another person in the back to the left holding straw goods.","hypothesis":"Two young Asian men are selling their wares at a market in China.","label":1}
+{"source_index":111292,"premise":"A man wearing a white t-shirt looking away from the camera.","hypothesis":"The is wearing a red t-shirt.","label":2}
+{"source_index":111766,"premise":"A dog is running on the sand whilst chasing a ball.","hypothesis":"the dog is on the couch in the living room","label":2}
+{"source_index":112647,"premise":"An edited picture of a couple kissing, one is holding a bouquet of flowers.","hypothesis":"The mom kissed her son on the forehead.","label":2}
+{"source_index":113130,"premise":"A person wearing a red shirt sitting in the middle of fresh fruit and vegetables.","hypothesis":"A person is surrounded by food.","label":0}
+{"source_index":113482,"premise":"Construction worker, welding on high beam.","hypothesis":"The worker gets paid","label":1}
+{"source_index":114570,"premise":"A man in a green parks looks over his shoulder at a policeman who is helping an injured bicyclist lying in the street.","hypothesis":"man looks at policeman","label":0}
+{"source_index":115153,"premise":"A woman in dark sunglasses checks her mobile phone while two woman walk the city crosswalk.","hypothesis":"A girl drops her phone in a stream in the country side.","label":2}
+{"source_index":117040,"premise":"A group of ladies with computers sit behind a table while people on the other side purchase something.","hypothesis":"People are purchasing necessary items.","label":1}
+{"source_index":117167,"premise":"An old man in front of an Iron Man truck.","hypothesis":"The man is working on the engine of the Iron Man truck.","label":1}
+{"source_index":117651,"premise":"A dog taking a poop in the street.","hypothesis":"A dog is pooping.","label":0}
+{"source_index":118176,"premise":"A young girl in a red shirt hitting a tennis ball with a pink racket","hypothesis":"The girl is winning the tennis match.","label":1}
+{"source_index":118210,"premise":"A group of African boys of different ages tending to their cattle, with bushes in the background and small wagon in the center of the picture.","hypothesis":"The boys are slopping the hogs.","label":2}
+{"source_index":118275,"premise":"A group of people digging a large hole.","hypothesis":"A bulldozer digging a hole.","label":2}
+{"source_index":119934,"premise":"A man is bending down repairing a house.","hypothesis":"The man is near the house.","label":0}
+{"source_index":121762,"premise":"A dog walking through the water at the ocean.","hypothesis":"A cat walking through the water at the ocean.","label":2}
+{"source_index":123524,"premise":"Factory workers standing in uniform next to their product.","hypothesis":"The factory workers are sitting.","label":2}
+{"source_index":123536,"premise":"The black and white dog is running on the grass.","hypothesis":"The black and white dog is running.","label":0}
+{"source_index":124930,"premise":"A woman standing in front of a building as others go about their day.","hypothesis":"I women waiting on friends outside a building.","label":1}
+{"source_index":125168,"premise":"Two cyclists competing in road race, one in front of the other.","hypothesis":"Two people are racing.","label":0}
+{"source_index":125334,"premise":"A woman wearing a sparkly blue costume, leaps into the air while swirling a green ribbon in her left hand.","hypothesis":"The woman is in a play.","label":1}
+{"source_index":126619,"premise":"Five men wearing black shorts are leaving the starting blocks in a track competition with few spectators.","hypothesis":"Five men are racing.","label":0}
+{"source_index":126867,"premise":"A woman in a brown coat is reading a book.","hypothesis":"A woman reading the first published copy of her new book.","label":1}
+{"source_index":129375,"premise":"A woman holding a microphone wearing a brown jacket, in front of a sign which says \"comedians you should know.\"","hypothesis":"A woman is advertising for a sign promoting comedians.","label":1}
+{"source_index":129526,"premise":"People walking past a fashion shops.","hypothesis":"People are eating in a restaurant","label":2}
+{"source_index":129767,"premise":"A young long-haired girl is out skipping on the sidewalk on a sunny day.","hypothesis":"The boy is rolling a can down the street in the rain.","label":2}
+{"source_index":130156,"premise":"A person is suspended by wires and poles against a blue sky.","hypothesis":"There is a highwire act that is too high and it suspended between two buildings.","label":1}
+{"source_index":132011,"premise":"A woman and a man sit on a stone bench, with tall buildings behind them.","hypothesis":"Two people sitting on a bench.","label":0}
+{"source_index":133213,"premise":"A shirtless man, wearing sunglasses and yellow shorts is making a heart sign towards the camera.","hypothesis":"Grocery stores are busy with shoppers hoping to win a free turkey.","label":2}
+{"source_index":134525,"premise":"People on the sideline of a soccer match.","hypothesis":"People are watching a college basketball game.","label":2}
+{"source_index":134613,"premise":"A redheaded woman with a scarf in her hair, wearing a white sweater with black bows on it.","hypothesis":"The woman is out Christmas Carolling in the winter time.","label":1}
+{"source_index":135071,"premise":"A man wearing a belt, a tan jacket and brown shoes is walking next to a woman with a brown purse, a black outfit, and sunglasses on a sidewalk.","hypothesis":"People are walking outdoors.","label":0}
+{"source_index":135294,"premise":"A father and his son and daughter play by the waters edge.","hypothesis":"A father is spending his saturday with his kids","label":1}
+{"source_index":136271,"premise":"People riding motorbikes down the street.","hypothesis":"People are rowing a boat on a river","label":2}
+{"source_index":136456,"premise":"A painter is standing on smaller silver ladder and there is another silver ladder close by.","hypothesis":"A man is standing on a ladder painting.","label":0}
+{"source_index":137962,"premise":"The rugby players play on a field.","hypothesis":"A group of rugby players practices outside.","label":1}
+{"source_index":138010,"premise":"A lady wearing a bonnet is sitting down with her hands on her lap.","hypothesis":"A man is standing in a field.","label":2}
+{"source_index":138280,"premise":"Person in a red hat walking on a sidewalk on a snowy day.","hypothesis":"The lady wore a red hat while she walked on the snowy sidewalk.","label":0}
+{"source_index":138332,"premise":"Two young boys wearing collared shirts and baseball caps have their blue-tinted tongues stuck out.","hypothesis":"A couple of young baseball players at a park.","label":1}
+{"source_index":138618,"premise":"A person riding transit (catching?) a paper bag.","hypothesis":"A person with a paper bag.","label":1}
+{"source_index":138993,"premise":"A group of girls in leotards.","hypothesis":"Some women in jumpsuits.","label":2}
+{"source_index":141282,"premise":"A view of large field ringed by trees, with a large group of people milling about on the field.","hypothesis":"They are waiting for a picnic to start.","label":1}
+{"source_index":141386,"premise":"A sari-garbed woman is smiling at the camera.","hypothesis":"The woman is yelling at the photographer.","label":2}
+{"source_index":141712,"premise":"A man is asleep on the ground near two bank machines.","hypothesis":"A man is asleep on the ground to take rest.","label":1}
+{"source_index":141719,"premise":"A boy watches his classmates play in a courtyard, looking from above.","hypothesis":"A boy watches his classmates play.","label":0}
+{"source_index":142281,"premise":"Men wearing black and white striped shirts and red scarves carry a shrine on their shoulders.","hypothesis":"Men are carrying a shrine on their shoulders.","label":0}
+{"source_index":143023,"premise":"A group of women in pink dresses, walking across a street.","hypothesis":"A group of women are walking to a wedding they're attending.","label":1}
+{"source_index":143539,"premise":"A baby with its eyes closed is holding a wooden toy and biting it.","hypothesis":"The child is chewing its toys.","label":0}
+{"source_index":145395,"premise":"Old woman with lots of ornate clothing and jewelry.","hypothesis":"A grandmother is have a garage sale getting rid of her Clothing and jewelry since she has too many","label":1}
+{"source_index":145658,"premise":"A group of school children looking at a group on men wearing white shirts","hypothesis":"A group of kids are together.","label":0}
+{"source_index":146160,"premise":"Several people walk by a rickshaw containing a sleeping cat.","hypothesis":"People walking as a group in a tour","label":1}
+{"source_index":146990,"premise":"A cyclist in a red, yellow and black uniform, including a helmet is performing a trick on his bike.","hypothesis":"A cyclist is preforming a bike trick.","label":0}
+{"source_index":147325,"premise":"Three girls are walking along the sidewalk together and the one in the middle is bouncing a basketball.","hypothesis":"Three girls are on their way to the park to shoot some hoops.","label":1}
+{"source_index":148216,"premise":"Man trying to guide a kit in the desert.","hypothesis":"A man is trying to guide a kit in the desert","label":0}
+{"source_index":148356,"premise":"A man in a red shirt is interacting with a woman holding a shopping bag.","hypothesis":"A red-haired rides a go-cart.","label":2}
+{"source_index":150141,"premise":"The woman in glasses is smiling with the ocean in the background","hypothesis":"The woman is mad that her glasses are broken.","label":2}
+{"source_index":150619,"premise":"A person in a yellow coat is carrying a bag of three oranges.","hypothesis":"A man  in a yellow coat is carrying a bag of three oranges.","label":1}
+{"source_index":150697,"premise":"a woman holding a small ball chasing after a small boy.","hypothesis":"The woman is sleeping in bed.","label":2}
+{"source_index":151152,"premise":"Several men sit with their green nets in fishing boats.","hypothesis":"The men are standing in the boats.","label":2}
+{"source_index":151395,"premise":"Eight people are on an escalator going up or down.","hypothesis":"Group of people taking an escalator.","label":0}
+{"source_index":155127,"premise":"A skateboarder riding up to a slope.","hypothesis":"There is someone on the skateboard.","label":0}
+{"source_index":158708,"premise":"An elderly man in a leather jacket with a scarf is holding up a sign.","hypothesis":"A man is holding up a sign.","label":0}
+{"source_index":159279,"premise":"playing the guitar in front of the color purple.","hypothesis":"some instruments can only be played with particular colours","label":2}
+{"source_index":159758,"premise":"A man in a white shirt black tie looks out of the elevator shaft of a parking garage.","hypothesis":"A woman cries of happiness.","label":2}
+{"source_index":160952,"premise":"Hikers walking up red clay path.","hypothesis":"Hikers follow a path to get to a waterfall.","label":1}
+{"source_index":161674,"premise":"A male is leaping above white water.","hypothesis":"A male leaps.","label":0}
+{"source_index":163028,"premise":"A smiling young girl in braids is playing ball.","hypothesis":"A child kicking a ball while playing.","label":1}
+{"source_index":163640,"premise":"Old man is fixing overturned bike.","hypothesis":"Man is fixing a bike.","label":0}
+{"source_index":164057,"premise":"A man holding a sign and a man playing a guitar are speaking in front of a crowd.","hypothesis":"A woman holding a sign is begging for money near her husband pretending to be a guitar player.","label":2}
+{"source_index":164421,"premise":"An older man with white hair and beard reading a map as he's walking through an unfamiliar city.","hypothesis":"The man is sitting on a park bench.","label":2}
+{"source_index":165214,"premise":"Two women making decorations on a wall.","hypothesis":"Two women are sleeping.","label":2}
+{"source_index":166345,"premise":"A young girl is drawing with an orange crayon.","hypothesis":"watched by a group","label":1}
+{"source_index":167082,"premise":"Four women, two with id badges.","hypothesis":"Two women have badges.","label":0}
+{"source_index":167459,"premise":"A construction worker assembles a scaffold.","hypothesis":"The scaffold was assembled by the worker.","label":0}
+{"source_index":167720,"premise":"an asian girl looking surprised in front of a brick window","hypothesis":"There is an arabian man looking surprised.","label":2}
+{"source_index":168963,"premise":"A man is on a casual bike ride during the day into town.","hypothesis":"A woman is wearing roller skates near the beach.","label":2}
+{"source_index":169049,"premise":"Man and baby posing in front of an engine of an old train.","hypothesis":"The baby is driving the train.","label":2}
+{"source_index":169137,"premise":"Two people riding a bike are riding towards a stop sign.","hypothesis":"A couple ride a bike together.","label":1}
+{"source_index":169167,"premise":"Skater does a trick on a rail.","hypothesis":"The skater is performing for a cameraman.","label":1}
+{"source_index":169975,"premise":"A street vendor is sitting on the ground in front of the shirts he is selling.","hypothesis":"The street vendor looks tired.","label":1}
+{"source_index":170191,"premise":"A game of dominoes is being played.","hypothesis":"Two men are playing a card game.","label":2}
+{"source_index":170297,"premise":"Two Latin dancers dancing with Mariachi band playing in the background with a crowd watching.","hypothesis":"The dancers are performing for the crowd.","label":0}
+{"source_index":171597,"premise":"A small South American child running on a cobblestone pathway, by a blue wall with a door.","hypothesis":"A small girl runs along a pathway towards a house.","label":1}
+{"source_index":172675,"premise":"a sparsely-populated arcade with many brightly lit games and a few people sprinkled around.","hypothesis":"The arcade is closed.","label":2}
+{"source_index":172947,"premise":"Three young boys on a beach in swimsuits- two standing facing the water and one sitting on a rock- are in a rocky area with yellow wildflowers in the foreground while in the background many people recreate on a sandy shore.","hypothesis":"Three boys play nintendo.","label":2}
+{"source_index":173016,"premise":"A man bending over holding a tennis ball and playing with his dog.","hypothesis":"The man and his dog are playing basketball at the gym.","label":2}
+{"source_index":173774,"premise":"In China, workers in the field carry out their tasks as the sun sets.","hypothesis":"Workers in China carry out tasks as the sun sets.","label":0}
+{"source_index":175645,"premise":"Kids jump their bikes off of dirt ramps near a waterfront.","hypothesis":"Humans jumping","label":0}
+{"source_index":176277,"premise":"people in white shirts and backpacks looking around one of them holding a small camera.","hypothesis":"Some people are dressed in formal wear at the museum.","label":2}
+{"source_index":176740,"premise":"Five children are sitting and standing in front of an open green tent, holding food with a trashcan and table that had food on it behind them.","hypothesis":"Five kids are standing in front of a tent.","label":0}
+{"source_index":176956,"premise":"A woman in a magazine stand.","hypothesis":"The magazine stand has a wide variety of material.","label":1}
+{"source_index":177271,"premise":"A young lady in a colorful dress, holds a white stuffed animal stands in the rain hold a plaid umbrella.","hypothesis":"A lady wearing a colorful dress holds a plaid umbrella and a white stuffed animal in the rain.","label":0}
+{"source_index":177566,"premise":"A little boy with a green shirt is running on a rock ledge.","hypothesis":"A child is running.","label":0}
+{"source_index":177718,"premise":"Three women are rollerskating in full roller derby attire.","hypothesis":"Three women are rollerskating","label":0}
+{"source_index":178067,"premise":"A man with a red hat looking at something in a glass counter and starfish on top in a metal container.","hypothesis":"A man is looking at an object.","label":0}
+{"source_index":178078,"premise":"Young African people drum in the streets.","hypothesis":"Asian girls dancing in the streets.","label":2}
+{"source_index":180986,"premise":"Two white dogs play together on a slightly snowy patch of green grass.","hypothesis":"dog chasing man on snow","label":2}
+{"source_index":182297,"premise":"A man is snowboarding over a structure on a snowy hill.","hypothesis":"The snowboard has stripes.","label":1}
+{"source_index":182307,"premise":"The child in white is on the monkey bars, while the one in brown stands below.","hypothesis":"Kids walking home.","label":2}
+{"source_index":182879,"premise":"A girl with a purple shirt with a heart on it is making an electrical switch.","hypothesis":"A student is working in her technology education class.","label":1}
+{"source_index":183621,"premise":"two women walk down some stairs with intricate designs on the railings","hypothesis":"The railings had designs.","label":0}
+{"source_index":184494,"premise":"An oriental woman in a white gabardine and dressy shoes standing outside waiting for a ride.","hypothesis":"The woman is a bride on her way to a church.","label":1}
+{"source_index":184671,"premise":"A person in a yellow safety vest kneeling in the street.","hypothesis":"A plane is taking off on a stormy day.","label":2}
+{"source_index":184879,"premise":"A young girl expanding the time of childhood through colorful play.","hypothesis":"The girl is painting with all the colours of the rainbow.","label":1}
+{"source_index":185263,"premise":"A man and two young girls in a forest.","hypothesis":"A man and his two daughters eat ice cream indoors.","label":2}
+{"source_index":188183,"premise":"group of people by the ocean holding a net","hypothesis":"A group of people are near the ocean.","label":0}
+{"source_index":188199,"premise":"A woman with a floral shirt and purse and a man with a black shirt are walking while another man walks behind them.","hypothesis":"the woman has a purse","label":0}
+{"source_index":188555,"premise":"Several people are holding containers of alcohol in a room.","hypothesis":"People holding containers on alcohol.","label":0}
+{"source_index":188590,"premise":"A man wearing a business suit and a newsie cap clicks his heels in excitement.","hypothesis":"An excited businessman clicks up his heels","label":0}
+{"source_index":188599,"premise":"A man with an olive green shirt and messy hair plays a colorful drum set.","hypothesis":"A man plays the drums.","label":0}
+{"source_index":188981,"premise":"A man in a black sweatshirt and jeans holds a black acoustic guitar and converses with a passerby.","hypothesis":"A man holds his guitar and talks to a man who just gave him a tip.","label":1}
+{"source_index":189281,"premise":"a group sitting at a table discussing a subject.","hypothesis":"peoples are tested by group discussion.","label":1}
+{"source_index":192390,"premise":"A woman, fit and toned, runs in a race as a crowd of runners follow.","hypothesis":"Everybody is walking slowly.","label":2}
+{"source_index":192973,"premise":"Several people are washing themselves off using showers at the beach.","hypothesis":"some people are in beach","label":1}
+{"source_index":194020,"premise":"A man on a laptop at a table.","hypothesis":"A man using a computer.","label":0}
+{"source_index":195461,"premise":"A group of children wearing colorful hats are smiling at the camera.","hypothesis":"Some children are getting their picture taken.","label":0}
+{"source_index":195920,"premise":"A single man sits on the ground with a cup in front of him.","hypothesis":"The man is all alone on the ground.","label":0}
+{"source_index":196673,"premise":"A biker reaches the apex of his ramp while onlookers watch his feat.","hypothesis":"A biker reaches the apex of his ramp.","label":0}
+{"source_index":197235,"premise":"A man is fishing on an inlet in the ocean.","hypothesis":"A man fishing in the ocean.","label":0}
+{"source_index":199215,"premise":"Ready and set as two hockey players on the ice wait with sticks out in front of them, anticipating the puck.","hypothesis":"The hckey game is about to begin.","label":1}
+{"source_index":200568,"premise":"A multicolor cat fighting with a black and brown dog in a red collar.","hypothesis":"A cat and dog are fighting.","label":0}
+{"source_index":200662,"premise":"A man in a hat is walking across a lawn from a small truck to a van with a satellite.","hypothesis":"A man is wearing a secret service outfit.","label":1}
+{"source_index":200772,"premise":"A wakeboarder is traveling across the water behind a ramp.","hypothesis":"The wakeboader is a man.","label":1}
+{"source_index":202122,"premise":"A group of people sit outdoors around a small, short table.","hypothesis":"The dryer is broken.","label":2}
+{"source_index":203055,"premise":"A person in a colorful wig is wiping white cream on a woman's face.","hypothesis":"a rabbit runs","label":2}
+{"source_index":204391,"premise":"A smiling man on a horse in front of brush and woods.","hypothesis":"A man enjoys a day in the woods with his horse.","label":1}
+{"source_index":204719,"premise":"The men are waving as they are standing in snow.","hypothesis":"A group of men are enjoying a day at the pool.","label":2}
+{"source_index":204800,"premise":"Two women with stethoscopes and a man with a blue hairnet on working tedious over an unknown object or person.","hypothesis":"Two women are running.","label":2}
+{"source_index":205153,"premise":"The men standing on the edge of a torn down building.","hypothesis":"The men are wearing safety gear.","label":1}
+{"source_index":206106,"premise":"There is a man with a red hat on his hand.","hypothesis":"There is a sad man with a red hat on his hand.","label":1}
+{"source_index":207276,"premise":"This dish is very tasty and I enjoy this dish","hypothesis":"There is food in the dish.","label":0}
+{"source_index":207574,"premise":"A man surfing on big waves with a watch on.","hypothesis":"He is in a surfing tournament.","label":1}
+{"source_index":208906,"premise":"People at a concert wave their hands in the air as they watch the singer and guitarist perform.","hypothesis":"People enjoying music at a concert.","label":0}
+{"source_index":209139,"premise":"A kid is riding on a skateboard.","hypothesis":"A kid is riding a skateboard","label":0}
+{"source_index":209684,"premise":"A man sits back on an elegant sofa, sticking his feet up on the coffee table.","hypothesis":"The man is sitting down.","label":0}
+{"source_index":209775,"premise":"Eldery couple wearing hats looking at tickets on the street.","hypothesis":"the people were on concrete","label":1}
+{"source_index":211350,"premise":"Two women in military uniform are standing with other soldiers in formation.","hypothesis":"Two women in military uniform are standing with others in formation","label":0}
+{"source_index":211927,"premise":"A boat floating on blue water.","hypothesis":"The boat is about to be taken out on the water.","label":1}
+{"source_index":213001,"premise":"Two girls play in the shower with their clothes on.","hypothesis":"Two girls have their clothes on in the shower.","label":0}
+{"source_index":213279,"premise":"A large duck in flight over a rocky stream.","hypothesis":"A duck is flying over water.","label":0}
+{"source_index":213566,"premise":"A little boy in a cowboy hat eating something.","hypothesis":"The boy is eating his birthday cake with the other party guests.","label":1}
+{"source_index":214226,"premise":"A man sitting on the back of a truck underneath an umbrella.","hypothesis":"a mouse eating chees","label":2}
+{"source_index":214998,"premise":"A runner is sliding into home while the cathcer covers the plate in a softball game.","hypothesis":"A runner slides home for the winning run in a softball game.","label":1}
+{"source_index":215221,"premise":"A waveboarder skims through the surf at sunset.","hypothesis":"A person is in a waveboader competition.","label":1}
+{"source_index":215707,"premise":"A man with black hair sits in a restaurant with a glass of beer.","hypothesis":"There is a man with a drink.","label":0}
+{"source_index":215759,"premise":"White girl in a white dress and white bird-looking wings holding some blue ads.","hypothesis":"A girl is wearing a yellow suit.","label":2}
+{"source_index":215835,"premise":"Soccer players in jerseys representing two teams mill around on a soccer field.","hypothesis":"The soccer players are getting ready to play.","label":1}
+{"source_index":215950,"premise":"A guy in a blue shirt, shorts and sandals is giving a speech with a microphone to some people sitting in the front row of an auditorium.","hypothesis":"A man is giving his campaing speech.","label":1}
+{"source_index":216738,"premise":"A woman is taking a man's blood pressure in a kitchen.","hypothesis":"The woman is checking the man's health indoors.","label":0}
+{"source_index":217803,"premise":"Many people stand on an overpass looking over.","hypothesis":"People are looking at something.","label":0}
+{"source_index":218103,"premise":"A teenage girl wearing a t-shirt and bathing suit bottom jumps into a body of water.","hypothesis":"A girl jumps into water.","label":0}
+{"source_index":218557,"premise":"A boy is flying in midair while snowboarding in a hilly and wooded area.","hypothesis":"the boy is competing in a snowboard competition","label":1}
+{"source_index":219803,"premise":"A young man is having his picture taken in front of a picture of an Asian sports team, while a child walks in a ball cap walks in front of the picture.","hypothesis":"A young man gets his photo taken.","label":0}
+{"source_index":221452,"premise":"A girl in a baseball uniform getting ready to throw the ball at a game.","hypothesis":"The girl prepares to throw the ball.","label":0}
+{"source_index":221454,"premise":"A girl wearing the number one LaFayette softball uniform is about to throw the ball.","hypothesis":"Some woman are softball players.","label":1}
+{"source_index":223038,"premise":"A boy in a blue life jacket jumps into the water.","hypothesis":"There is a boy jumping into the water to play.","label":1}
+{"source_index":223113,"premise":"Two men stand in front of a building.","hypothesis":"two men stand","label":0}
+{"source_index":224071,"premise":"Three people are walking down the beach.","hypothesis":"Three men riding their motorcycles.","label":2}
+{"source_index":224732,"premise":"Shoppers look for Christmas gifts at Harrod's department store.","hypothesis":"The shoppers are finding good deals.","label":1}
+{"source_index":224812,"premise":"Little girl holding a karate trophy.","hypothesis":"A little girl is","label":2}
+{"source_index":226116,"premise":"Two females walking down the street with shopping bags.","hypothesis":"they just finished shopping","label":1}
+{"source_index":226394,"premise":"A black bird in the air with leaves in its mouth.","hypothesis":"A black bird is making a nest.","label":1}
+{"source_index":226504,"premise":"Two people raise their arms on a snowy hill in the mountains.","hypothesis":"the child was happy","label":1}
+{"source_index":226575,"premise":"Two men and a woman converse together at as EASTA meeting.","hypothesis":"A woman is shouting a men in office.","label":2}
+{"source_index":226981,"premise":"Two men are sitting by themselves in a cafe.","hypothesis":"A cafe where two men sit alone.","label":0}
+{"source_index":227619,"premise":"Two young men are leaping exuberantly on an outdoor plaza.","hypothesis":"The two men have just been stuck in concrete boots and are drowning in the Hudson River.","label":2}
+{"source_index":229906,"premise":"A dark-skinned security officer smiles.","hypothesis":"A security officer is angry and scowling.","label":2}
+{"source_index":230044,"premise":"A man with a guitar and a woman with a microphone perform.","hypothesis":"They are performing in a club","label":1}
+{"source_index":230599,"premise":"Two men are kayaking, one in front of the other.","hypothesis":"The people are sitting on the beach.","label":2}
+{"source_index":231324,"premise":"A smiling woman with dark hair is sitting at a table.","hypothesis":"A woman sits at a table.","label":0}
+{"source_index":232434,"premise":"Male figure wearing black, and surfing on a surfboard.","hypothesis":"Male in black mugs a lady on the street.","label":2}
+{"source_index":232796,"premise":"A guy and a girl having a conversation.","hypothesis":"Two people talking.","label":0}
+{"source_index":232922,"premise":"A person standing outside is using an umbrella in the heavy rain.","hypothesis":"Someone is outside.","label":0}
+{"source_index":233399,"premise":"Man swiftly riding a horse.","hypothesis":"The man is riding the horse in a race.","label":1}
+{"source_index":233423,"premise":"A gentleman in jeans and a black sweatshirt is excitedly speaking on a cellphone.","hypothesis":"A man talking with his wife on the phone.","label":1}
+{"source_index":233782,"premise":"A bunch of police officers are standing outside a bus.","hypothesis":"The police officers are driving in a car.","label":2}
+{"source_index":233919,"premise":"A man and a woman kissing while at a show.","hypothesis":"A man is attracted to a woman.","label":0}
+{"source_index":233997,"premise":"Blond child in red shirt standing on a plastic wreathed Christmas sleigh.","hypothesis":"Child wearing nothing at all standing on a sleigh.","label":2}
+{"source_index":234990,"premise":"The man in black shorts and a green shirt with the number 25 on the back is about to kick the soccer ball.","hypothesis":"He is aiming at a goal.","label":1}
+{"source_index":235554,"premise":"The man in a red shirt just got a rebound in a basketball game.","hypothesis":"The man in the red shirt is playing well","label":1}
+{"source_index":236796,"premise":"Two dancers performing in the spotlight, on stage.","hypothesis":"The dancers are performing in front of a large audience.","label":1}
+{"source_index":237247,"premise":"Two boys are standing in a kitchen.","hypothesis":"Two boys are inside a house inside a kitchen wearing pink aprons.","label":1}
+{"source_index":237389,"premise":"A woman and a small child laying in bed.","hypothesis":"two people are in bed","label":0}
+{"source_index":238210,"premise":"A bearded man is wearing a redhead scarf and holding a forked green and white branch.","hypothesis":"A man with facial hair is wearing a scarf.","label":0}
+{"source_index":238582,"premise":"A boy jumps off of a structure into a pool.","hypothesis":"He is wearing swim goggles.","label":1}
+{"source_index":238747,"premise":"A man sitting on a metal fence overlooking the water and skyline.","hypothesis":"A man sits on a fence to hide from the soldiers.","label":1}
+{"source_index":241686,"premise":"A black and white dog is jumping into the water.","hypothesis":"A dog is sleeping in the owner's backyard.","label":2}
+{"source_index":243896,"premise":"A woman on a cellphone is sitting in a chair.","hypothesis":"A woman on a phone is sitting in a chair.","label":0}
+{"source_index":244500,"premise":"This gentleman just finished a refreshing swim.","hypothesis":"A man is swimming in a pool.","label":2}
+{"source_index":246031,"premise":"A blond woman in a gray dress crossing the street.","hypothesis":"The woman is black.","label":2}
+{"source_index":248126,"premise":"one white little girl, riding on a brown and white saddle which is on top of brown adult horse with black hair, both outside on a sunny day.","hypothesis":"The girl is on the horse.","label":0}
+{"source_index":249816,"premise":"A young blond-haired boy is going down a red slide.","hypothesis":"a mother shows her kid how to slide","label":2}
+{"source_index":250993,"premise":"A man walks into a maroon building as a dog looks on.","hypothesis":"A man walks into a building in front of a dog","label":0}
+{"source_index":251441,"premise":"A sign on a store in and urban neighborhood.","hypothesis":"A banna is nailed to the wall.","label":2}
+{"source_index":252089,"premise":"A woman sitting at a desk labeled Programmes and Ice Cream, the stand appears to be out of ice cream.","hypothesis":"A female is sitting at a table with two labels, and item described in one of the labels is not at the table.","label":0}
+{"source_index":252148,"premise":"A white female sitting behind a programmes and ice cream stand.","hypothesis":"A woman waits for a friend behind a programmes and ice cream stand.","label":1}
+{"source_index":253837,"premise":"A young man in a gray t-shirt and dark pants is mowing a lawn outside a white clapboard building.","hypothesis":"there is a bee following the man","label":1}
+{"source_index":254588,"premise":"A large group of people participate in a marathon along a city street.","hypothesis":"One man stands alone on the city street","label":2}
+{"source_index":254814,"premise":"A skateboarder performs a trick in front of a business building.","hypothesis":"A skateboarder irritates business people by doing tricks downtown.","label":1}
+{"source_index":256030,"premise":"Two men on a snowy and rocky mountainside cook a meal while their teammates sit a little way away.","hypothesis":"The men are inside watching TV.","label":2}
+{"source_index":257881,"premise":"A man on a bike is seen among a crowd of people at an outdoor event.","hypothesis":"A large group of people are gathered outdoors.","label":0}
+{"source_index":258168,"premise":"Two men are swimming in a body of water, near which is an area of land covered in vegetation.","hypothesis":"the men are divers","label":1}
+{"source_index":258343,"premise":"A man working on the construction of a large boat.","hypothesis":"A man working on a boat.","label":0}
+{"source_index":258358,"premise":"A skateboarder flies through the air over the staircase of a sleek contemporary building.","hypothesis":"lion sleeps","label":2}
+{"source_index":258365,"premise":"A woman pushing a shopping cart at a grocery store.","hypothesis":"A woman carrying her bags to the car","label":2}
+{"source_index":259128,"premise":"A greyhound running on a track.","hypothesis":"Dog running.","label":0}
+{"source_index":259206,"premise":"The two boys, in matching red shirts, fell asleep in the same position.","hypothesis":"The two boys were fighting and throwing punches.","label":2}
+{"source_index":261673,"premise":"A woman is walking by a building labeled Fisher's Popcorn.","hypothesis":"A woman is walking by a popcorn stand","label":0}
+{"source_index":261954,"premise":"Two girls, one with brown hair and one with red, make toy cars.","hypothesis":"Two girls make toys together.","label":0}
+{"source_index":262023,"premise":"People sitting in a room talking to a panel.","hypothesis":"The people are at a party.","label":2}
+{"source_index":263405,"premise":"A woman is playing ice hockey.","hypothesis":"A woman proving she can be a hockey player.","label":1}
+{"source_index":263526,"premise":"A Caucasian male performing a water board trick in a lake with trees in the background.","hypothesis":"A guy sitting down beside the water surrounded by trees.","label":2}
+{"source_index":264247,"premise":"One lone skier is making his way down a snowy mountain slope which has many ski track marks visible on the snow pack and a ski lift in the background.","hypothesis":"A man is outdoors.","label":0}
+{"source_index":264764,"premise":"Two children are on a fairground ride.","hypothesis":"children are at the fair","label":0}
+{"source_index":265354,"premise":"Young Indian children in an old stone building watching an elephant who his touching one child on the head.","hypothesis":"Young Indian children watched an elephant.","label":1}
+{"source_index":266636,"premise":"People in snowy climate prepare to eat food on plates.","hypothesis":"People in a snow covered area preparing to eat a meal.","label":0}
+{"source_index":268411,"premise":"A man waits at a crosswalk holding a motorbike helmet.","hypothesis":"A dog is wearing pants.","label":2}
+{"source_index":268796,"premise":"Children playing on a merry-go-round on a chilly day.","hypothesis":"Children are playing on a merry go","label":0}
+{"source_index":270886,"premise":"A man standing by a building corner and reading a newspaper.","hypothesis":"A man is standing by a building corner and reading a book.","label":2}
+{"source_index":271518,"premise":"A group of white water rafters.","hypothesis":"The group has been rafting all day.","label":1}
+{"source_index":271629,"premise":"A woman with red eyes and green makeup on her face, holds up a beige colored, ornately designed fan to cover her mouth.","hypothesis":"A women hides her mouth behind the fan.","label":0}
+{"source_index":272383,"premise":"A lacrosse player wearing a red uniform with the number 33 on the back looks skyward while a player in a green uniform with yellow trim is visible in the background.","hypothesis":"A lacrosse player is catching a ball.","label":1}
+{"source_index":272751,"premise":"Two young women have fallen asleep at a public eating area.","hypothesis":"Sleeping women.","label":0}
+{"source_index":272787,"premise":"A young boy, arms and legs splayed wide, is leaping into the water on a rocky shoreline.","hypothesis":"A young boy is spitting.","label":2}
+{"source_index":274036,"premise":"Woman in shorts and bikini top, yellow jacket, walking.","hypothesis":"It is snowing.","label":2}
+{"source_index":276768,"premise":"Three men and one woman standing next to each other, all wearing aprons and pouring something into each others cups at the same time.","hypothesis":"3 males and 1 female are standing vertical, next to each other wearing an apron and motioning of moving something inside a cup","label":0}
+{"source_index":276879,"premise":"two kids, one with green pants and the other with a white shirt and jeans are running down a street.","hypothesis":"There are children running after someone outside.","label":1}
+{"source_index":277346,"premise":"A young male holding a fishing pole.","hypothesis":"A man carries his fishing rod.","label":0}
+{"source_index":277522,"premise":"An Indian man is writing on something in a crowd of women and children.","hypothesis":"An Indian man is writing on something.","label":0}
+{"source_index":277576,"premise":"A golfer wearing a striped red polo shirt and white pants watches his drive after swinging.","hypothesis":"The golfer is preparing food for dinner.","label":2}
+{"source_index":277858,"premise":"A guy sitting in a chair is getting a shave.","hypothesis":"A guy is in a barbershop.","label":1}
+{"source_index":277982,"premise":"A man with a black hat is standing and shading his eyes.","hypothesis":"A man is standing.","label":0}
+{"source_index":278462,"premise":"a boy swings on the swing.","hypothesis":"A boy swings on the swing his mother built.","label":1}
+{"source_index":278595,"premise":"A couple and child are watching people walk by.","hypothesis":"The family is on the way to a movie.","label":1}
+{"source_index":278717,"premise":"A woman playing tennis at a tennis game.","hypothesis":"A woman trying to win the final match for the title.","label":1}
+{"source_index":279199,"premise":"Several people on a stage with a blue background.","hypothesis":"The humans are on the ground.","label":0}
+{"source_index":280193,"premise":"A child with a stethoscope, preparing to listen to his mother heart.","hypothesis":"A child is listening to his mother's heart beat.","label":0}
+{"source_index":280508,"premise":"Men are working on scaffolding outside of a building while other men watch.","hypothesis":"Men are working indoors.","label":2}
+{"source_index":280977,"premise":"A airline stewardess serving passengers on a plane.","hypothesis":"The stewardess is a woman","label":0}
+{"source_index":281436,"premise":"A young boy, dressed in a karate gee and wearing a yellow belt, stands ready to defend himself inside a gym.","hypothesis":"A young boy is ready to defend himself from a flying spaghetti monster.","label":2}
+{"source_index":282246,"premise":"Four band members singing and playing.","hypothesis":"They play a gig at a bar","label":1}
+{"source_index":282259,"premise":"A woman in a black jacket is walking down the street with a red umbrella.","hypothesis":"A fat woman in a black jacket is walking down the street with a red umbrella.","label":1}
+{"source_index":282686,"premise":"Horrific artwork displayed at the local hipster bar.","hypothesis":"Local hipster bar is ripped off when ordering artwork and displays it anyways.","label":1}
+{"source_index":282806,"premise":"Two kids in a green tree.","hypothesis":"The kids are above the ground.","label":0}
+{"source_index":284212,"premise":"A man doing a trick on a bicycle in a wooded area.","hypothesis":"A man does a trick","label":0}
+{"source_index":285462,"premise":"A person in a dark wetsuit is surfing.","hypothesis":"A person in a white wetsuit surfing","label":2}
+{"source_index":286692,"premise":"A woman wearing a white shirt and a short, black skirt is in motion on a green, artificial surface.","hypothesis":"There is a dog playing catch.","label":2}
+{"source_index":287124,"premise":"Two female rollerskaters competing.","hypothesis":"The women are great skaters.","label":1}
+{"source_index":287246,"premise":"Two people walk in opposite directions across a brick road.","hypothesis":"The road was made with bricks.","label":0}
+{"source_index":290260,"premise":"Children playing on the beach.","hypothesis":"Kids were having fun.","label":0}
+{"source_index":290629,"premise":"A man is standing next to a vehicle in a city setting.","hypothesis":"Someone is standing by a car","label":0}
+{"source_index":290839,"premise":"The man in the red shirt pretends to play the violin with an umbrella.","hypothesis":"The man is wearing a red shirt.","label":0}
+{"source_index":291507,"premise":"The young boy is jumping into the pool on his belly.","hypothesis":"The people around the pool are afraid of getting wet after the belly flop is finished.","label":1}
+{"source_index":291984,"premise":"A woman dressed in black boots and a black trench coat is walking down the middle of the street.","hypothesis":"The woman walking down the street trips and falls.","label":1}
+{"source_index":292713,"premise":"a young girl in a pick shirt swinging up in the air on a swing set","hypothesis":"The girl is having fun on the playground at recess.","label":1}
+{"source_index":292795,"premise":"Woman looking out the window at a man.","hypothesis":"The woman is standing outdoors.","label":2}
+{"source_index":292908,"premise":"A man in a black hat holds a small girl on his shoulders.","hypothesis":"A man carries his son.","label":2}
+{"source_index":292986,"premise":"Man in black and white playing tennis.","hypothesis":"A man is inside eating dinner","label":2}
+{"source_index":293493,"premise":"A Frisbee team huddles around a Frisbee, each holding a part of it.","hypothesis":"A frisbee team does a chant before their game in a circle.","label":1}
+{"source_index":293560,"premise":"Two men in orange outfits clean up garbage spilled on the street.","hypothesis":"Two men are cleaning up garbage that was spilled after a block party.","label":1}
+{"source_index":293833,"premise":"A young girl with red-hair blows bubbles in clear water.","hypothesis":"A red headed girl is making bubbles.","label":0}
+{"source_index":294178,"premise":"A basketball player in a white jersey with the word price on it, posting up against another player in a blue uniform.","hypothesis":"a player dressed in white","label":0}
+{"source_index":294223,"premise":"A photographer capturing a skateboarder mid trick.","hypothesis":"No cameras are around when the skateboard performs his trick.","label":2}
+{"source_index":295019,"premise":"three people standing in line.","hypothesis":"Some people are standing.","label":0}
+{"source_index":295231,"premise":"A restaurant in downtown Korea.","hypothesis":"The restaurant in downtown Korea has Korean food.","label":1}
+{"source_index":295609,"premise":"a beige dog running on the grass with a tennis ball in his mouth","hypothesis":"Nobody is running","label":2}
+{"source_index":295641,"premise":"A wedding party scene with the bride throwing the bouquet of flowers to onlooking women.","hypothesis":"A bride throws the flowers to her sister.","label":1}
+{"source_index":297956,"premise":"A man in a gray shirt is pouring a drink into a flute.","hypothesis":"A woman in a gray shirt is pouring a drink into a flute.","label":2}
+{"source_index":298065,"premise":"Three dogs are together outdoors checking out a fountain.","hypothesis":"Animals by a fountain.","label":0}
+{"source_index":298894,"premise":"A professional wrestler takes a flying leap onto another wrestler.","hypothesis":"Pro wrestlers put on a show.","label":0}
+{"source_index":299161,"premise":"A couple of boys are in a gym with partially assembled bicycles.","hypothesis":"The boys are working on their bikes inside.","label":0}
+{"source_index":299206,"premise":"Two people are carrying a large bag filled with a red substance down a ally as a figure in red walks behind them.","hypothesis":"Three people are walking down the alley.","label":0}
+{"source_index":299336,"premise":"A group of surgeons wearing scrubs are performing a surgery.","hypothesis":"The group of surgeons are having a board meeting.","label":2}
+{"source_index":300966,"premise":"Two people with hard hats on standing on a brick wall.","hypothesis":"No one is wearing protective gear.","label":2}
+{"source_index":301270,"premise":"A young woman wearing sunglasses and a blue shirt is holding a white sheet while a little girl in pigtails writes on it with a marker.","hypothesis":"The little girl is coloring on a white sheet.","label":0}
+{"source_index":301629,"premise":"A male surfer catching a nice wave.","hypothesis":"A woman is surfing.","label":2}
+{"source_index":302107,"premise":"Men share an item on mini trains.","hypothesis":"men at a mini train convention","label":1}
+{"source_index":302885,"premise":"A man wearing black and white stripes is trying to stop a horse.","hypothesis":"A man is trying to keep the horse from running into the crowd.","label":1}
+{"source_index":303583,"premise":"a lone skier walking cross a snowy bank with trees in the background","hypothesis":"A person is out in the outdoors.","label":0}
+{"source_index":304578,"premise":"A girl sits at a desk and reads a paper.","hypothesis":"A boy sitting at his desk is reading a large book.","label":2}
+{"source_index":306358,"premise":"An asian lady in a red jacket taking a photo","hypothesis":"A tall human in a jacket.","label":1}
+{"source_index":307182,"premise":"A lady pouring tea into tea cups with flower print on them.","hypothesis":"a lady pouring wine for guests","label":2}
+{"source_index":307679,"premise":"An older man in a white shirt is playing a saxaphone.","hypothesis":"The man owns the saxophone.","label":1}
+{"source_index":308436,"premise":"A group of people hold on to a long skinny object.","hypothesis":"No one is holding on to an object","label":2}
+{"source_index":309108,"premise":"A woman in a brown sweater is sewing on her machine.","hypothesis":"The woman doesn't have a sewing machine.","label":2}
+{"source_index":309756,"premise":"a couple looking at food out in the cold.","hypothesis":"Two people are looking at food","label":0}
+{"source_index":310001,"premise":"A bearded man with glasses does a toe-touch.","hypothesis":"A man is moving.","label":0}
+{"source_index":310358,"premise":"a woman is walking beside a subway.","hypothesis":"The woman is in a rush.","label":1}
+{"source_index":310401,"premise":"A man using a wheelchair is talking in a field to a couple women.","hypothesis":"The man is sitting","label":0}
+{"source_index":310705,"premise":"Two girls are astonished at the sight of planes.","hypothesis":"The two girls have never seen planes before.","label":1}
+{"source_index":311121,"premise":"A woman in shorts and a white top is taking a picture with a digital camera as a young man watches.","hypothesis":"A woman in shorts and a white top is talking on her cellphone to a close friend.","label":2}
+{"source_index":311315,"premise":"A single man, riding his bike on the pier at sunset.","hypothesis":"The man is riding his bike","label":0}
+{"source_index":311574,"premise":"A woman preparing to serve a meal on the beach.","hypothesis":"It is mealtime.","label":0}
+{"source_index":311616,"premise":"Two people, a man and a woman, are on a stage at a band.","hypothesis":"They are in a band.","label":1}
+{"source_index":312572,"premise":"A middle-aged man riding his black motorcycle through a neighborhood.","hypothesis":"The man is headed home on his motorcycle.","label":1}
+{"source_index":313598,"premise":"A scuba diving class taking a picture during class time.","hypothesis":"Some people are taking ski lessons.","label":2}
+{"source_index":313693,"premise":"One of the buses is marked \"Linea Express\" while the other is marked \"Metropolitan Transit System\". ","hypothesis":"Two buses","label":1}
+{"source_index":314343,"premise":"A group of people sit in folding chairs in a small area under two umbrellas outdoors, with a few cars parked in the background.","hypothesis":"A group of people are sitting outdoors.","label":0}
+{"source_index":314877,"premise":"A middle-aged man and woman are holding hands walking in a street with people behind them.","hypothesis":"A middle-aged couple running down the bridge.","label":1}
+{"source_index":315586,"premise":"Two older women smiling and standing in front of large trees, one woman is fixing her hair.","hypothesis":"The women are skateboarding down a busy street.","label":2}
+{"source_index":316194,"premise":"Three children and three adults are outside in the yard of a home and they have a basket sitting on the lawn.","hypothesis":"Three children and three adults have a basket.","label":0}
+{"source_index":316876,"premise":"A young girl holds a crying infant.","hypothesis":"A blonde girl holds her baby sister.","label":1}
+{"source_index":318353,"premise":"Workers enjoy coffee and treats at conference table.","hypothesis":"the workers are underpaid","label":1}
+{"source_index":319482,"premise":"Two boys are looking upwards with their arms streteched to the sky, the boy on the left is wearing a blue vest jacket with a gray long-sleeved shirt and black jogging pants, and black tennis shoes and a hat, and the boy on the right is wearing a silver vest jacket, with blue long-sleeved undershirt, gray pants, and black tennis shoes and has black short hair and glasses.","hypothesis":"Two boys stretching for the sky","label":0}
+{"source_index":319797,"premise":"A woman in a gray and blue shirt smiles as she unwraps and cuts into a calzone.","hypothesis":"The woman is cutting into her arm.","label":2}
+{"source_index":321140,"premise":"A couple smiling, sitting at an event with other adults and children doing the same.","hypothesis":"Adults and children get sleepy listening to a dull speaker at an event.","label":2}
+{"source_index":321435,"premise":"A dog leaps to catch a ball in a field.","hypothesis":"A dog caught a ball in a field but then dropped it.","label":1}
+{"source_index":322012,"premise":"The lady is holding her glasses.","hypothesis":"A lady is cleaning her glasses.","label":1}
+{"source_index":322299,"premise":"A group of men playing and singing music while a crowd watches.","hypothesis":"A boy band is performing a concert for a crowd.","label":1}
+{"source_index":322472,"premise":"A big group of people are enjoying a public event.","hypothesis":"People are enjoying a public event.","label":0}
+{"source_index":323424,"premise":"Two hockey players one in yellow and one in white competing against each other to gain control of the hockey puck.","hypothesis":"Two friends are playing basketball.","label":2}
+{"source_index":324702,"premise":"The woman talks on her cellular phone while walking on a city street.","hypothesis":"The streets are crowded.","label":1}
+{"source_index":325880,"premise":"A man in a black shirt and blue jeans crawls on a table.","hypothesis":"A man wearing a black shirt.","label":0}
+{"source_index":326312,"premise":"A dog peeks out of a red play tunnel.","hypothesis":"a dog playing","label":0}
+{"source_index":326894,"premise":"People in orange shirts roll carts while people watch them.","hypothesis":"A group of workers in matching oranage shirts push carts outside as others watch them.","label":1}
+{"source_index":327111,"premise":"A child is holding an Aquafina water bottle.","hypothesis":"The man has a beer.","label":2}
+{"source_index":327544,"premise":"Two people are having a conversation as they sit at the bar.","hypothesis":"They are going to Mars","label":2}
+{"source_index":327733,"premise":"A little boy in red stands on top of a rock with a smile and outstretched arms.","hypothesis":"A little boy in red is outdoors.","label":0}
+{"source_index":328469,"premise":"A group of well-dressed young people stand in front of a congregation.","hypothesis":"There are several people in the room.","label":0}
+{"source_index":330719,"premise":"Small dog running through a field.","hypothesis":"A cat is playing with yarn.","label":2}
+{"source_index":331133,"premise":"A man in pants scaling the side of a cliff.","hypothesis":"A woman climbs the side of a building.","label":2}
+{"source_index":331212,"premise":"A little girl in a red shirt is suspended in midair on a contraption, as a man wearing white shorts looks up at her.","hypothesis":"A man and girl are swimming in the ocean","label":2}
+{"source_index":332168,"premise":"A man is leaning his head on a fancy coffin in a church.","hypothesis":"A man is leaning his head against a pulpit.","label":2}
+{"source_index":333591,"premise":"A female and a male put a long, oblong box away in an area full of boxes.","hypothesis":"A couple remove a box from an area full of boxes.","label":2}
+{"source_index":334203,"premise":"A girl with red-hair is jumping on a sand dune.","hypothesis":"A girl is outdoors.","label":0}
+{"source_index":334987,"premise":"A man, woman, and two girls walk on the beach barefoot.","hypothesis":"The group walks outside.","label":0}
+{"source_index":335668,"premise":"A cloudy sky above a busy city street.","hypothesis":"Cars are driving on clouds.","label":2}
+{"source_index":336330,"premise":"The woman carrying a backpack is facing the camera, while the man is turned away.","hypothesis":"The woman has a backpack","label":0}
+{"source_index":336368,"premise":"People are ice-skating and walking across a frozen surface with the Adobe building in the background.","hypothesis":"The people are skating.","label":0}
+{"source_index":337152,"premise":"A group of young men in colorful shirts with their number on them walk down a street.","hypothesis":"They are camping out in the wilderness","label":2}
+{"source_index":337655,"premise":"A boy in an orange shirt holds hands with an adult as he walks with a group of other children down a street.","hypothesis":"Two runners in blue t-shirts hold hands.","label":2}
+{"source_index":338139,"premise":"A mom and a young boy on a seesaw.","hypothesis":"Some high school kids smoking cigarettes outside school.","label":2}
+{"source_index":338736,"premise":"A black dog leaps in the air above the snow.","hypothesis":"The dog has snow on his fur.","label":0}
+{"source_index":338834,"premise":"A very excited man on top of a mountain jumping into the air.","hypothesis":"A man is showing his excitement on the mountain.","label":0}
+{"source_index":338871,"premise":"A snowboarder rides a snowboard down a railing beside a flight of steps.","hypothesis":"A man is watching t.v. at home.","label":2}
+{"source_index":339401,"premise":"Several people are in an enclosed garden space while a young Black boy and another person hold onto a wooden frame of a raised plant bed.","hypothesis":"There is only one person present.","label":2}
+{"source_index":339454,"premise":"Ow, my head, you silly a-hole watch what you are doing next time.","hypothesis":"Ow, you just punched me in the shoulder.","label":2}
+{"source_index":340397,"premise":"A man in a white outfit sings into a microphone.","hypothesis":"The man is wearing a green outfit.","label":2}
+{"source_index":340830,"premise":"Two individuals, in full fencing attire, with their masks on and the swords in their hands, fencing in the gym.","hypothesis":"Two men, in full fencing attire, with their masks on and the swords in their hands, fencing in the gym.","label":1}
+{"source_index":341229,"premise":"Two woman with white head coverings are gazing at a cellphone.","hypothesis":"Two men with black head coverings are gazing at a cellphone.","label":2}
+{"source_index":341509,"premise":"Two men dressed in matching blue uniforms, celebrate a victory.","hypothesis":"the men are are their house sleeping","label":2}
+{"source_index":341844,"premise":"Several men traveling down a hill riding donkeys.","hypothesis":"the men are at the restaurant eating","label":2}
+{"source_index":342089,"premise":"Children stand around water pipes awaiting clean water.","hypothesis":"The men broke the water pipes and are waiting for the repairman.","label":2}
+{"source_index":342956,"premise":"A male wearing a strange helmet covering face and head is seated on the accordion case in a street apparently blocked off, perhaps for a block party, while onlookers walk behind and listeners are seated in front in lawn chairs.","hypothesis":"a boy in a head covering is next to a blocked road that's near a crowd of people sitting on chairs","label":0}
+{"source_index":343438,"premise":"A large amount of people using sleeping bags to sleep in front of a building.","hypothesis":"A large amount of people sleeping.","label":0}
+{"source_index":343889,"premise":"A man catches a ball in front of a large crowd.","hypothesis":"The football player caught the pass.","label":1}
+{"source_index":344181,"premise":"A boy contorts his face while holding an electronic device.","hypothesis":"A boy has a cell phone.","label":1}
+{"source_index":344451,"premise":"A street performer smiles at two potential customers.","hypothesis":"An upturned hat half filled with coins sits next to the street performer.","label":1}
+{"source_index":344802,"premise":"Three Asian women having a conversation.","hypothesis":"Three white men are talking to each other.","label":2}
+{"source_index":344964,"premise":"A man in a white shirt is sitting on a curb and reading a newspaper.","hypothesis":"The man is going up an escalator.","label":2}
+{"source_index":346374,"premise":"Two boys, one in a red and one in a white uniform, fight for control over the ball during a soccer match.","hypothesis":"Two boys are playing basketball.","label":2}
+{"source_index":347590,"premise":"A child is interacting with an electronics laboratory kit.","hypothesis":"A child is bored and has no toys.","label":2}
+{"source_index":349312,"premise":"A man in mid- air while going down a sand-dune.","hypothesis":"The man is skiing in the snow.","label":2}
+{"source_index":349463,"premise":"A dark-skinned woman with a scarf on her head smiling with telephones hanging from the trees.","hypothesis":"She is climbing the tree to get a better reception.","label":2}
+{"source_index":349723,"premise":"An older man in a blue hoodie is sitting down next to his bags.","hypothesis":"A mann handing a cashier money.","label":2}
+{"source_index":350091,"premise":"Three girls dressed alike in plaid skirts and hats, green sweaters, and blue knee socks walk together.","hypothesis":"The three girls are twins.","label":1}
+{"source_index":350537,"premise":"Two men kick in the air at each other on a grassy area, while another man watches them in the background.","hypothesis":"The men are outdoors.","label":1}
+{"source_index":351322,"premise":"There are two men on a ladder one is at the top handing down to the other guy the number \"O\" as this what they do for a living.","hypothesis":"Two men are at office desks.","label":2}
+{"source_index":351356,"premise":"A black man in a white shirt is cooking on a commercial stove.","hypothesis":"A man is preparing food on the commercial stove for the restaurant patrons.","label":1}
+{"source_index":351913,"premise":"With flowers in the foreground, a man in a blue striped shirt bikes past a large white building.","hypothesis":"A man is biking outside.","label":0}
+{"source_index":352553,"premise":"Two men are looking through the solar telescopes.","hypothesis":"The men are trying to find Uranus.","label":1}
+{"source_index":352765,"premise":"A fluffy dog looking at a yellow chew toy.","hypothesis":"A dog is near a toy.","label":0}
+{"source_index":352989,"premise":"A group of people near a fun house at a carnival.","hypothesis":"A group of people near entrance at a carnival.","label":2}
+{"source_index":353921,"premise":"Two men wearing dark pants and red shirts are leaping in-synch in front of a white building.","hypothesis":"They crawl along","label":2}
+{"source_index":354675,"premise":"A person sits outside at a table and rests their head in their hand.","hypothesis":"A person is standing with the crowd at the festival concert.","label":2}
+{"source_index":355209,"premise":"A girl dressed in black with a purse on her arm is smiling at a man in a room with lots of desserts on the table.","hypothesis":"There is a girl dressed in light colored clothing frowning at a man.","label":2}
+{"source_index":355550,"premise":"A man walks on a fancy sidewalk next to an abandoned bar.","hypothesis":"the man is going to meet a friend for drinks","label":1}
+{"source_index":356013,"premise":"Three women in old-fashioned clothing stand in the street with a dog.","hypothesis":"Women are standing.","label":0}
+{"source_index":356717,"premise":"A skier is by himself in the woods.","hypothesis":"A person is outside.","label":0}
+{"source_index":357578,"premise":"Small child in green shorts and green shirt squatting and looking at something.","hypothesis":"The child is standing up.","label":2}
+{"source_index":358703,"premise":"The woman in a green sweater and the man with a cap are on the side of the road.","hypothesis":"A husband and wife next to a road.","label":1}
+{"source_index":358861,"premise":"The football players wear purple pants, gold helmets and white jerseys.","hypothesis":"The people are racing cars.","label":2}
+{"source_index":359371,"premise":"A group of men in hard hats traveling over the ocean in a small boat.","hypothesis":"A group of men travel over an ocean.","label":0}
+{"source_index":359675,"premise":"A man is taking a nap outdoors under the cover of a pink blanket.","hypothesis":"A man is dead outdoors under the cover of a pink blanket.","label":1}
+{"source_index":360401,"premise":"A policeman in sunglasses and uniform with other policemen.","hypothesis":"Two police officers are watching a suspect from afar.","label":1}
+{"source_index":360709,"premise":"Three school boys posing under a blue umbrella.","hypothesis":"The umbrella is red.","label":2}
+{"source_index":361537,"premise":"Young boy staring excitedly at a leaf.","hypothesis":"The boy looks at the veins that run along the leaf.","label":1}
+{"source_index":361621,"premise":"A woman wearing sunglasses and a black shirt is running on the beach.","hypothesis":"A woman runs away from a lobster.","label":1}
+{"source_index":363227,"premise":"a middle-aged man working on a dock.","hypothesis":"A man is fixing a dock.","label":0}
+{"source_index":364369,"premise":"A man and a woman are posing for a photo beside a rack of clothes.","hypothesis":"A man and woman are sitting on a couch.","label":2}
+{"source_index":364429,"premise":"A man and a woman are sitting on the grass together.","hypothesis":"A man and a woman are in the park","label":1}
+{"source_index":366538,"premise":"A woman in a hi-viz jacket is smiling at person carrying a stop sign in front of a crane.","hypothesis":"A woman is smiling at someone.","label":0}
+{"source_index":366985,"premise":"A curly-haired woman plays the violin.","hypothesis":"A woman is playing a stringed instrument.","label":0}
+{"source_index":369066,"premise":"A man is standing while playing the drums for an audience.","hypothesis":"A man is playing the piano.","label":2}
+{"source_index":369396,"premise":"A man is reading a newspaper at a Chinese food store.","hypothesis":"A teenage girl is standing on the table.","label":2}
+{"source_index":369541,"premise":"Five boy scouts performing on an indoor stage.","hypothesis":"the boys are five","label":1}
+{"source_index":369982,"premise":"two wrestlers fighting in a rink with a referee in the backgroud","hypothesis":"Some wrestlers are wrestling in a backyard championship match.","label":1}
+{"source_index":371082,"premise":"This is two black children dressed the same hugging.","hypothesis":"Funny humans dressed","label":1}
+{"source_index":371632,"premise":"A group of five people have picture taken while jumping in the air.","hypothesis":"The people jump in the air when the picture is taken.","label":0}
+{"source_index":371860,"premise":"Brunette female wearing yellow bikini top, has large tattoo inked across her lower back, and a blue towel draped across her right shoulder.","hypothesis":"A person in a black shirt and black shorts is holding a football.","label":2}
+{"source_index":372611,"premise":"A brown dog carries a multiple colored toy in the grass.","hypothesis":"A dog is carrying colored toys.","label":0}
+{"source_index":372919,"premise":"A woman with curly brown hair looks at a menu.","hypothesis":"The woman has decided on what she wants to eat.","label":1}
+{"source_index":373879,"premise":"Adults and children are in a rooming dancing.","hypothesis":"The clidren are watching a game","label":2}
+{"source_index":374215,"premise":"Amish guy plays golf and walks","hypothesis":"An Amish man enjoying some golf.","label":1}
+{"source_index":374596,"premise":"A group of people sitting in white plastic chairs are having a picnic.","hypothesis":"All arrived at the picnic on foot.","label":1}
+{"source_index":374679,"premise":"A man leaning into a hole in the counter.","hypothesis":"A man standing at the counter.","label":1}
+{"source_index":375404,"premise":"An elderly man takes his dog for a walk near the water.","hypothesis":"The elderly man is running with his dog.","label":2}
+{"source_index":375602,"premise":"A man is standing in a white room, with the lights turned down, holding a detailed lantern with another hanging nearby.","hypothesis":"A man is praying while holding a latern.","label":1}
+{"source_index":376513,"premise":"People walk down the busy sidewalk.","hypothesis":"People happily walk down the sidewalk.","label":1}
+{"source_index":376867,"premise":"A dog with a muzzle is leading several other dogs in a race","hypothesis":"The muzzled dog is really having fun.","label":1}
+{"source_index":377799,"premise":"Older gentleman putting a powdery substance in a swimming pool.","hypothesis":"The gentleman is 10 years old.","label":2}
+{"source_index":377914,"premise":"A woman in red is holding a microphone in front of a green background.","hypothesis":"A woman in red holds a black kidney bean.","label":2}
+{"source_index":378043,"premise":"A surfer in the distance is at the base of the wave close to the shore.","hypothesis":"A man surfs the internet at home.","label":2}
+{"source_index":379691,"premise":"People are watching a boy on a skateboard at the top of a skate ramp.","hypothesis":"People are watching a girl on a skateboard at the top of a skate ramp.","label":2}
+{"source_index":381415,"premise":"Two men in magenta costumes performing.","hypothesis":"Two men are putting on a large show.","label":1}
+{"source_index":381818,"premise":"Two men juggling in front of a group of people.","hypothesis":"Two men juggling in fornt of group of people to attract them.","label":1}
+{"source_index":382061,"premise":"There is a child wearing an orange shirt and hold an orange book.","hypothesis":"There is a child wearing a shirt and holding a book.","label":0}
+{"source_index":383277,"premise":"A man in a white shirt is playing a saxophone on a stage.","hypothesis":"the guy in the white shirt is playing music on this sax that he is renting","label":1}
+{"source_index":383368,"premise":"A man in an orange shirt and black cap is standing in front of a stage with several women dancing.","hypothesis":"A man dancing with women on stage.","label":2}
+{"source_index":384316,"premise":"A man and a woman are sleeping on a mode of public transportation.","hypothesis":"Everyone is awake riding the bus.","label":2}
+{"source_index":385656,"premise":"A man playing drums on upside down jugs.","hypothesis":"The jugs the man is playing on are very big.","label":1}
+{"source_index":387067,"premise":"A woman is running on a gravel path, while another woman in a green shirt is cheering.","hypothesis":"A woman in shorts is running.","label":1}
+{"source_index":388849,"premise":"An elderly man with a beard in a dark suit is walking through a rainy city.","hypothesis":"A young man is dancing in the streets on a sunny day.","label":2}
+{"source_index":389488,"premise":"three children in a field with white flowers","hypothesis":"Three people sit in the grass.","label":0}
+{"source_index":389577,"premise":"A man in a nun costume has a cigarette in his mouth.","hypothesis":"A person wear a costume.","label":0}
+{"source_index":390330,"premise":"A woman in a white shirt, with a red bandanna holding the end of a sign post.","hypothesis":"A woman with a red shirt and a bandana is shopping at the mall.","label":2}
+{"source_index":393497,"premise":"A chef in white clothes is putting something into a brick oven.","hypothesis":"A chef in white clothes is putting a pizza into a brick oven.","label":1}
+{"source_index":394495,"premise":"Men and women competing in a marathon.","hypothesis":"The men and women are at the end of the marathon.","label":1}
+{"source_index":394608,"premise":"A lady in a yellow shirt adjusts her sunglasses.","hypothesis":"The lady is adjusting her hat.","label":2}
+{"source_index":394965,"premise":"There is a man and a woman sitting on lawn chairs next to a skate park with a group of guys on bicycles in the background and a woman with a child in a stroller on the side of the picture.","hypothesis":"A group of people outdoors.","label":0}
+{"source_index":396067,"premise":"A girl wearing a blue shirt fixing her hair while looking into a pink mirror.","hypothesis":"A girl with blonde hair in front of a mirror.","label":1}
+{"source_index":396269,"premise":"A man tends to his laptop in what appears to be a slideshow of sorts.","hypothesis":"A man runs a slideshow.","label":0}
+{"source_index":396554,"premise":"A child in a coat and hat is standing in a yellow doorway, and a woman in a coat and hat is standing outside, holding a cup.","hypothesis":"The door is open.","label":0}
+{"source_index":397864,"premise":"A young boy listens to music through headphones in front of a kitchen.","hypothesis":"A young boy listens to rock music.","label":1}
+{"source_index":398189,"premise":"A person is standing at the top of a large, rolling sand dune.","hypothesis":"She was stranded in the desert.","label":2}
+{"source_index":398883,"premise":"A man and woman reenact a scene of a statue.","hypothesis":"A man and woman eat at a restaurant.","label":2}
+{"source_index":399855,"premise":"A girl blows into a large yellow balloon.","hypothesis":"a girl has a balloon","label":0}
+{"source_index":400206,"premise":"Two young girls have fun in an ice skating rink.","hypothesis":"The girls are wearing tights.","label":1}
+{"source_index":400731,"premise":"A group of children is performing a concert outside.","hypothesis":"A group of children is performing outside.","label":0}
+{"source_index":400864,"premise":"A person has just thrown a snowball and hit someone in the back.","hypothesis":"A person was outside playing a threw something.","label":1}
+{"source_index":402508,"premise":"Someone doing a jump on a dirt bike in the woods.","hypothesis":"A person is jumping on the dirt bike.","label":0}
+{"source_index":403554,"premise":"A man in checkered pants rides a unicycle down the street while juggling for a crowd.","hypothesis":"A man in clown make-up performs stunts for a crowd.","label":1}
+{"source_index":403976,"premise":"People are sitting at a park under flowering trees.","hypothesis":"The people are standing in the desert.","label":2}
+{"source_index":404415,"premise":"A man taking a photograph, holding a postcard","hypothesis":"There is a man holding a post card.","label":0}
+{"source_index":405381,"premise":"A child in a red jacket, sitting atop a slide.","hypothesis":"A child is sliding down a waterslide","label":2}
+{"source_index":407270,"premise":"A man standing next to a women's restroom in an orange shirt.","hypothesis":"The man's wife is in the restroom.","label":1}
+{"source_index":407321,"premise":"Several people are walking on a sidewalk while one person is laying down.","hypothesis":"a person is laying down because he is having a heart attack","label":1}
+{"source_index":411654,"premise":"A group of people are sitting around a large white banner that says \"From New York.\"","hypothesis":"There is a group of people sitting around a large white banner.","label":0}
+{"source_index":412899,"premise":"A child holding some shoes.","hypothesis":"The child is tying the shoelaces on his shoes.","label":2}
+{"source_index":413131,"premise":"A man in a white shirt is working on a laptop while another man in a black shirt points to something on the screen with a pen.","hypothesis":"The men are coworkers.","label":1}
+{"source_index":413141,"premise":"three young woman walking down a sidewalk looking up","hypothesis":"Three young women walk outside.","label":0}
+{"source_index":415665,"premise":"A girl with yellow sunglasses is laying on the ground with a girl wearing brown sunglasses.","hypothesis":"sisters lay on the ground","label":1}
+{"source_index":416052,"premise":"Man carries empty Coke bottles on his head across dirt road.","hypothesis":"Man carries empty Coke bottles outside.","label":0}
+{"source_index":417237,"premise":"Several people sitting, relaxing in the snow.","hypothesis":"The people are outdoors.","label":0}
+{"source_index":418334,"premise":"A pedicab driving sitting on the side and waiting for his next customer.","hypothesis":"The cab is waiting for a customer.","label":0}
+{"source_index":418639,"premise":"At a brick-floored area near the beach, a middle-aged white man surrounded by a white family is sitting and painting a portrait of someone.","hypothesis":"A woman is drawing dogs at the beach.","label":2}
+{"source_index":420064,"premise":"A police officer on a motorcycle talking to two men on a cobblestone street.","hypothesis":"A motorbike cop interrogates two men on a street.","label":1}
+{"source_index":421310,"premise":"A person, whose face is blocked, is working on a large wooden loom.","hypothesis":"A person, whose face is blocked, is working on a wooden loom.","label":0}
+{"source_index":422758,"premise":"A man dressed in a green jacket is playing piano while a woman sings.","hypothesis":"A man is burning a piano.","label":2}
+{"source_index":423126,"premise":"A crane is hoisting someone up next to a building.","hypothesis":"The crane is lifting up a car.","label":2}
+{"source_index":423518,"premise":"A magician performs with a burning bar placed in his front on the floor while the crowd watches closely.","hypothesis":"The magician burns himself.","label":1}
+{"source_index":424045,"premise":"A man sits under an umbrella beside a pond while he works.","hypothesis":"A woman is swimming in a pool.","label":2}
+{"source_index":424612,"premise":"Two female bikers pose on a bridge as other riders travel by in a marathon.","hypothesis":"The two woman are repelling down a rock face, attempting to get to the bottom of the rock wall.","label":2}
+{"source_index":425301,"premise":"Teenage girls in a dance recital.","hypothesis":"The high school dance team put on a great show.","label":1}
+{"source_index":426181,"premise":"Lady wearing spectacles points camera with some trepidation.","hypothesis":"A lady is holding a camera.","label":0}
+{"source_index":426473,"premise":"A little boy in a bright green field has kicked a soccer ball very high in the air.","hypothesis":"A boy watches soccer on TV at his house.","label":2}
+{"source_index":426484,"premise":"A man resting in a blue hammock, boots and pack off, as he looks out over a flowing river.","hypothesis":"A man is outside.","label":0}
+{"source_index":426839,"premise":"Two women on the patio having drinks.","hypothesis":"Two women have drinks on the deck.","label":0}
+{"source_index":427833,"premise":"A little girl in a white jacket holding a piglet toy.","hypothesis":"The little girl is caucasian.","label":1}
+{"source_index":428056,"premise":"A construction worker in a neon vest is working with electrical equipment while sparks fly.","hypothesis":"A construction worker is on his lunch break","label":2}
+{"source_index":429004,"premise":"Two women observing a fountain in a park.","hypothesis":"two women dig up their yard for a garden","label":2}
+{"source_index":430526,"premise":"A skilled surfer rides a very large wave;","hypothesis":"The surfer is sitting in the sand.","label":2}
+{"source_index":431648,"premise":"A young woman in a striped sweater, knitted hat and jeans and wearing a black winter coat is ice skating at a rink with several other young women.","hypothesis":"The woman in the sweater was rollerblading.","label":2}
+{"source_index":431938,"premise":"A woman talks on a cellphone on an Asian market street.","hypothesis":"A woman is sleeping.","label":2}
+{"source_index":431953,"premise":"A man and a woman are walking in a street.","hypothesis":"a man and a woman walk down the street","label":0}
+{"source_index":432209,"premise":"A woman in a brown flowered tank top dances with a puppet","hypothesis":"A woman is sleeping on the street.","label":2}
+{"source_index":433659,"premise":"A man riding a horse is chasing after a young cow with a lasso.","hypothesis":"a lasso is being used on a pig","label":2}
+{"source_index":436878,"premise":"A person does a trick on a skateboard.","hypothesis":"Trick on skateborad by a young boy in a busy traffic","label":2}
+{"source_index":437702,"premise":"A person swims in a pool by a waterfall.","hypothesis":"A person is near the waterfall.","label":0}
+{"source_index":438773,"premise":"Man and woman looking surprised, with the man holding headphones.","hypothesis":"They looked surprised, holding the headphones.","label":0}
+{"source_index":439665,"premise":"A man dressed in a red t-shirt and blue jeans eats food he's holding in his hand, as he walks along a busy sidewalk, with an antique-style sign advertising wedding rings on the right-hand side of the picture.","hypothesis":"A man in a suit holds a briefcase as he walks along an empty sidewalk.","label":2}
+{"source_index":441211,"premise":"Three dogs pull a sled during a race in the snow.","hypothesis":"Four dogs are winning a sled race.","label":2}
+{"source_index":441240,"premise":"four men looking at a large sign.","hypothesis":"The men are watching sports.","label":2}
+{"source_index":441625,"premise":"Three teenage boys sitting down talking and fixing their shoes.","hypothesis":"Three schoolboys take time out from soccer practice to talk","label":1}
+{"source_index":441649,"premise":"A small boy in a white shirt is jumping with a sword in his hand.","hypothesis":"Boys holding sword","label":0}
+{"source_index":442027,"premise":"A child in an orange t-shirt is riding a green bike beside a pathway.","hypothesis":"A man wearing a red shirt riding a cow.","label":2}
+{"source_index":442332,"premise":"A man in a gray t-shirt walks down a public street past a pair of tall office buildings.","hypothesis":"A man is unable to walk.","label":2}
+{"source_index":442910,"premise":"A person wearing a gray sweatshirt and tennis shoes is sitting on something.","hypothesis":"A person dust lint off his suit.","label":2}
+{"source_index":443307,"premise":"In a tilted picture, two boys in a poor country run towards a doorway.","hypothesis":"Two boys wearing blue run toward a doorway in a picture.","label":1}
+{"source_index":445694,"premise":"A person riding a horse trying to rope a calf that is running from them.","hypothesis":"A person is competing at a rodeo.","label":1}
+{"source_index":445900,"premise":"Several men are tinkering with radio controlled items.","hypothesis":"Some people are maneuvering radio controlled gadgets.","label":0}
+{"source_index":446052,"premise":"A man on a white surfboard in the ocean riding the waves.","hypothesis":"A surfer is standing on his board in the water.","label":0}
+{"source_index":447248,"premise":"An Asian man makes calligraphy on a green table with newspaper on it.","hypothesis":"A man is drawing.","label":0}
+{"source_index":448081,"premise":"There is a husband and wife outside of a small shop taking pictures of a baby camel.","hypothesis":"The baby camel is inside of the shop.","label":1}
+{"source_index":448093,"premise":"A security guard stands by a metal, lighted sculpture.","hypothesis":"A person guards a sculpture.","label":0}
+{"source_index":448470,"premise":"A man wearing a helmet has his hand up in the air and is shouting in a similar way the crowd behind his doing.","hypothesis":"A man leads others in a chant.","label":1}
+{"source_index":448551,"premise":"The bull is running with a yellow fence behind him.","hypothesis":"A bull is running through an open field chasing a cow.","label":1}
+{"source_index":449726,"premise":"Two young blond-haired children are laying in their sleeping bags.","hypothesis":"Their hair is red.","label":2}
+{"source_index":450435,"premise":"People ordering food from a lunch cart outside.","hypothesis":"The lunch cart is mexican food.","label":1}
+{"source_index":450767,"premise":"A young woman dances to the delight of a group of children.","hypothesis":"A woman is holding 3 children.","label":2}
+{"source_index":450897,"premise":"A chef is preparing some food.","hypothesis":"In the kitchen the man washes dishes.","label":2}
+{"source_index":450940,"premise":"A boy in a sports uniform chasing a soccer ball","hypothesis":"A boy is playing.","label":1}
+{"source_index":452118,"premise":"Two men play the guitar while on a boat.","hypothesis":"Two men on a boat play their guitars together.","label":0}
+{"source_index":453097,"premise":"A group of people are running a race.","hypothesis":"The people are almost to the finish line.","label":1}
+{"source_index":455935,"premise":"A man wearing orange reflective clothing and a red hard hat shovels watery mud next to a low cement wall.","hypothesis":"The man is a repairman.","label":1}
+{"source_index":456117,"premise":"Three women in a hospital.","hypothesis":"the skateboard was black","label":1}
+{"source_index":456266,"premise":"A guy lifts some heavy weights while an older man assists him.","hypothesis":"A man helping another man bench press.","label":1}
+{"source_index":456761,"premise":"Three dogs run on beach, two playing with unknown object.","hypothesis":"Three dogs are swimming in the ocean.","label":2}
+{"source_index":456772,"premise":"Two large white dogs and one large tan dog in a red collar run along a beach.","hypothesis":"Three dogs are lying in the grass in the shade.","label":2}
+{"source_index":457878,"premise":"A girl doing something on her cellphone.","hypothesis":"There is a person with a telecommunications device.","label":0}
+{"source_index":457899,"premise":"A woman in a red dress and a man in a white suite are engaging in a ballet performance on a purple lit stage.","hypothesis":"A man and woman are dancing.","label":0}
+{"source_index":458599,"premise":"A closeup of a man riding his bicycle through the forest.","hypothesis":"A man is riding his bicycle in the forest to exercise.","label":1}
+{"source_index":458628,"premise":"Two young girls one blond one brunette are puckering there lips and showing a peace sign with there fingers.","hypothesis":"The girls have no fingers.","label":2}
+{"source_index":459828,"premise":"Young girl jumping off a swing.","hypothesis":"Someone is jumping.","label":0}
+{"source_index":461143,"premise":"A woman in a white shirt sitting on a gray bench in front of a wall with graffiti written on it.","hypothesis":"A person in a white shirt swimming in a lake.","label":2}
+{"source_index":463262,"premise":"A brown and black dog approaching a red ball.","hypothesis":"The ball attracted the dog's attention.","label":0}
+{"source_index":463559,"premise":"A woman is jogging on a road by a shoreline, holding an item up in the air.","hypothesis":"The woman is holding a rock.","label":1}
+{"source_index":463572,"premise":"A man is selling water and lemonade at a stand.","hypothesis":"a vendor is selling lemonade.","label":1}
+{"source_index":463687,"premise":"Children are playing outside in a rocky area beside a river.","hypothesis":"Children are playing oustide with their parents.","label":1}
+{"source_index":464513,"premise":"A small kid wearing a helmet smiles while his father is doing some adjustment at its back.","hypothesis":"The kid is flying through the sky wearing a cape.","label":2}
+{"source_index":464854,"premise":"Little boy pushing another little boy up the pole.","hypothesis":"There are two boys.","label":0}
+{"source_index":464901,"premise":"A man wearing a colorful suit sits on a sidewalk playing a basset horn to collect money.","hypothesis":"A man juggles on the street.","label":2}
+{"source_index":466557,"premise":"Woman walking on a puddle of water.","hypothesis":"A woman with wet Nike sneakers.","label":1}
+{"source_index":467470,"premise":"A group of people are sitting on the top of a boat.","hypothesis":"The people are swimming","label":2}
+{"source_index":467865,"premise":"Two players in red white and blue football uniforms squat down on the field.","hypothesis":"Two players in red white and blue football uniforms squat down on the field and holding their helmets.","label":0}
+{"source_index":468548,"premise":"A class of students all doing different actions.","hypothesis":"A class of students working on one math problem.","label":2}
+{"source_index":469856,"premise":"The men are talking to the person in the police van.","hypothesis":"There is a criminal in the back of a police van.","label":1}
+{"source_index":470247,"premise":"A man with a yellow hat on is leaning on a wall of some sort.","hypothesis":"someone with a yellow hat leans","label":0}
+{"source_index":470257,"premise":"A child wearing a green shirt and blowing bubbles.","hypothesis":"A child in green is playing baseball.","label":2}
+{"source_index":472747,"premise":"Young boy delivers a jumping martial arts kick.","hypothesis":"The boy practices martial arts.","label":0}
+{"source_index":472789,"premise":"A young boy points a toy rifle off-camera.","hypothesis":"A boy is holding a sword.","label":2}
+{"source_index":473855,"premise":"There is a person sitting on a plastic blow-up float in the high piled snow.","hypothesis":"The person is outdoors.","label":0}
+{"source_index":474441,"premise":"A baby decides to pack himself away in a suitcase.","hypothesis":"A baby ends up in a suitcase and is promptly discovered.","label":1}
+{"source_index":474740,"premise":"A man in white is playing a black accordion.","hypothesis":"man plays accordion","label":0}
+{"source_index":475013,"premise":"The racer zooms past the wooded area leaving a cloud of dust.","hypothesis":"The car is fast.","label":1}
+{"source_index":475232,"premise":"A guy snowboarding down a pole that is on top of a blue vehicle into the snow.","hypothesis":"A man performs snowboard stunts in a scored event.","label":1}
+{"source_index":475671,"premise":"The people are standing outside after a wedding.","hypothesis":"It was a wedding for two Indian people","label":1}
+{"source_index":477167,"premise":"A man in a white t-shirt is standing outside on a busy street.","hypothesis":"The woman is wearing a white shirt.","label":2}
+{"source_index":477223,"premise":"A guy is jumping in the air while a group of people stand around and ignore him.","hypothesis":"A guy is really an alien from Neptune.","label":2}
+{"source_index":477332,"premise":"People are in a restaurant eating.","hypothesis":"A group of individuals eating in a restaurant.","label":0}
+{"source_index":477877,"premise":"A man wearing yellow riding a bike.","hypothesis":"A man steering a bike.","label":0}
+{"source_index":477962,"premise":"Three teenage girls walking down the sidewalk together on a nice day","hypothesis":"Girls are walking in the daytime.","label":0}
+{"source_index":478194,"premise":"Beautiful day to play fetch with dog while relaxing on the dock at the lake.","hypothesis":"The sun shines upon the lake.","label":0}
+{"source_index":482019,"premise":"A man in glasses talks to a woman while shopping for orange juice.","hypothesis":"There is a man shopping while avoiding a women","label":1}
+{"source_index":482758,"premise":"A man bundled up in a coat displaying with his arms a bunch of clothes.","hypothesis":"The man was about to go outside","label":2}
+{"source_index":484972,"premise":"Four cheerleaders at a basketball game dance at half-court during a break in the game.","hypothesis":"Four cheerleaders dance during a break in the game.","label":0}
+{"source_index":485427,"premise":"A child jumps onto a bed.","hypothesis":"The child is jumping on the bed and his big sister is worried that the bed will break and they will get scolded.","label":1}
+{"source_index":485580,"premise":"A man who is wearing glasses is planting trees.","hypothesis":"A man plants strawberries.","label":2}
+{"source_index":485598,"premise":"There are 2 shirtless boys jumping up from some water looking at a soccer ball.","hypothesis":"Two boys are playing with a soccer ball in a pool.","label":1}
+{"source_index":485858,"premise":"A woman with long dark hair is walking on a sidewalk past some tall buildings, while two other people walk across the street with their dog.","hypothesis":"People walking.","label":0}
+{"source_index":486098,"premise":"A professor explaining a University level lecture.","hypothesis":"A professor in class.","label":0}
+{"source_index":486675,"premise":"Two people are hugging and one is wearing a pink-hooded stretch top.","hypothesis":"Both people are wearing scuba suits.","label":2}
+{"source_index":487229,"premise":"A young girl in a green bathing suit getting splashed with water.","hypothesis":"A girl in a red tank top gets splashed with water.","label":2}
+{"source_index":487685,"premise":"There are three people sitting on a bench outside a building and one man standing next to it looking at a newspaper.","hypothesis":"The people are talking.","label":1}
+{"source_index":488220,"premise":"A lady with a blue coat is seen riding a bike in front of a store.","hypothesis":"A lady with a blue coat is getting exercise.","label":0}
+{"source_index":488702,"premise":"A person in a yellow hat, carrying a bag and a fishing pole, walks in a grassy area near a small body of water.","hypothesis":"On the grass near the water, a person in a yellow hat walks carrying fishing gear.","label":0}
+{"source_index":488841,"premise":"People are standing in a room with a television that has a picture of a boat on the water.","hypothesis":"A man sits online in a dark room eating pizza and watching Wheel of Fortune.","label":2}
+{"source_index":489327,"premise":"A person wearing a red vest climbs up a steep rock.","hypothesis":"A person is repelling down the mountain.","label":2}
+{"source_index":489352,"premise":"A young man is taking his hat off while walking from his graduation.","hypothesis":"A student is sitting after graduating.","label":2}
+{"source_index":489857,"premise":"A little boy learning how to handle an owl in the outdoors.","hypothesis":"A boy is learning.","label":0}
+{"source_index":490129,"premise":"A red and silver muscle car, waits to start a drag race.","hypothesis":"the car is in a long race","label":1}
+{"source_index":491039,"premise":"A young lady is being videotaped while she's sitting in her stroller in front of a Sysco truck on the sidewalk.","hypothesis":"a young woman is being filmed while she sits in her stroller on the sidewalk in front of a truck","label":0}
+{"source_index":492175,"premise":"A person holding a small dog on a leash is bending over and looking through items.","hypothesis":"The person is looking though several shopping bags.","label":1}
+{"source_index":493759,"premise":"Yellow dog catches ball in shallow waters.","hypothesis":"Dog sleeping","label":2}
+{"source_index":494996,"premise":"Greyhound dogs wearing racing stripes are running out of a gate on a track.","hypothesis":"Dogs wearing racing stripes are running out of a gate on a track.","label":0}
+{"source_index":495730,"premise":"A woman in a park wearing a hat and holding a scarf over her face.","hypothesis":"A woman is in a city park.","label":1}
+{"source_index":495795,"premise":"A man is walking on a trail in the woods while a young girl is attempting to climb some boards of wood.","hypothesis":"A man walks in the woods while a young girl climbs.","label":0}
+{"source_index":496534,"premise":"Three guys riding on an elephant with a house-like structures and trees in the background.","hypothesis":"The elephants sometimes fight their trainers.","label":1}
+{"source_index":499937,"premise":"They blow their trumpets.","hypothesis":"The trumpeters are playing fiddles.","label":2}
+{"source_index":500623,"premise":"The horse on the left has a white mane.","hypothesis":"The horse is solid black.","label":2}
+{"source_index":501731,"premise":"Two people, a woman wearing an orange shirt and a man wearing a blue shirt, are jumping out of swings in midair.","hypothesis":"No one is jumping from a swing.","label":2}
+{"source_index":501926,"premise":"A man in a plaid shirt exhales smoke on a crowded city street.","hypothesis":"A firetruck goes down the street.","label":2}
+{"source_index":502223,"premise":"Three men are standing next to each other wearing different colored shirts.","hypothesis":"Three brothers wearing their favorite color shirt.","label":1}
+{"source_index":502423,"premise":"A man smiles and poses with a product he appears to be trying to sell.","hypothesis":"A person is posing with an object.","label":0}
+{"source_index":503039,"premise":"Girl poses on couch on suburban lawn.","hypothesis":"A girl posing for a photo shoot on a couch.","label":1}
+{"source_index":504105,"premise":"A man wearing a blue shirt smokes a cigarette in front of an official building.","hypothesis":"A man wearing a blue shirt.","label":0}
+{"source_index":504992,"premise":"Two women walking toward the camera along a sidewalk while wearing a backpack and showing midriff.","hypothesis":"There are clothes on the women.","label":0}
+{"source_index":506005,"premise":"A woman with gray hair is sitting next to a little boy who is holding onto the handles of a stroller and a little girl who is sitting in a different stroller.","hypothesis":"An older lady is resting with a couple of children.","label":1}
+{"source_index":506414,"premise":"The trees are green","hypothesis":"All trees are green.","label":1}
+{"source_index":508521,"premise":"A person in a red shirt doing tricks on a bicycle.","hypothesis":"A person is competing in a bmx competition.","label":1}
+{"source_index":509169,"premise":"A couple hug in a crowded place.","hypothesis":"A man hugs his boyfriend at a protest.","label":1}
+{"source_index":509328,"premise":"A woman in an orange bikini is massaging a man.","hypothesis":"A woman is touching a man.","label":0}
+{"source_index":509438,"premise":"Two women sit at desks in a large room with white walls.","hypothesis":"The women are esitting in a white room.","label":0}
+{"source_index":510455,"premise":"Here is a picture of an older lady wearing a beanie and carrying her terrier in a field outside.","hypothesis":"Here is a picture of a older person wearing a hat and carrying her dog outside.","label":0}
+{"source_index":510869,"premise":"A man is sitting on the floor meditating","hypothesis":"A man is meditating while listening to water noises.","label":1}
+{"source_index":511280,"premise":"A mottled black and gray dog in a blue collar jumping over a fallen tree.","hypothesis":"A white dog in a red collar jumping over a tree.","label":2}
+{"source_index":511871,"premise":"The man in blue is punching the man with the red gloves while he blocks his face.","hypothesis":"Floyd Mayweather is laying some smack down on a hapless challenger.","label":1}
+{"source_index":512053,"premise":"Man performing stunt, lady breaking block on his stomach with sludge hammer.","hypothesis":"Nobody is performing.","label":2}
+{"source_index":512639,"premise":"A skateboarder makes a jump while someone films it.","hypothesis":"The skateboarder landed the jump perfectly.","label":1}
+{"source_index":512695,"premise":"A young girl in a pink shirt creates a painting on paper.","hypothesis":"A young girl draws.","label":0}
+{"source_index":512778,"premise":"A man riding a four-wheel ATV in the dessert, kicking up sand in his wake.","hypothesis":"The man is riding his atv on the city road.","label":2}
+{"source_index":513211,"premise":"two men working a construction job","hypothesis":"The two men are sweating.","label":1}
+{"source_index":513720,"premise":"Three women in white mini dresses, carrying white umbrellas and drinks, walking in an unknown desert location.","hypothesis":"Three women are waiting in the desert while wearing short dresses.","label":0}
+{"source_index":513835,"premise":"A man in a black hooded sweater stands behind a rich variety of fruits and vegetables.","hypothesis":"A fruit salad on the rung from the cops.","label":2}
+{"source_index":514380,"premise":"A woman, with a drink in hand, is leaning against a silver car parked along the street, while looking at the camera.","hypothesis":"A female is going to take a picture of a car that she is trying to sell.","label":1}
+{"source_index":515747,"premise":"A boy poses on a shadow-dappled lawn.","hypothesis":"A boy takes a bath.","label":2}
+{"source_index":516128,"premise":"A man in a green striped shirt drums furiously.","hypothesis":"The man is playing drums.","label":0}
+{"source_index":517858,"premise":"Older female walking with cane next to flower wreaths.","hypothesis":"An older woman is walking with a cane.","label":0}
+{"source_index":518461,"premise":"A dog up to its belly in the snow attempts to move.","hypothesis":"An animal outdoors.","label":0}
+{"source_index":518638,"premise":"A man on a cellphone stands outside of a building with pictures of women in black shirts behind him.","hypothesis":"The woman is late for her appointment","label":2}
+{"source_index":519201,"premise":"A white ice cream truck stopped on the side of the road and a man stopped to buy some.","hypothesis":"A green ice cream truck stopped on the side of the road and a woman stopped to buy some.","label":2}
+{"source_index":519469,"premise":"Many birds are sitting on a concrete wall.","hypothesis":"Many pigeons are sitting on a concrete wall.","label":1}
+{"source_index":519819,"premise":"A man hiking with a large backpack and two poles near a collection of pointy white rocks.","hypothesis":"The man hiking is caucasian.","label":1}
+{"source_index":520042,"premise":"A Team USA player passing the ball to another player.","hypothesis":"The people do not have a ball.","label":2}
+{"source_index":520786,"premise":"Man with gray hair telling a story to a group of younger people on a bench.","hypothesis":"The man is entertaining people","label":0}
+{"source_index":521347,"premise":"A blond woman is holding a microphone and making a zero sign with her fingers.","hypothesis":"A woman is speaking into a microphone.","label":1}
+{"source_index":521683,"premise":"A little girl in a hat sits under a grocery cart.","hypothesis":"A girl is sleeping in her bed.","label":2}
+{"source_index":523638,"premise":"A person is walking by a wall that is surrounding a church.","hypothesis":"A person is walking by an ice cream stand.","label":2}
+{"source_index":524089,"premise":"A brunette with a lei around her head.","hypothesis":"A person with a lei around their head.","label":0}
+{"source_index":524354,"premise":"Two girls looking at bubbles in the air.","hypothesis":"Two boys were climbing a tree","label":2}
+{"source_index":524385,"premise":"A boy in a flowered apron standing at a stove while a woman stirs a pot in the background.","hypothesis":"A boy in a flowered apron is helping make soup.","label":1}
+{"source_index":524406,"premise":"A young woman is stirring something in a pot while a young boy wearing a flowered apron stands by her.","hypothesis":"They are making soup","label":1}
+{"source_index":524854,"premise":"A little girl smiling and holding a small object.","hypothesis":"A girl is proud of her object.","label":1}
+{"source_index":527833,"premise":"These two people are eating.","hypothesis":"Two humans are having a meal.","label":0}
+{"source_index":528482,"premise":"A religious man in a robe is sitting in contemplation.","hypothesis":"A man wearing a robe looks to be very religious","label":0}
+{"source_index":528520,"premise":"A surfer catching a wave.","hypothesis":"A person is surfing.","label":0}
+{"source_index":530538,"premise":"Four young boys are standing around a grill.","hypothesis":"Four young boys are standing in a group.","label":0}
+{"source_index":531157,"premise":"A girl sitting in the back of a cart full of various belongings.","hypothesis":"A boy carries his belongings in his arms.","label":2}
+{"source_index":533036,"premise":"A woman wearing a colorful shawl on her head is using a sewing machine.","hypothesis":"A sewing machine is used by a woman wearing a colorful shawl.","label":0}
+{"source_index":534650,"premise":"Someone in a blue coat and white sneakers is airborne.","hypothesis":"The person is laying on the ground.","label":2}
+{"source_index":537726,"premise":"A closeup of a bicycle rider's leg.","hypothesis":"The person is participating in a bike race.","label":1}
+{"source_index":538979,"premise":"The local street is busy with a food market and bus transportation.","hypothesis":"There is a bus that brings you to the local street fair that sells food.","label":0}
+{"source_index":539080,"premise":"Two asian women are sitting in the shade under a tree.","hypothesis":"Two women are relaxing.","label":0}
+{"source_index":539243,"premise":"Two men wearing sandals walking.","hypothesis":"the men are asleep in the motel","label":2}
+{"source_index":539998,"premise":"A small black girl in a bathing suit","hypothesis":"The girl is visiting her grandmother who lives on Martha's Vineyard.","label":1}
+{"source_index":540283,"premise":"A horse pulls a wagon with a bale of hay on top, while a man sits on top of the bale with his hand in the air.","hypothesis":"A man wears a hat.","label":1}
+{"source_index":540574,"premise":"man wearing gray jacket watching family at worship.","hypothesis":"A man is at home eating dinner.","label":2}
+{"source_index":541031,"premise":"A woman and a man holding a small boy smile while standing in front of a decorated christmas tree with gifts under it.","hypothesis":"The family is celebrating its last Channukah.","label":2}
+{"source_index":541746,"premise":"A person in yellow is riding a dirt bike on a dirt path.","hypothesis":"A guy driving an ATV through the park.","label":2}
+{"source_index":542263,"premise":"A girl in a floral bathing suit jumping on the beach in front of the waves.","hypothesis":"A five year old girl is on vacation with her family.","label":1}
+{"source_index":542646,"premise":"A sports team is lined up outside.","hypothesis":"The sports team is laying down on the field.","label":2}
+{"source_index":543160,"premise":"A man has a pan and what looks like a block of dirt.","hypothesis":"A man with a pan.","label":0}
+{"source_index":545706,"premise":"A middle-aged solo musician performs by singing and playing the guitar.","hypothesis":"The muscisian is on stage.","label":1}
+{"source_index":546367,"premise":"Two people are standing in a flower shop.","hypothesis":"People in a store.","label":0}
+{"source_index":547621,"premise":"Three dogs playing in the snow.","hypothesis":"Dogs play outside.","label":0}
+{"source_index":548940,"premise":"A man in a yellow shirt is reading a book.","hypothesis":"A man is reading while waiting for a bus.","label":1}
+{"source_index":549041,"premise":"A man in a purple hat, white shirt, wearing earbuds, listening to music, sitting outside a city building.","hypothesis":"He is taking shelter from the hurricane.","label":2}
+{"source_index":549274,"premise":"A female swimmer wearing a swim cap and nose clips moves slowly through the water is seen from below.","hypothesis":"A female swimmer swims.","label":0}
+{"source_index":549910,"premise":"Crowd standing outside a metro area.","hypothesis":"The crowd is sitting in a field.","label":2}
